@@ -1,0 +1,84 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_keyboard_h%s	sdl_sdl_keyboard_h.ads	fb495255 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_keysym_h%s	sdl_sdl_keysym_h.ads	sdl_sdl_keysym_h.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_keyboard_h.ads  20160123123442 39fac545 sdl_sdl_keyboard_h%s
+D sdl_sdl_keysym_h.ads	20160123123442 39328e2d sdl_sdl_keysym_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24 7r6 43r67
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 7r17 43r78
+35I9*int<integer> 7|25r41 25r53 28r44 28r60 28r72 31r49 31r72 34r47
+43M9*unsigned
+44M9*unsigned_short
+47M9*unsigned_char
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|7w19 43r80
+47P9*chars_ptr 7|43r88
+X 7 sdl_sdl_keyboard_h.ads
+9K9*SDL_SDL_keyboard_h 46l5 46e23
+12N4*SDL_ALL_HOTKEYS
+14N4*SDL_DEFAULT_REPEAT_DELAY
+15N4*SDL_DEFAULT_REPEAT_INTERVAL
+17R9*SDL_keysym 22e14 23r39
+18m7*scancode{9|117M12}
+19m7*sym{8|12M12}
+20m7*c_mod{8|248M12}
+21m7*unicode{9|121M12}
+25V13*SDL_EnableUNICODE{4|35I9} 25>32 26b<c,SDL_EnableUNICODE>22
+25i32 enable{4|35I9}
+28V13*SDL_EnableKeyRepeat{4|35I9} 28>34 28>49 29b<c,SDL_EnableKeyRepeat>22
+28i34 c_delay{4|35I9}
+28i49 interval{4|35I9}
+31U14*SDL_GetKeyRepeat 31^32 31^54 32b<c,SDL_GetKeyRepeat>22
+31p32 c_delay(4|35I9)
+31p54 interval(4|35I9)
+34V13*SDL_GetKeyState(9|117M12) 34^30 35b<c,SDL_GetKeyState>22
+34p30 numkeys(4|35I9)
+37V13*SDL_GetModState{8|248M12} 38b<c,SDL_GetModState>22
+40U14*SDL_SetModState 40>31 41b<c,SDL_SetModState>22
+40m31 modstate{8|248M12}
+43V13*SDL_GetKeyName{6|47P9} 43>29 44b<c,SDL_GetKeyName>22
+43m29 key{8|12M12}
+X 8 sdl_sdl_keysym_h.ads
+6K9*SDL_SDL_keysym_h 7|6w6 19r21 20r23 37r36 40r42 43r35 8|263e21
+12M12*SDLKey{4|43M9} 7|19r38 43r52
+248M12*SDLMod{4|43M9} 7|20r40 37r53 40r59
+X 9 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|5w6 18r26 21r25 34r66 9|230e21
+117M12*Uint8{10|11M12} 7|18r43 34r83
+121M12*Uint16{10|15M12} 7|21r42
+X 10 stdint_h.ads
+11M12*uint8_t{4|47M9}
+15M12*uint16_t{4|44M9}
+

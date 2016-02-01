@@ -1,0 +1,50 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U umingw_h%s		umingw_h.ads		597ec6e6 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 9|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 9|4w17 4r35
+35I9*int<integer> 9|15r23 17r24 21r25 27r23
+37I9*long<long_integer> 9|29r27
+43M9*unsigned 9|13r22 19r25
+44M9*unsigned_short 9|23r22 25r24
+X 9 umingw_h.ads
+6K9*umingw_h 35l5 35e13
+9N4*USE_u_u_UUIDOF
+11N4*WINVER
+13M12*size_t{4|43M9}
+15I12*ssize_t{4|35I9}
+17I12*intptr_t{4|35I9}
+19M12*uintptr_t{4|43M9}
+21I12*ptrdiff_t{4|35I9}
+23M12*wint_t{4|44M9}
+25M12*wctype_t{4|44M9}
+27I12*errno_t{4|35I9}
+29I12*uu_time32_t{4|37I9} 33r22
+31I12*uu_time64_t{long_long_integer}
+33I12*time_t{29I12}
+

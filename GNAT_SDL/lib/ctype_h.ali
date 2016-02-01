@@ -1,0 +1,113 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ctype_h%s		ctype_h.ads		8731402a NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W umingw_h%s		umingw_h.ads		umingw_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D ctype_h.ads		20160123123442 de4f86cc ctype_h%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+X 3 ctype_h.ads
+7K9*ctype_h 177l5 177e12
+17V13*isalpha{5|35I9} 17>22 18b<c,isalpha>22
+17i22 u_C{5|35I9}
+22V13*isupper{5|35I9} 22>22 23b<c,isupper>22
+22i22 u_C{5|35I9}
+27V13*islower{5|35I9} 27>22 28b<c,islower>22
+27i22 u_C{5|35I9}
+32V13*isdigit{5|35I9} 32>22 33b<c,isdigit>22
+32i22 u_C{5|35I9}
+37V13*isxdigit{5|35I9} 37>23 38b<c,isxdigit>22
+37i23 u_C{5|35I9}
+42V13*isspace{5|35I9} 42>22 43b<c,isspace>22
+42i22 u_C{5|35I9}
+47V13*ispunct{5|35I9} 47>22 48b<c,ispunct>22
+47i22 u_C{5|35I9}
+52V13*isalnum{5|35I9} 52>22 53b<c,isalnum>22
+52i22 u_C{5|35I9}
+57V13*isprint{5|35I9} 57>22 58b<c,isprint>22
+57i22 u_C{5|35I9}
+62V13*isgraph{5|35I9} 62>22 63b<c,isgraph>22
+62i22 u_C{5|35I9}
+67V13*iscntrl{5|35I9} 67>22 68b<c,iscntrl>22
+67i22 u_C{5|35I9}
+72V13*toupper{5|35I9} 72>22 73b<c,toupper>22
+72i22 u_C{5|35I9}
+75V13*tolower{5|35I9} 75>22 76b<c,tolower>22
+75i22 u_C{5|35I9}
+86V13*isblank{5|35I9} 86>22 87b<c,isblank>22
+86i22 u_C{5|35I9}
+89V13*iswalpha{5|35I9} 89>23 90b<c,iswalpha>22
+89m23 u_C{10|23M12}
+94V13*iswupper{5|35I9} 94>23 95b<c,iswupper>22
+94m23 u_C{10|23M12}
+99V13*iswlower{5|35I9} 99>23 100b<c,iswlower>22
+99m23 u_C{10|23M12}
+104V13*iswdigit{5|35I9} 104>23 105b<c,iswdigit>22
+104m23 u_C{10|23M12}
+109V13*iswxdigit{5|35I9} 109>24 110b<c,iswxdigit>22
+109m24 u_C{10|23M12}
+114V13*iswspace{5|35I9} 114>23 115b<c,iswspace>22
+114m23 u_C{10|23M12}
+119V13*iswpunct{5|35I9} 119>23 120b<c,iswpunct>22
+119m23 u_C{10|23M12}
+124V13*iswalnum{5|35I9} 124>23 125b<c,iswalnum>22
+124m23 u_C{10|23M12}
+129V13*iswprint{5|35I9} 129>23 130b<c,iswprint>22
+129m23 u_C{10|23M12}
+134V13*iswgraph{5|35I9} 134>23 135b<c,iswgraph>22
+134m23 u_C{10|23M12}
+139V13*iswcntrl{5|35I9} 139>23 140b<c,iswcntrl>22
+139m23 u_C{10|23M12}
+144V13*iswascii{5|35I9} 144>23 145b<c,iswascii>22
+144m23 u_C{10|23M12}
+147V13*isleadbyte{5|35I9} 147>25 148b<c,isleadbyte>22
+147i25 u_C{5|35I9}
+152V13*towupper{10|23M12} 152>23 153b<c,towupper>22
+152m23 u_C{10|23M12}
+157V13*towlower{10|23M12} 157>23 158b<c,towlower>22
+157m23 u_C{10|23M12}
+162V13*iswctype{5|35I9} 162>23 162>46 163b<c,iswctype>22
+162m23 u_C{10|23M12}
+162m46 u_Type{10|25M12}
+171V13*is_wctype{5|35I9} 171>24 171>47 172b<c,is_wctype>22
+171m24 u_C{10|23M12}
+171m47 u_Type{10|25M12}
+174V13*iswblank{5|35I9} 174>23 175b<c,iswblank>22
+174m23 u_C{10|23M12}
+X 4 interfac.ads
+38K9*Interfaces 3|4r6 4r24 4|178e15
+X 5 i-c.ads
+18K20*C 3|4w17 4r35 5|230e17
+35I9*int<integer> 3|17r28 17r40 22r28 22r40 27r28 27r40 32r28 32r40 37r29
+. 37r41 42r28 42r40 47r28 47r40 52r28 52r40 57r28 57r40 62r28 62r40 67r28
+. 67r40 72r28 72r40 75r28 75r40 86r28 86r40 89r53 94r53 99r53 104r53 109r54
+. 114r53 119r53 124r53 129r53 134r53 139r53 144r53 147r31 147r43 162r81 171r82
+. 174r53
+44M9*unsigned_short
+X 10 umingw_h.ads
+6K9*umingw_h 3|5w6 89r29 94r29 99r29 104r29 109r30 114r29 119r29 124r29 129r29
+. 134r29 139r29 144r29 152r29 152r53 157r29 157r53 162r29 162r55 171r30 171r56
+. 174r29 10|35e13
+23M12*wint_t{5|44M9} 3|89r38 94r38 99r38 104r38 109r39 114r38 119r38 124r38
+. 129r38 134r38 139r38 144r38 152r38 152r62 157r38 157r62 162r38 171r39 174r38
+25M12*wctype_t{5|44M9} 3|162r64 171r65
+

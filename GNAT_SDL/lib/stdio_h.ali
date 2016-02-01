@@ -1,0 +1,367 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stdio_h%s		stdio_h.ads		f6049cac NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+W umingw_h%s		umingw_h.ads		umingw_h.ali
+W umingw_off_t_h%s	umingw_off_t_h.ads	umingw_off_t_h.ali
+W vadefs_h%s		vadefs_h.ads		vadefs_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D stdio_h.ads		20160123123442 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123123442 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 6|4r6 4r24 5r6 50r15 52r16 57r20 65r55 69r32 73r31
+. 73r74 79r18 83r33 87r16 88r18 92r54 96r31 100r29 100r72 104r30 109r16 114r15
+. 115r16 156r15 158r36 167r33 167r74 170r33 170r72 178r28 189r20 190r16 248r30
+. 248r69 253r33 266r27 271r34 274r37 274r85 279r34 289r55 300r15 316r32 316r71
+. 333r11 335r16 340r11 342r16 586r36 586r83 586r122 592r52
+X 4 i-c.ads
+18K20*C 230e17 6|4w17 4r35 5r17 50r26 52r27 57r31 65r66 69r43 73r42 73r85
+. 79r29 83r44 87r27 88r29 92r65 96r42 100r40 100r83 104r41 109r27 114r26
+. 115r27 156r26 158r47 167r44 167r85 170r44 170r83 178r39 189r31 190r27 248r41
+. 248r80 253r44 266r38 271r45 274r48 274r96 279r45 289r66 300r26 316r43 316r82
+. 333r22 335r27 340r22 342r27 586r47 586r94 586r133 592r63
+35I9*int<integer> 6|51r23 53r24 54r24 55r27 56r26 66r16 70r16 74r16 80r44
+. 83r102 89r41 93r16 97r16 101r16 104r94 110r39 116r39 128r50 135r48 138r50
+. 141r50 144r49 149r74 152r76 157r20 173r27 173r61 178r89 196r74 199r76 205r18
+. 205r30 211r16 211r28 217r16 217r28 240r48 243r28 260r26 260r60 263r29 263r41
+. 266r66 271r73 274r124 279r73 301r16 302r40 319r28 319r62 336r38 343r16
+. 353r16 357r16 361r16 364r77 370r39 376r39 380r16 384r16 390r44 393r87 397r16
+. 403r39 435r23 439r74 462r16 469r39 589r30 592r36 595r29 598r50 601r29 604r30
+. 604r42 607r48 610r26 610r60 613r26
+37I9*long<long_integer> 6|204r18 220r49
+43M9*unsigned
+44M9*unsigned_short
+108E9*wchar_t<wide_character> 6|352r62 356r37 356r64 360r39 364r36 369r21
+. 374r21 375r21 379r63 383r40 389r25 393r41 396r37 396r60 401r21 402r21 413r28
+. 424r27 427r30 434r22 436r43 439r36 459r18 461r23 466r21 468r21
+X 5 i-cstrin.ads
+36K22*Strings 106e25 6|5w19 50r28 52r29 57r33 65r68 69r45 73r44 73r87 79r31
+. 83r46 87r29 88r31 92r67 96r44 100r42 100r85 104r43 109r29 114r28 115r29
+. 156r28 158r49 167r46 167r87 170r46 170r85 178r41 189r33 190r29 248r43 248r82
+. 253r46 266r40 271r47 274r50 274r98 279r47 289r68 300r28 316r45 316r84 333r24
+. 335r29 340r24 342r29 586r49 586r96 586r135 592r65
+47P9*chars_ptr 6|50r36 52r37 57r41 65r76 69r53 73r52 73r95 79r39 83r54 87r37
+. 88r39 92r75 96r52 100r50 100r93 104r51 109r37 114r36 115r37 156r36 158r57
+. 167r54 167r95 170r54 170r93 178r49 189r41 190r37 248r51 248r90 253r54 266r48
+. 271r55 274r58 274r106 279r55 289r76 300r36 316r53 316r92 333r32 335r37
+. 340r32 342r37 586r57 586r104 586r143 592r73
+X 6 stdio_h.ads
+11K9*stdio_h 616l5 616e12
+14N4*BUFSIZ
+16N4*EOF
+19N4*SEEK_CUR
+20N4*SEEK_END
+21N4*SEEK_SET
+23N4*STDIN_FILENO
+24N4*STDOUT_FILENO
+25N4*STDERR_FILENO
+27N4*FILENAME_MAX
+28N4*FOPEN_MAX
+30N4*TMP_MAX
+49R9*u_iobuf 58e14 59r39 61r20
+50p7*u_ptr{5|47P9}
+51i7*u_cnt{4|35I9}
+52p7*u_base{5|47P9}
+53i7*u_flag{4|35I9}
+54i7*u_file{4|35I9}
+55i7*u_charbuf{4|35I9}
+56i7*u_bufsiz{4|35I9}
+57p7*u_tmpfname{5|47P9}
+61R12*FILE{49R9} 65r38 78r23 92r37 108r19 125r40 128r37 135r35 138r37 141r37
+. 144r36 149r38 152r40 158r23 167r120 170r118 173r48 178r76 185r23 191r23
+. 191r43 196r38 199r40 203r23 209r23 215r23 220r36 223r37 226r39 237r23 240r35
+. 260r47 282r38 289r38 299r23 313r35 319r49 352r38 368r21 379r39 388r23 408r37
+. 413r53 418r36 424r52 430r62 436r23 439r61 592r98 598r37 607r35 610r47
+63I12*fpos_t{long_long_integer} 149r59 152r61 196r59 199r61
+65V13*fprintf{4|35I9} 65^22 65>44 67b<c,fprintf>22
+65p22 u_File(61R12)
+65p44 u_Format{5|47P9}
+69V13*printf{4|35I9} 69>21 71b<c,printf>22
+69p21 u_Format{5|47P9}
+73V13*sprintf{4|35I9} 73>22 73>63 75b<c,sprintf>22
+73p22 u_Dest{5|47P9}
+73p63 u_Format{5|47P9}
+77V13*vfprintf{4|35I9} 78^7 79>7 80>7 81b<c,vfprintf>22
+78p7 u_File(61R12)
+79p7 u_Format{5|47P9}
+80m7 u_ArgList{13|11M12}
+83V13*vprintf{4|35I9} 83>22 83>65 84b<c,vprintf>22
+83p22 u_Format{5|47P9}
+83m65 u_ArgList{13|11M12}
+86V13*vsprintf{4|35I9} 87>7 88>7 89>7 90b<c,vsprintf>22
+87p7 u_Dest{5|47P9}
+88p7 u_Format{5|47P9}
+89m7 u_Args{13|11M12}
+92V13*fscanf{4|35I9} 92^21 92>43 94b<c,fscanf>22
+92p21 u_File(61R12)
+92p43 u_Format{5|47P9}
+96V13*scanf{4|35I9} 96>20 98b<c,scanf>22
+96p20 u_Format{5|47P9}
+100V13*sscanf{4|35I9} 100>21 100>61 102b<c,sscanf>22
+100p21 u_Src{5|47P9}
+100p61 u_Format{5|47P9}
+104V13*vscanf{4|35I9} 104>21 104>62 105b<c,vscanf>22
+104p21 Format{5|47P9}
+104m62 argp{13|11M12}
+107V13*vfscanf{4|35I9} 108^7 109>7 110>7 111b<c,vfscanf>22
+108p7 fp(61R12)
+109p7 Format{5|47P9}
+110m7 argp{13|11M12}
+113V13*vsscanf{4|35I9} 114>7 115>7 116>7 117b<c,vsscanf>22
+114p7 u_Str{5|47P9}
+115p7 Format{5|47P9}
+116m7 argp{13|11M12}
+125U14*clearerr 125^24 126b<c,clearerr>22
+125p24 u_File(61R12)
+128V13*fclose{4|35I9} 128^21 129b<c,fclose>22
+128p21 u_File(61R12)
+135V13*feof{4|35I9} 135^19 136b<c,feof>22
+135p19 u_File(61R12)
+138V13*ferror{4|35I9} 138^21 139b<c,ferror>22
+138p21 u_File(61R12)
+141V13*fflush{4|35I9} 141^21 142b<c,fflush>22
+141p21 u_File(61R12)
+144V13*fgetc{4|35I9} 144^20 145b<c,fgetc>22
+144p20 u_File(61R12)
+149V13*fgetpos{4|35I9} 149^22 149^44 150b<c,fgetpos>22
+149p22 u_File(61R12)
+149p44 u_Pos(63I12)
+152V13*fgetpos64{4|35I9} 152^24 152^46 153b<c,fgetpos64>22
+152p24 u_File(61R12)
+152p46 u_Pos(63I12)
+155V13*fgets{5|47P9} 156>7 157>7 158^7 159b<c,fgets>22
+156p7 u_Buf{5|47P9}
+157i7 u_MaxCount{4|35I9}
+158p7 u_File(61R12)
+167V13*fopen(61R12) 167>20 167>65 168b<c,fopen>22
+167p20 u_Filename{5|47P9}
+167p65 u_Mode{5|47P9}
+170V13*fopen64(61R12) 170>22 170>65 171b<c,fopen64>22
+170p22 filename{5|47P9}
+170p65 mode{5|47P9}
+173V13*fputc{4|35I9} 173>20 173^32 174b<c,fputc>22
+173i20 u_Ch{4|35I9}
+173p32 u_File(61R12)
+178V13*fputs{4|35I9} 178>20 178^60 179b<c,fputs>22
+178p20 u_Str{5|47P9}
+178p60 u_File(61R12)
+181V13*fread{11|13M12} 182>7 183>7 184>7 185^7 186b<c,fread>22
+182m7 u_DstBuf{7|67M9}
+183m7 u_ElementSize{11|13M12}
+184m7 u_Count{11|13M12}
+185p7 u_File(61R12)
+188V13*freopen(61R12) 189>7 190>7 191^7 192b<c,freopen>22
+189p7 u_Filename{5|47P9}
+190p7 u_Mode{5|47P9}
+191p7 u_File(61R12)
+196V13*fsetpos{4|35I9} 196^22 196^44 197b<c,fsetpos>22
+196p22 u_File(61R12)
+196p44 u_Pos(63I12)
+199V13*fsetpos64{4|35I9} 199^24 199^46 200b<c,fsetpos64>22
+199p24 u_File(61R12)
+199p46 u_Pos(63I12)
+202V13*fseek{4|35I9} 203^7 204>7 205>7 206b<c,fseek>22
+203p7 u_File(61R12)
+204i7 u_Offset{4|37I9}
+205i7 u_Origin{4|35I9}
+208V13*fseeko64{4|35I9} 209^7 210>7 211>7 212b<c,fseeko64>22
+209p7 stream(61R12)
+210i7 offset{12|12I12}
+211i7 whence{4|35I9}
+214V13*fseeko{4|35I9} 215^7 216>7 217>7 218b<c,fseeko>22
+215p7 stream(61R12)
+216i7 offset{12|8I12}
+217i7 whence{4|35I9}
+220V13*ftell{4|37I9} 220^20 221b<c,ftell>22
+220p20 u_File(61R12)
+223V13*ftello{12|8I12} 223^21 224b<c,ftello>22
+223p21 stream(61R12)
+226V13*ftello64{12|12I12} 226^23 227b<c,ftello64>22
+226p23 stream(61R12)
+233V13*fwrite{11|13M12} 234>7 235>7 236>7 237^7 238b<c,fwrite>22
+234m7 u_Str{7|67M9}
+235m7 u_Size{11|13M12}
+236m7 u_Count{11|13M12}
+237p7 u_File(61R12)
+240V13*getc{4|35I9} 240^19 241b<c,getc>22
+240p19 u_File(61R12)
+243V13*getchar{4|35I9} 244b<c,getchar>22
+248V13*gets{5|47P9} 248>19 249b<c,gets>22
+248p19 u_Buffer{5|47P9}
+253U14*perror 253>22 254b<c,perror>22
+253p22 u_ErrMsg{5|47P9}
+260V13*putc{4|35I9} 260>19 260^31 261b<c,putc>22
+260i19 u_Ch{4|35I9}
+260p31 u_File(61R12)
+263V13*putchar{4|35I9} 263>22 264b<c,putchar>22
+263i22 u_Ch{4|35I9}
+266V13*puts{4|35I9} 266>19 267b<c,puts>22
+266p19 u_Str{5|47P9}
+271V13*remove{4|35I9} 271>21 272b<c,remove>22
+271p21 u_Filename{5|47P9}
+274V13*rename{4|35I9} 274>21 274>69 275b<c,rename>22
+274p21 u_OldFilename{5|47P9}
+274p69 u_NewFilename{5|47P9}
+279V13*unlink{4|35I9} 279>21 280b<c,unlink>22
+279p21 u_Filename{5|47P9}
+282U14*rewind 282^22 283b<c,rewind>22
+282p22 u_File(61R12)
+289U14*setbuf 289^22 289>44 290b<c,setbuf>22
+289p22 u_File(61R12)
+289p44 u_Buffer{5|47P9}
+298V13*setvbuf{4|35I9} 299^7 300>7 301>7 302>7 303b<c,setvbuf>22
+299p7 u_File(61R12)
+300p7 u_Buf{5|47P9}
+301i7 u_Mode{4|35I9}
+302m7 u_Size{11|13M12}
+313V13*tmpfile(61R12) 314b<c,tmpfile>22
+316V13*tmpnam{5|47P9} 316>21 317b<c,tmpnam>22
+316p21 u_Buffer{5|47P9}
+319V13*ungetc{4|35I9} 319>21 319^33 320b<c,ungetc>22
+319i21 u_Ch{4|35I9}
+319p33 u_File(61R12)
+332V13*vsnprintf{4|35I9} 333>7 334>7 335>7 336>7 337b<c,vsnprintf>22
+333p7 d{5|47P9}
+334m7 n{11|13M12}
+335p7 format{5|47P9}
+336m7 arg{13|11M12}
+339V13*snprintf{4|35I9} 340>7 341>7 342>7 344b<c,snprintf>22
+340p7 s{5|47P9}
+341m7 n{11|13M12}
+342p7 format{5|47P9}
+352V13*fwscanf{4|35I9} 352^22 352^44 354b<c,fwscanf>22
+352p22 u_File(61R12)
+352p44 u_Format(4|108E9)
+356V13*swscanf{4|35I9} 356^22 356^46 358b<c,swscanf>22
+356p22 u_Src(4|108E9)
+356p46 u_Format(4|108E9)
+360V13*wscanf{4|35I9} 360^21 362b<c,wscanf>22
+360p21 u_Format(4|108E9)
+364V13*vwscanf{4|35I9} 364^22 364>45 365b<c,vwscanf>22
+364p22 arg1(4|108E9)
+364m45 arg2{13|11M12}
+367V13*vfwscanf{4|35I9} 368^7 369^7 370>7 371b<c,vfwscanf>22
+368p7 arg1(61R12)
+369p7 arg2(4|108E9)
+370m7 arg3{13|11M12}
+373V13*vswscanf{4|35I9} 374^7 375^7 376>7 377b<c,vswscanf>22
+374p7 arg1(4|108E9)
+375p7 arg2(4|108E9)
+376m7 arg3{13|11M12}
+379V13*fwprintf{4|35I9} 379^23 379^45 381b<c,fwprintf>22
+379p23 u_File(61R12)
+379p45 u_Format(4|108E9)
+383V13*wprintf{4|35I9} 383^22 385b<c,wprintf>22
+383p22 u_Format(4|108E9)
+387V13*vfwprintf{4|35I9} 388^7 389^7 390>7 391b<c,vfwprintf>22
+388p7 u_File(61R12)
+389p7 u_Format(4|108E9)
+390m7 u_ArgList{13|11M12}
+393V13*vwprintf{4|35I9} 393^23 393>50 394b<c,vwprintf>22
+393p23 u_Format(4|108E9)
+393m50 u_ArgList{13|11M12}
+396V13*swprintf{4|35I9} 396^23 396^46 398b<c,swprintf>22
+396p23 arg1(4|108E9)
+396p46 arg2(4|108E9)
+400V13*vswprintf{4|35I9} 401^7 402^7 403>7 404b<c,vswprintf>22
+401p7 arg1(4|108E9)
+402p7 arg2(4|108E9)
+403m7 arg3{13|11M12}
+408V13*fgetwc{11|23M12} 408^21 409b<c,fgetwc>22
+408p21 u_File(61R12)
+413V13*fputwc{11|23M12} 413>21 413^37 414b<c,fputwc>22
+413e21 u_Ch{4|108E9}
+413p37 u_File(61R12)
+418V13*getwc{11|23M12} 418^20 419b<c,getwc>22
+418p20 u_File(61R12)
+421V13*getwchar{11|23M12} 422b<c,getwchar>22
+424V13*putwc{11|23M12} 424>20 424^36 425b<c,putwc>22
+424e20 u_Ch{4|108E9}
+424p36 u_File(61R12)
+427V13*putwchar{11|23M12} 427>23 428b<c,putwchar>22
+427e23 u_Ch{4|108E9}
+430V13*ungetwc{11|23M12} 430>22 430^46 431b<c,ungetwc>22
+430m22 u_Ch{11|23M12}
+430p46 u_File(61R12)
+433V13*fgetws(4|108E9) 434^7 435>7 436^7 437b<c,fgetws>22
+434p7 u_Dst(4|108E9)
+435i7 u_SizeInWords{4|35I9}
+436p7 u_File(61R12)
+439V13*fputws{4|35I9} 439^21 439^45 440b<c,fputws>22
+439p21 u_Str(4|108E9)
+439p45 u_File(61R12)
+458V13*snwprintf{4|35I9} 459^7 460>7 461^7 463b<c,snwprintf>22
+459p7 s(4|108E9)
+460m7 n{11|13M12}
+461p7 format(4|108E9)
+465V13*vsnwprintf{4|35I9} 466^7 467>7 468^7 469>7 470b<c,vsnwprintf>22
+466p7 arg1(4|108E9)
+467m7 arg2{11|13M12}
+468p7 arg3(4|108E9)
+469m7 arg4{13|11M12}
+586V13*tempnam{5|47P9} 586>22 586>68 587b<c,tempnam>22
+586p22 u_Directory{5|47P9}
+586p68 u_FilePrefix{5|47P9}
+589V13*fcloseall{4|35I9} 590b<c,fcloseall>22
+592V13*fdopen(61R12) 592>21 592>41 593b<c,fdopen>22
+592i21 u_FileHandle{4|35I9}
+592p41 u_Format{5|47P9}
+595V13*fgetchar{4|35I9} 596b<c,fgetchar>22
+598V13*fileno{4|35I9} 598^21 599b<c,fileno>22
+598p21 u_File(61R12)
+601V13*flushall{4|35I9} 602b<c,flushall>22
+604V13*fputchar{4|35I9} 604>23 605b<c,fputchar>22
+604i23 u_Ch{4|35I9}
+607V13*getw{4|35I9} 607^19 608b<c,getw>22
+607p19 u_File(61R12)
+610V13*putw{4|35I9} 610>19 610^31 611b<c,putw>22
+610i19 u_Ch{4|35I9}
+610p31 u_File(61R12)
+613V13*rmtmp{4|35I9} 614b<c,rmtmp>22
+X 7 system.ads
+37K9*System 6|7w6 182r18 234r15 7|155e11
+67M9*Address 6|182r25 234r22
+X 11 umingw_h.ads
+6K9*umingw_h 6|8w6 183r23 184r17 185r36 235r16 236r17 237r36 302r16 334r11
+. 341r11 408r50 413r66 418r49 421r29 424r65 427r46 430r29 430r75 460r11 467r14
+. 11|35e13
+13M12*size_t{4|43M9} 6|183r32 184r26 185r45 235r25 236r26 237r45 302r25 334r20
+. 341r20 460r20 467r23
+23M12*wint_t{4|44M9} 6|408r59 413r75 418r58 421r38 424r74 427r55 430r38 430r84
+X 12 umingw_off_t_h.ads
+6K9*umingw_off_t_h 6|9w6 210r16 216r16 223r50 226r52 12|18e19
+8I12*u_off_t{4|37I9} 6|216r31 223r65
+12I12*u_off64_t{long_long_integer} 6|210r31 226r67
+X 13 vadefs_h.ads
+7K9*vadefs_h 6|6w6 80r19 83r77 89r16 104r69 110r14 116r14 336r13 364r52 370r14
+. 376r14 390r19 393r62 403r14 469r14 13|13e13
+9M12*uu_gnuc_va_list{7|67M9}
+11M12*va_list{9M12} 6|80r28 83r86 89r25 104r78 110r23 116r23 336r22 364r61
+. 370r23 376r23 390r28 393r71 403r23 469r23
+

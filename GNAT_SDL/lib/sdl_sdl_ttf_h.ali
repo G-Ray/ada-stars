@@ -1,0 +1,248 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_ttf_h%s	sdl_sdl_ttf_h.ads	6611fd45 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+Y sdl_sdl_rwops_h%s	sdl_sdl_rwops_h.ads	sdl_sdl_rwops_h.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+Y sdl_sdl_version_h%s	sdl_sdl_version_h.ads	sdl_sdl_version_h.ali
+W sdl_sdl_video_h%s	sdl_sdl_video_h.ads	sdl_sdl_video_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_rwops_h.ads	20160123123442 11d62089 sdl_sdl_rwops_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D sdl_sdl_ttf_h.ads	20160123123442 fe8bf8a9 sdl_sdl_ttf_h%s
+D sdl_sdl_version_h.ads	20160123123442 83c9a202 sdl_sdl_version_h%s
+D sdl_sdl_video_h.ads	20160125135023 ec23dadb sdl_sdl_video_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D stdio_h.ads		20160123123442 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123123442 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 9|4r6 4r24 6r6 61r34 65r14 125r67 128r66 146r14 153r14
+. 167r14 173r14 191r14 198r14 219r14 225r14
+X 4 i-c.ads
+18K20*C 230e17 9|4w17 4r35 6r17 61r45 65r25 125r78 128r77 146r25 153r25 167r25
+. 173r25 191r25 198r25 219r25 225r25
+35I9*int<integer> 9|51r48 58r29 61r75 66r16 72r17 73r16 78r17 79r16 83r61
+. 86r63 89r63 92r67 95r63 98r67 101r59 104r59 107r60 110r61 113r63 116r67
+. 122r69 131r94 137r21 138r21 139r21 140r21 141r24 141r36 147r18 148r18 148r30
+. 154r18 155r18 155r30 161r18 162r18 162r30 247r32 252r20 253r15 253r27
+37I9*long<long_integer> 9|67r15 80r15 119r58
+44M9*unsigned_short
+X 6 i-cstrin.ads
+36K22*Strings 106e25 9|6w19 61r47 65r27 125r80 128r79 146r27 153r27 167r27
+. 173r27 191r27 198r27 219r27 225r27
+47P9*chars_ptr 9|61r55 65r35 125r88 128r87 146r35 153r35 167r35 173r35 191r35
+. 198r35 219r35 225r35
+X 7 sdl_sdl_rwops_h.ads
+10K9 SDL_SDL_rwops_h 9|71r20 77r20
+X 8 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 230e21 9|9w6 131r62 136r12 160r21 179r21 185r12 205r21
+. 212r12 231r21 237r12
+121M12*Uint16{12|15M12} 9|131r79 136r29 160r38 179r38 185r29 205r38 212r29
+. 231r38 237r29
+X 9 sdl_sdl_ttf_h.ads
+12K9*SDL_SDL_ttf_h 256l5 256e18
+15N4*SDL_TTF_MAJOR_VERSION
+16N4*SDL_TTF_MINOR_VERSION
+17N4*SDL_TTF_PATCHLEVEL
+26N4*UNICODE_BOM_NATIVE
+27N4*UNICODE_BOM_SWAPPED
+29N4*TTF_STYLE_NORMAL
+30N4*TTF_STYLE_BOLD
+31N4*TTF_STYLE_ITALIC
+32N4*TTF_STYLE_UNDERLINE
+33N4*TTF_STYLE_STRIKETHROUGH
+35N4*TTF_HINTING_NORMAL
+36N4*TTF_HINTING_LIGHT
+37N4*TTF_HINTING_MONO
+38N4*TTF_HINTING_NONE
+48V13*TTF_Linked_Version 49b<c,TTF_Linked_Version>22
+51U14*TTF_ByteSwappedUNICODE 51>38 52b<c,TTF_ByteSwappedUNICODE>22
+51i38 swapped{4|35I9}
+58V13*TTF_Init{4|35I9} 59b<c,TTF_Init>22
+61V13*TTF_OpenFont{14|67M9} 61>27 61>66 62b<c,TTF_OpenFont>22
+61p27 file{6|47P9}
+61i66 ptsize{4|35I9}
+64V13*TTF_OpenFontIndex{14|67M9} 65>7 66>7 67>7 68b<c,TTF_OpenFontIndex>22
+65p7 file{6|47P9}
+66i7 ptsize{4|35I9}
+67i7 index{4|37I9}
+70V13*TTF_OpenFontRW{14|67M9} 71^7 72>7 73>7 74b<c,TTF_OpenFontRW>22
+71p7 src
+72i7 freesrc{4|35I9}
+73i7 ptsize{4|35I9}
+76V13*TTF_OpenFontIndexRW{14|67M9} 77^7 78>7 79>7 80>7 81b<c,TTF_OpenFontIndexRW>22
+77p7 src
+78i7 freesrc{4|35I9}
+79i7 ptsize{4|35I9}
+80i7 index{4|37I9}
+83V13*TTF_GetFontStyle{4|35I9} 83>31 84b<c,TTF_GetFontStyle>22
+83m31 font{14|67M9}
+86U14*TTF_SetFontStyle 86>32 86>55 87b<c,TTF_SetFontStyle>22
+86m32 font{14|67M9}
+86i55 style{4|35I9}
+89V13*TTF_GetFontOutline{4|35I9} 89>33 90b<c,TTF_GetFontOutline>22
+89m33 font{14|67M9}
+92U14*TTF_SetFontOutline 92>34 92>57 93b<c,TTF_SetFontOutline>22
+92m34 font{14|67M9}
+92i57 outline{4|35I9}
+95V13*TTF_GetFontHinting{4|35I9} 95>33 96b<c,TTF_GetFontHinting>22
+95m33 font{14|67M9}
+98U14*TTF_SetFontHinting 98>34 98>57 99b<c,TTF_SetFontHinting>22
+98m34 font{14|67M9}
+98i57 hinting{4|35I9}
+101V13*TTF_FontHeight{4|35I9} 101>29 102b<c,TTF_FontHeight>22
+101m29 font{14|67M9}
+104V13*TTF_FontAscent{4|35I9} 104>29 105b<c,TTF_FontAscent>22
+104m29 font{14|67M9}
+107V13*TTF_FontDescent{4|35I9} 107>30 108b<c,TTF_FontDescent>22
+107m30 font{14|67M9}
+110V13*TTF_FontLineSkip{4|35I9} 110>31 111b<c,TTF_FontLineSkip>22
+110m31 font{14|67M9}
+113V13*TTF_GetFontKerning{4|35I9} 113>33 114b<c,TTF_GetFontKerning>22
+113m33 font{14|67M9}
+116U14*TTF_SetFontKerning 116>34 116>57 117b<c,TTF_SetFontKerning>22
+116m34 font{14|67M9}
+116i57 allowed{4|35I9}
+119V13*TTF_FontFaces{4|37I9} 119>28 120b<c,TTF_FontFaces>22
+119m28 font{14|67M9}
+122V13*TTF_FontFaceIsFixedWidth{4|35I9} 122>39 123b<c,TTF_FontFaceIsFixedWidth>22
+122m39 font{14|67M9}
+125V13*TTF_FontFaceFamilyName{6|47P9} 125>37 126b<c,TTF_FontFaceFamilyName>22
+125m37 font{14|67M9}
+128V13*TTF_FontFaceStyleName{6|47P9} 128>36 129b<c,TTF_FontFaceStyleName>22
+128m36 font{14|67M9}
+131V13*TTF_GlyphIsProvided{4|35I9} 131>34 131>57 132b<c,TTF_GlyphIsProvided>22
+131m34 font{14|67M9}
+131m57 ch{8|121M12}
+134V13*TTF_GlyphMetrics{4|35I9} 135>7 136>7 137^7 138^7 139^7 140^7 141^7
+. 142b<c,TTF_GlyphMetrics>22
+135m7 font{14|67M9}
+136m7 ch{8|121M12}
+137p7 minx(4|35I9)
+138p7 maxx(4|35I9)
+139p7 miny(4|35I9)
+140p7 maxy(4|35I9)
+141p7 advance(4|35I9)
+144V13*TTF_SizeText{4|35I9} 145>7 146>7 147^7 148^7 149b<c,TTF_SizeText>22
+145m7 font{14|67M9}
+146p7 text{6|47P9}
+147p7 w(4|35I9)
+148p7 h(4|35I9)
+151V13*TTF_SizeUTF8{4|35I9} 152>7 153>7 154^7 155^7 156b<c,TTF_SizeUTF8>22
+152m7 font{14|67M9}
+153p7 text{6|47P9}
+154p7 w(4|35I9)
+155p7 h(4|35I9)
+158V13*TTF_SizeUNICODE{4|35I9} 159>7 160^7 161^7 162^7 163b<c,TTF_SizeUNICODE>22
+159m7 font{14|67M9}
+160p7 text(8|121M12)
+161p7 w(4|35I9)
+162p7 h(4|35I9)
+165V13*TTF_RenderText_Solid(11|98R9) 166>7 167>7 168>7 169b<c,TTF_RenderText_Solid>22
+166m7 font{14|67M9}
+167p7 text{6|47P9}
+168r7 fg{11|63R9}
+171V13*TTF_RenderUTF8_Solid(11|98R9) 172>7 173>7 174>7 175b<c,TTF_RenderUTF8_Solid>22
+172m7 font{14|67M9}
+173p7 text{6|47P9}
+174r7 fg{11|63R9}
+177V13*TTF_RenderUNICODE_Solid(11|98R9) 178>7 179^7 180>7 181b<c,TTF_RenderUNICODE_Solid>22
+178m7 font{14|67M9}
+179p7 text(8|121M12)
+180r7 fg{11|63R9}
+183V13*TTF_RenderGlyph_Solid(11|98R9) 184>7 185>7 186>7 187b<c,TTF_RenderGlyph_Solid>22
+184m7 font{14|67M9}
+185m7 ch{8|121M12}
+186r7 fg{11|63R9}
+189V13*TTF_RenderText_Shaded(11|98R9) 190>7 191>7 192>7 193>7 194b<c,TTF_RenderText_Shaded>22
+190m7 font{14|67M9}
+191p7 text{6|47P9}
+192r7 fg{11|63R9}
+193r7 bg{11|63R9}
+196V13*TTF_RenderUTF8_Shaded(11|98R9) 197>7 198>7 199>7 200>7 201b<c,TTF_RenderUTF8_Shaded>22
+197m7 font{14|67M9}
+198p7 text{6|47P9}
+199r7 fg{11|63R9}
+200r7 bg{11|63R9}
+203V13*TTF_RenderUNICODE_Shaded(11|98R9) 204>7 205^7 206>7 207>7 208b<c,TTF_RenderUNICODE_Shaded>22
+204m7 font{14|67M9}
+205p7 text(8|121M12)
+206r7 fg{11|63R9}
+207r7 bg{11|63R9}
+210V13*TTF_RenderGlyph_Shaded(11|98R9) 211>7 212>7 213>7 214>7 215b<c,TTF_RenderGlyph_Shaded>22
+211m7 font{14|67M9}
+212m7 ch{8|121M12}
+213r7 fg{11|63R9}
+214r7 bg{11|63R9}
+217V13*TTF_RenderText_Blended(11|98R9) 218>7 219>7 220>7 221b<c,TTF_RenderText_Blended>22
+218m7 font{14|67M9}
+219p7 text{6|47P9}
+220r7 fg{11|63R9}
+223V13*TTF_RenderUTF8_Blended(11|98R9) 224>7 225>7 226>7 227b<c,TTF_RenderUTF8_Blended>22
+224m7 font{14|67M9}
+225p7 text{6|47P9}
+226r7 fg{11|63R9}
+229V13*TTF_RenderUNICODE_Blended(11|98R9) 230>7 231^7 232>7 233b<c,TTF_RenderUNICODE_Blended>22
+230m7 font{14|67M9}
+231p7 text(8|121M12)
+232r7 fg{11|63R9}
+235V13*TTF_RenderGlyph_Blended(11|98R9) 236>7 237>7 238>7 239b<c,TTF_RenderGlyph_Blended>22
+236m7 font{14|67M9}
+237m7 ch{8|121M12}
+238r7 fg{11|63R9}
+241U14*TTF_CloseFont 241>29 242b<c,TTF_CloseFont>22
+241m29 font{14|67M9}
+244U14*TTF_Quit 245b<c,TTF_Quit>22
+247V13*TTF_WasInit{4|35I9} 248b<c,TTF_WasInit>22
+250V13*TTF_GetFontKerningSize{4|35I9} 251>7 252>7 253>7 254b<c,TTF_GetFontKerningSize>22
+251m7 font{14|67M9}
+252i7 prev_index{4|35I9}
+253i7 index{4|35I9}
+X 10 sdl_sdl_version_h.ads
+8K9 SDL_SDL_version_h 9|48r55
+X 11 sdl_sdl_video_h.ads
+11K9*SDL_SDL_video_h 9|10w6 168r12 168r53 174r12 174r53 180r12 180r53 186r12
+. 186r53 192r12 193r12 193r53 199r12 200r12 200r53 206r12 207r12 207r53 213r12
+. 214r12 214r53 220r12 220r53 226r12 226r53 232r12 232r53 238r12 238r53 11|466e20
+63R9*SDL_Color 9|168r28 174r28 180r28 186r28 192r28 193r28 199r28 200r28
+. 206r28 207r28 213r28 214r28 220r28 226r28 232r28 238r28 11|68e14
+98R9*SDL_Surface 9|168r69 174r69 180r69 186r69 193r69 200r69 207r69 214r69
+. 220r69 226r69 232r69 238r69 11|113e14
+X 12 stdint_h.ads
+15M12*uint16_t{4|44M9}
+X 14 system.ads
+37K9*System 9|7w6 61r87 67r28 73r28 80r28 83r38 86r39 89r40 92r41 95r40 98r41
+. 101r36 104r36 107r37 110r38 113r40 116r41 119r35 122r46 125r44 128r43 131r41
+. 135r14 145r14 152r14 159r14 166r14 172r14 178r14 184r14 190r14 197r14 204r14
+. 211r14 218r14 224r14 230r14 236r14 241r36 251r14 14|155e11
+67M9*Address 9|61r94 67r35 73r35 80r35 83r45 86r46 89r47 92r48 95r47 98r48
+. 101r43 104r43 107r44 110r45 113r47 116r48 119r42 122r53 125r51 128r50 131r48
+. 135r21 145r21 152r21 159r21 166r21 172r21 178r21 184r21 190r21 197r21 204r21
+. 211r21 218r21 224r21 230r21 236r21 241r43 251r21
+

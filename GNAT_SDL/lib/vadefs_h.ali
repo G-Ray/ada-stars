@@ -1,0 +1,38 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U vadefs_h%s		vadefs_h.ads		61c6f4e7 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 9|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 9|4w17 4r35
+X 5 system.ads
+37K9*System 155e11 9|5w6 9r31
+67M9*Address 9|9r38
+X 9 vadefs_h.ads
+7K9*vadefs_h 13l5 13e13
+9M12*uu_gnuc_va_list{5|67M9} 11r23
+11M12*va_list{9M12}
+

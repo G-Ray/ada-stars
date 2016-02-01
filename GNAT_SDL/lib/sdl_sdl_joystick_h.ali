@@ -1,0 +1,102 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_joystick_h%s	sdl_sdl_joystick_h.ads	46c3e62c NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_joystick_h.ads  20160123123442 a065bb90 sdl_sdl_joystick_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24 5r6 29r58
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 5r17 29r69
+35I9*int<integer> 7|26r37 29r46 32r46 35r48 35r60 38r66 41r68 44r69 47r68
+. 50r71 56r45 56r57 59r68 62r66 67r14 68r19 69r19 69r31 72r72
+36I9*short<short_integer>
+47M9*unsigned_char
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|5w19 29r71
+47P9*chars_ptr 7|29r79
+X 7 sdl_sdl_joystick_h.ads
+9K9*SDL_SDL_joystick_h 78l5 78e23
+12N4*SDL_HAT_CENTERED
+13N4*SDL_HAT_UP
+14N4*SDL_HAT_RIGHT
+15N4*SDL_HAT_DOWN
+16N4*SDL_HAT_LEFT
+26V13*SDL_NumJoysticks{4|35I9} 27b<c,SDL_NumJoysticks>22
+29V13*SDL_JoystickName{6|47P9} 29>31 30b<c,SDL_JoystickName>22
+29i31 device_index{4|35I9}
+32V13*SDL_JoystickOpen{10|67M9} 32>31 33b<c,SDL_JoystickOpen>22
+32i31 device_index{4|35I9}
+35V13*SDL_JoystickOpened{4|35I9} 35>33 36b<c,SDL_JoystickOpened>22
+35i33 device_index{4|35I9}
+38V13*SDL_JoystickIndex{4|35I9} 38>32 39b<c,SDL_JoystickIndex>22
+38m32 joystick{10|67M9}
+41V13*SDL_JoystickNumAxes{4|35I9} 41>34 42b<c,SDL_JoystickNumAxes>22
+41m34 joystick{10|67M9}
+44V13*SDL_JoystickNumBalls{4|35I9} 44>35 45b<c,SDL_JoystickNumBalls>22
+44m35 joystick{10|67M9}
+47V13*SDL_JoystickNumHats{4|35I9} 47>34 48b<c,SDL_JoystickNumHats>22
+47m34 joystick{10|67M9}
+50V13*SDL_JoystickNumButtons{4|35I9} 50>37 51b<c,SDL_JoystickNumButtons>22
+50m37 joystick{10|67M9}
+53U14*SDL_JoystickUpdate 54b<c,SDL_JoystickUpdate>22
+56V13*SDL_JoystickEventState{4|35I9} 56>37 57b<c,SDL_JoystickEventState>22
+56i37 state{4|35I9}
+59V13*SDL_JoystickGetAxis{8|119I12} 59>34 59>61 60b<c,SDL_JoystickGetAxis>22
+59m34 joystick{10|67M9}
+59i61 axis{4|35I9}
+62V13*SDL_JoystickGetHat{8|117M12} 62>33 62>60 63b<c,SDL_JoystickGetHat>22
+62m33 joystick{10|67M9}
+62i60 hat{4|35I9}
+65V13*SDL_JoystickGetBall{4|35I9} 66>7 67>7 68^7 69^7 70b<c,SDL_JoystickGetBall>22
+66m7 joystick{10|67M9}
+67i7 ball{4|35I9}
+68p7 dx(4|35I9)
+69p7 dy(4|35I9)
+72V13*SDL_JoystickGetButton{8|117M12} 72>36 72>63 73b<c,SDL_JoystickGetButton>22
+72m36 joystick{10|67M9}
+72i63 button{4|35I9}
+75U14*SDL_JoystickClose 75>33 76b<c,SDL_JoystickClose>22
+75m33 joystick{10|67M9}
+X 8 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|7w6 59r80 62r78 72r84 8|230e21
+117M12*Uint8{9|11M12} 7|62r95 72r101
+119I12*Sint16{9|13I12} 7|59r97
+X 9 stdint_h.ads
+11M12*uint8_t{4|47M9}
+13I12*int16_t{4|36I9}
+X 10 system.ads
+37K9*System 7|6w6 32r58 38r43 41r45 44r46 47r45 50r48 59r45 62r44 66r18 72r47
+. 75r44 10|155e11
+67M9*Address 7|32r65 38r50 41r52 44r53 47r52 50r55 59r52 62r51 66r25 72r54
+. 75r51
+

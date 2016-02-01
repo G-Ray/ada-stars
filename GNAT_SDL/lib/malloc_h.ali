@@ -1,0 +1,44 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U malloc_h%s		malloc_h.ads		08d0e8a4 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W umingw_h%s		umingw_h.ads		umingw_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D malloc_h.ads		20160123123442 51ae2e42 malloc_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 5|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 5|4w17 4r35
+35I9*int<integer> 5|12r25 14r27
+43M9*unsigned
+X 5 malloc_h.ads
+7K9*malloc_h 52l5 52e13
+11R9*u_heapinfo 15e14 16r39
+12p7*u_pentry(4|35I9)
+13m7*u_size{10|13M12}
+14i7*u_useflag{4|35I9}
+X 10 umingw_h.ads
+6K9*umingw_h 5|5w6 13r24 10|35e13
+13M12*size_t{4|43M9} 5|13r33
+

@@ -1,0 +1,147 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1
+
+U display%b		display.adb		a32e0ad0 NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U display%s		display.ads		a63a4646 EE OO PF PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-finali.ads		20150506105331 69f99942 ada.finalization%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D display.ads		20160124103935 a63a4646 display%s
+D display.adb		20160124104102 05144c96 display%b
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D system.ads		20150506105329 1d274481 system%s
+D s-atacco.ads		20150506105331 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-finroo.ads		20150506105331 4ff27390 system.finalization_root%s
+D s-linux.ads		20150506105328 2fda6ad1 system.linux%s
+D s-memory.ads		20150506105329 597d6634 system.memory%s
+D s-multip.ads		20150506105326 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20150506142910 4ac7eb08 system.os_constants%s
+D s-osinte.ads		20150506105327 e9e28195 system.os_interface%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150506105330 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stalib.adb		20150506105326 f2fe2716 system.standard_library%b
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20150506105329 2b3f8252 system.task_info%s
+D s-taspri.ads		20150506105328 e3ab4429 system.task_primitives%s
+D s-taskin.ads		20150506105332 339749f0 system.tasking%s
+D s-taprob.ads		20150506105327 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150506105332 b641f948 system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20150506105331 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+X 7 display.ads
+20K9*Display 75E4 81l5 81e12 8|1b15 15l5 15t12
+22E9*Color_Type 22e78
+22n24*Black{22E9}
+22n31*Blue{22E9}
+22n37*Green{22E9}
+22n44*Cyan{22E9}
+22n50*Red{22E9}
+22n55*Magenta{22E9}
+22n64*Yellow{22E9}
+22n72*White{22E9}
+24I9*Key_Type<integer> 79c9
+26E9*Special_Key 48e18
+27n7*KEY_NONE{26E9}
+28n7*KEY_F1{26E9}
+29n7*KEY_F2{26E9}
+30n7*KEY_F3{26E9}
+31n7*KEY_F4{26E9}
+32n7*KEY_F5{26E9}
+33n7*KEY_F6{26E9}
+34n7*KEY_F7{26E9}
+35n7*KEY_F8{26E9}
+36n7*KEY_F9{26E9}
+37n7*KEY_F10{26E9}
+38n7*KEY_F11{26E9}
+39n7*KEY_F12{26E9}
+40n7*KEY_LEFT{26E9}
+41n7*KEY_UP{26E9}
+42n7*KEY_RIGHT{26E9}
+43n7*KEY_DOWN{26E9}
+44n7*KEY_PAGE_UP{26E9}
+45n7*KEY_PAGE_DOWN{26E9}
+46n7*KEY_HOME{26E9}
+47n7*KEY_END{26E9}
+48n7*KEY_INSERT{26E9}
+50X4*Display_Error
+52E9*Button_Type 52e37 56r16
+52n25*Left{52E9}
+52n31*Right{52E9} 59r74
+54R9*Mouse_Position 57e14 59r33
+55f7*X{float}
+55f10*Y{float}
+56e7*Button{52E9}
+59r4*No_Mouse_Position{54R9}
+61P9*User_Callback_T 63r24
+63p4*User_Callback{61P9}
+65E9*GL_Task_Status_T 65e96
+65n30*Before_Start{65E9}
+65n44*After_Start{65E9}
+65n57*Before_Setup{65E9}
+65n71*After_Setup{65E9}
+65n84*Before_Loop{65E9}
+66w15*Synchronizer 8|3b18 13l8 13t20
+67Y13 Before_Start 8|5b13 8l11 8t23
+68U17 Start 8|9b17 12l11 12t16
+70b7 Start_Requested{boolean} 8|5r31 11r10
+75N4 Max_Shapes
+77N4 Special_Key_Shift
+X 11 system.ads
+67M9*Address
+X 16 s-memory.ads
+53V13*Alloc{11|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{11|67M9} 105i<c,__gnat_realloc>22
+X 23 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 25 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

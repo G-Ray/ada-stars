@@ -1,0 +1,420 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_ANONYMOUS_ALLOCATORS
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U sdl_helper%b		sdl_helper.adb		6799f0d9 OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.task_identification%s  a-taside.adb	a-taside.ali
+W ada.task_termination%s  a-taster.adb		a-taster.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W gl_gl_h%s		gl_gl_h.ads		gl_gl_h.ali
+W gl_glu_h%s		gl_glu_h.ads		gl_glu_h.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.os_lib%s		g-os_lib.ads		g-os_lib.ali
+W gnat.traceback%s	g-traceb.adb		g-traceb.ali
+W gnat.traceback.symbolic%s  g-trasym.ads	g-trasym.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_events_h%s	sdl_sdl_events_h.ads	sdl_sdl_events_h.ali
+W sdl_sdl_h%s		sdl_sdl_h.ads		sdl_sdl_h.ali
+W sdl_sdl_keysym_h%s	sdl_sdl_keysym_h.ads	sdl_sdl_keysym_h.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W sdl_sdl_timer_h%s	sdl_sdl_timer_h.ads	sdl_sdl_timer_h.ali
+W sdl_sdl_ttf_h%s	sdl_sdl_ttf_h.ads	sdl_sdl_ttf_h.ali
+W sdl_sdl_video_h%s	sdl_sdl_video_h.ads	sdl_sdl_video_h.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U sdl_helper%s		sdl_helper.ads		a6aac329 EE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W sdl_sdl_keysym_h%s	sdl_sdl_keysym_h.ads	sdl_sdl_keysym_h.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-exctra.ads		20150506105332 0966bad0 ada.exceptions.traceback%s
+D a-finali.ads		20150506105331 69f99942 ada.finalization%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20150506105328 a5838d5a ada.real_time%s
+D a-retide.ads		20150506105329 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-taside.ads		20150506105330 9a31e556 ada.task_identification%s
+D a-taster.ads		20150506105329 fe3f8ac8 ada.task_termination%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20150506105330 f15a5ed1 ada.unchecked_deallocation%s
+D gl_gl_h.ads		20160123123442 788c824f gl_gl_h%s
+D gl_glu_h.ads		20160123123442 d4f6dfb7 gl_glu_h%s
+D gnat.ads		20150506105333 fd2ad2f1 gnat%s
+D g-os_lib.ads		20150506105326 0db74523 gnat.os_lib%s
+D g-traceb.ads		20150506105326 dee80ba3 gnat.traceback%s
+D g-trasym.ads		20150506105327 f121a8ad gnat.traceback.symbolic%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D sdl_helper.ads	20160125052140 9f984d04 sdl_helper%s
+D sdl_helper.adb	20160125051436 dd15baa0 sdl_helper%b
+D sdl_sdl_events_h.ads	20160123123442 fd61776b sdl_sdl_events_h%s
+D sdl_sdl_h.ads		20160123123442 c8ed8b58 sdl_sdl_h%s
+D sdl_sdl_keyboard_h.ads  20160123123442 39fac545 sdl_sdl_keyboard_h%s
+D sdl_sdl_keysym_h.ads	20160123123442 39328e2d sdl_sdl_keysym_h%s
+D sdl_sdl_rwops_h.ads	20160123123442 11d62089 sdl_sdl_rwops_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D sdl_sdl_timer_h.ads	20160123123442 26f866a2 sdl_sdl_timer_h%s
+D sdl_sdl_ttf_h.ads	20160123123442 fe8bf8a9 sdl_sdl_ttf_h%s
+D sdl_sdl_version_h.ads	20160123123442 83c9a202 sdl_sdl_version_h%s
+D sdl_sdl_video_h.ads	20160125135023 ec23dadb sdl_sdl_video_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D stdio_h.ads		20160123123442 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-atacco.ads		20150506105331 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20150506105329 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-finroo.ads		20150506105331 4ff27390 system.finalization_root%s
+D s-imgint.ads		20150506105328 02dbe0c2 system.img_int%s
+D s-linux.ads		20150506105328 2fda6ad1 system.linux%s
+D s-memory.ads		20150506105329 597d6634 system.memory%s
+D s-multip.ads		20150506105326 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20150506142910 4ac7eb08 system.os_constants%s
+D s-osinte.ads		20150506105327 e9e28195 system.os_interface%s
+D s-os_lib.ads		20150506105330 5853d835 system.os_lib%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-secsta.ads		20150506105331 86a2856d system.secondary_stack%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150506105330 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stalib.adb		20150506105326 f2fe2716 system.standard_library%b
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-string.ads		20150506105330 8fe54fb7 system.strings%s
+D s-tasinf.ads		20150506105329 2b3f8252 system.task_info%s
+D s-taspri.ads		20150506105328 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20150506105327 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20150506105332 339749f0 system.tasking%s
+D s-taprob.ads		20150506105327 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150506105332 b641f948 system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20150506105331 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tassta.ads		20150506105328 70812003 system.tasking.stages%s
+D s-traceb.ads		20150506105332 9e662fab system.traceback%s
+D s-trasym.ads		20150506105332 79d2fb55 system.traceback.symbolic%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123123442 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 1 ada.ads
+16K9*Ada 19e8 27|3r6 3r23 12r6 14r6 15r6 16r5 17r6 17r32 304r16 449r11 453r7
+. 462r7 491r18 492r18 503r18 504r18 526r7
+X 2 a-except.ads
+54K13*Exceptions 361e19 27|15w10 16r9 492r22 504r22
+63R9*Exception_Occurrence 329e14 27|492r33 504r33
+104V13*Exception_Information{string} 27|508s20
+X 6 a-reatim.ads
+39K13*Real_Time 146e18 27|12w10 449r15
+45O9*Time<duration> 27|450r23
+50O9*Time_Span<duration>
+57V13*Clock{45O9} 27|450s31 463s20
+59V14*"+"{45O9} 27|476s33
+89V13*Milliseconds{50O9} 27|476s35
+X 10 a-taside.ads
+39K13*Task_Identification 77e28 27|14w10 491r22 503r22 526r11
+43P9*Task_Id<66|109P9> 27|491r42 503r42
+53V13*Current_Task{43P9} 27|526s31
+X 11 a-taster.ads
+19K13*Task_Termination 39e25 27|17w10 17r36
+22E9*Cause_Of_Termination 22e72 27|490r18 502r18
+29U14*Set_Dependents_Fallback_Handler 27|524s4
+33U14*Set_Specific_Handler 27|525s4
+X 12 a-textio.ads
+49K13*Text_IO 471e16 27|3w10 3r27 304r20 453r11 462r11
+263U14*Put_Line 27|63s10 95s13 125s10 266s10 304s28 453s19 462s19 507s10
+. 508s10 510s10
+X 15 gl_gl_h.ads
+7K9*GL_gl_h 2337e12 27|8w6 8r19
+19N4*GL_LESS 27|225r20
+35N4*GL_DEPTH_BUFFER_BIT 27|467r42
+41N4*GL_COLOR_BUFFER_BIT 27|467r19
+136N4*GL_CW 27|218r20
+175N4*GL_LIGHTING 27|219r17
+182N4*GL_COLOR_MATERIAL 27|222r17
+191N4*GL_DEPTH_TEST 27|221r17
+206N4*GL_NORMALIZE 27|223r17
+346N4*GL_TEXTURE_2D 27|224r17
+363N4*GL_LIGHT0 27|208r18 209r18 220r17
+373N4*GL_DIFFUSE 27|208r29
+375N4*GL_POSITION 27|209r29
+408N4*GL_MODELVIEW 27|153r21 171r21 227r21
+409N4*GL_PROJECTION 27|142r21 164r21 271r21
+662I12*GLsizei{22|35I9} 27|151r25 151r49 169r25 169r49
+670F12*GLfloat{float} 27|192r65
+674F12*GLdouble{22|65F9} 27|140r15 140r27 140r53 146r65 146r91 148r65 148r91
+. 162r15 162r27 162r53 256r15 274r16 274r31
+723U14*glClear 27|467s10
+733U14*glClearColor 27|206s7
+979U14*glDepthFunc 27|225s7
+1027U14*glEnable 27|219s7 220s7 221s7 222s7 223s7 224s7
+1092U14*glFlush 27|474s10
+1107U14*glFrontFace 27|218s7
+1345U14*glLightfv 27|208s7 209s7
+1372U14*glLoadIdentity 27|143s7 165s7 272s7
+1485U14*glMatrixMode 27|142s7 153s7 164s7 171s7 227s7 271s7
+1548U14*glOrtho 27|146s10 148s10
+2224U14*glViewport 27|151s7 169s7
+X 16 gl_glu_h.ads
+8K9*GL_glu_h 506e13 27|9w6 9r20
+162U14*gluPerspective 27|167s7
+X 17 gnat.ads
+34K9*GNAT 37e9 27|13r6 18r6 18r35 481r7 512r10
+X 18 g-os_lib.ads
+51K14*OS_Lib=51:36 27|13w11 481r12 512r15
+X 19 g-traceb.ads
+76K14*Traceback 97e19 27|18r11 18r40
+X 20 g-trasym.ads
+37K24*Symbolic=37:58 27|18w21 18r50
+X 21 interfac.ads
+38K9*Interfaces 178e15 27|2r6 2r24 5r6 5r32 31r29 32r29
+X 22 i-c.ads
+18K20*C 230e17 27|2w17 2r35 5r17 5r43 31r40 32r40
+35I9*int<integer> 27|31r42 52r27 122r36 122r56 263r36 263r45
+43M9*unsigned 27|32r42 300r15
+47M9*unsigned_char
+65F9*double<long_float>
+X 24 i-cstrin.ads
+36K22*Strings 106e25 27|5w19 5r45
+47P9*chars_ptr
+52p4*Null_Ptr{47P9} 27|244r71
+60V13*New_String{47P9} 27|80s43 244s35
+X 26 sdl_helper.ads
+2K9*SDL_Helper 29l5 29e15 27|22b14 528l5 528t15
+5X4*Display_Error 27|55r16
+7U14*Init 7>20 8>20 9>20 27|236b14 253l8 253t12 456s7
+7i20 Window_Width{integer} 27|236b20 242r22 249r19 456r13
+8i20 Window_Height{integer} 27|237b20 242r36 249r33 457r13
+9a20 Window_Title{string} 27|238b20 244r47 458r13
+11P9*User_Callback_T 15r34 27|28r20 433r34
+12P9*Projection_User_Callback_T 12>57 13>57 16r40 27|29r26 439r40
+12i57 Width{integer}
+13i57 Height{integer}
+15U14*Set_Loop_Cbk 15>28 27|433b14 436l8 436t20
+15p28 Cbk{11P9} 27|433b28 435r24
+16U14*Set_Projection_Cbk 16>34 27|439b14 442l8 442t26
+16p34 Cbk{12P9} 27|439b34 441r30
+17U14*Start_SDL_Task 17>30 18>30 19>30 27|422b14 427l8 427t22
+17i30 Window_Width{integer} 27|422b30 426r19
+18i30 Window_Height{integer} 27|423b30 426r33
+19a30 Window_Title{string} 27|424b30 426r48
+21U14*Set_Perspective_Projection 21>42 21>67 27|161b14 173l8 173t34
+21i42 Screen_Width{integer} 27|161b42 162r37 169r34
+21i67 Screen_Height{integer} 27|161b67 162r63 169r58
+23V13*Get_Window_Width{integer} 27|36b13 39l8 39t24
+24V13*Get_Window_Height{integer} 27|42b13 45l8 45t25
+26V13*Is_Key_Pressed{boolean} 26>29 27|289b13 292l8 292t22
+26m29 Key{31|12M12} 27|289b29 291r32
+X 27 sdl_helper.adb
+24i4 Window_Width{integer} 38r14 259m7 277r34 279r34
+25i4 Window_Height{integer} 44r14 260m7 277r48 279r48
+27b4 Stop{boolean} 302m16 308m19 464r17
+28p4 Loop_User_Cbk{26|11P9} 435m7 469r13 470r13
+29p4 Projection_User_Cbk{26|12P9} 199r11 200r10 276r10 277r10 441m7
+31i4 bpp{22|35I9} 122r77 263r54
+32m4 flags{22|43M9} 122r82 263r59
+33p4 surface(37|98R9) 122m7 124r10 262r24 263m7 265r10
+52U14 Check 52b14 52>21 57l8 57t13 80s7 107s7 108s7 109s7 110s7 111s7 112s7
+. 113s7 114s7 251s7
+52i21 Ret{22|35I9} 54r10
+59U14 Init_SDL 59b14 66l8 66t16 240s7
+73U14 Set_SDL_Video 73b14 73>29 73>53 129l8 129t21 242s7
+73i29 Window_Width{integer} 122r41
+73i53 Window_Height{integer} 122r61
+74p7 vidInfo(37|127R9) 92m30 92r30
+91m10 ptr{40|67M9} 92m14 92r14 94r13
+136U14 Set_Orthographic_Projection 136b14 136>43 137>43 138>43 139>43 155l8
+. 155t35 184s7
+136i43 Screen_Width{integer} 140r37 145r10 151r34
+137i43 Screen_Height{integer} 140r63 145r25 151r58
+138f43 Near_Clipping{float} 146r75 148r75
+139f43 Far_Clipping{float} 146r101 148r101
+140f7 Ratio{15|674F12} 146r28 146r43 148r43 148r58
+162f7 Ratio{15|674F12} 167r29
+181U14 Set_Default_Projection 181b14 181>38 181>63 185l8 185t30 202s10 279s10
+181i38 Screen_Width{integer} 184r36
+181i63 Screen_Height{integer} 184r50
+191U14 Set_OpenGL 191b14 191>26 191>51 232l8 232t18 249s7
+191i26 Screen_Width{integer} 200r34 200r48 202r34 202r48
+191i51 Screen_Height{integer}
+192A12 GLFloat_Array(15|670F12)<integer> 193r31 195r32
+193a7 light_diffuse{192A12} 208m41 208r41
+195a7 light_position{192A12} 209m42 209r42
+255U14 Reshape_Window 255b14 255>30 255>43 282l8 282t22 315s16
+255i30 W{integer} 259r23 263r41 274r26
+255i43 H{integer} 260r24 263r50 274r41
+256f7 Ratio{15|674F12} 274m7
+286A9 Active_Key_Array_T(boolean)<22|43M9> 287r24
+287a4 Active_Key_Array{286A9} 291r14 305m16 312m16
+295U14 Poll_Events 295b14 352l8 352t19 466s10
+296r7 Evt{28|174R9} 299m28 299r28 300r25 304r81 305r34 307r19 312r34 315r41
+. 315r65
+371w15 Sync 389b19 414m10 415m10 416m10 419l8 419t12 426r7 454r7 456r30 457r30
+. 458r37
+372Y13 Wait_Start 390b13 393l11 393t21 454s12
+373U17 Start 373>24 373>48 373>73 410b17 418l11 418t16 426s12
+373i24 Window_Width{integer} 410b24 414r31
+373i48 Window_Height{integer} 411b24 415r32
+373a73 Window_Title{string} 412b24 416r43
+375V16 Get_Window_Width{integer} 395b16 398l11 398t27 456s35
+376V16 Get_Window_Height{integer} 400b16 403l11 403t28 457s35
+377V16 Get_Window_Title(string) 405b16 408l11 408t27 458s42
+381b7 Start_Requested{boolean} 390r29 417r10
+382i7 Window_Width{integer} 397r17 414m15
+383i7 Window_Height{integer} 402r17 415m15
+384p7 Window_Title(string) 407r17 416m15
+445T14 SDL_Task_T 448b14 482l8 482t18 519r15
+450o7 Next_Time{6|45O9} 463m7 465r22 476m10 476r23
+451i7 Loop_Period{integer} 476r49
+488w14 Exception_Reporting 499b19 515l8 515t27 524r37 527r7
+489U17 Report 490>10 491>10 492>10 501b17 513l11 513t17 524r57 527r27
+490e10 Cause{11|22E9} 502b10 505r31
+491p10 T{10|43P9} 503b10 505r38
+492r10 X{2|63R9} 504b10 508r43 510r40
+519t4 SDL_Task{445T14}
+X 28 sdl_sdl_events_h.ads
+9K9*SDL_SDL_events_h 27|19w6 19r28 301r18 28|246e21
+27m4*SDL_KEYDOWN{24M12} 27|303r18
+28m4*SDL_KEYUP{24M12} 27|311r18
+37m4*SDL_QUIT{24M12} 27|301r35
+41m4*SDL_VIDEORESIZE{24M12} 27|314r18
+83r7*keysym{30|17R9} 27|304r89 305r42 307r27 312r42
+143i7*w{22|35I9} 27|315r52
+144i7*h{22|35I9} 27|315r76
+174R9*SDL_Event 27|296r21 28|205e14
+177m13*c_type{33|117M12} 27|300r29
+181r13*key{79R9} 27|304r85 305r38 307r23 312r38
+195r13*resize{141R9} 27|315r45 315r69
+225V13*SDL_PollEvent{22|35I9} 27|299s13
+X 29 sdl_sdl_h.ads
+7K9*SDL_SDL_h 27|1w6 1r21 64r10 96r13 126r10 267r10 480r7 29|34e14
+12N4*SDL_INIT_VIDEO 27|62r20
+19V13*SDL_Init{22|35I9} 27|62s10
+31U14*SDL_Quit 27|64s20 96s23 126s20 267s20 480s17
+X 30 sdl_sdl_keyboard_h.ads
+19m7*sym{31|12M12} 27|304r96 305r49 307r34 312r49
+X 31 sdl_sdl_keysym_h.ads
+6K9*SDL_SDL_keysym_h 26|1w6 1r28 26r35 27|20w6 20r28 31|263e21
+12M12*SDLKey{22|43M9} 26|26r52 27|289r35
+14m4*SDLK_FIRST{12M12} 27|286r38
+20m4*SDLK_ESCAPE{12M12} 27|307r40
+246m4*SDLK_LAST{12M12} 27|286r52
+X 33 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 27|4w6 80r14 33|230e21
+117M12*Uint8{38|11M12}
+156V13*SDL_putenv{22|35I9} 27|80s31
+X 34 sdl_sdl_timer_h.ads
+8K9*SDL_SDL_timer_h 27|11w6 11r27 34|43e20
+X 35 sdl_sdl_ttf_h.ads
+12K9*SDL_SDL_ttf_h 27|10w6 10r25 35|256e18
+58V13*TTF_Init{22|35I9} 27|251s14
+244U14*TTF_Quit 27|479s7
+X 37 sdl_sdl_video_h.ads
+11K9*SDL_SDL_video_h 27|7w6 7r27 37|466e20
+19N4*SDL_HWSURFACE 27|32r67
+26N4*SDL_OPENGL 27|32r54
+28N4*SDL_RESIZABLE 27|32r83
+98R9*SDL_Surface 27|33r27 37|113e14
+127R9*SDL_VideoInfo 27|74r24 37|144e14
+168n7*SDL_GL_RED_SIZE{167E9} 27|108r35
+169n7*SDL_GL_GREEN_SIZE{167E9} 27|109r35
+170n7*SDL_GL_BLUE_SIZE{167E9} 27|110r35
+173n7*SDL_GL_DOUBLEBUFFER{167E9} 27|114r35
+174n7*SDL_GL_DEPTH_SIZE{167E9} 27|111r35
+181n7*SDL_GL_MULTISAMPLEBUFFERS{167E9} 27|112r35
+182n7*SDL_GL_MULTISAMPLESAMPLES{167E9} 27|113r35
+184n7*SDL_GL_SWAP_CONTROL{167E9} 27|107r35
+199V13*SDL_GetVideoInfo{40|67M9} 27|91s35
+212V13*SDL_SetVideoMode(98R9) 27|122s18 263s18
+324U14*SDL_FreeSurface 27|262s7
+417V13*SDL_GL_SetAttribute{22|35I9} 27|107s14 108s14 109s14 110s14 111s14
+. 112s14 113s14 114s14
+423U14*SDL_GL_SwapBuffers 27|475s10
+435U14*SDL_WM_SetCaption 27|244s7
+435p33 title{24|47P9} 27|244r26
+435p73 icon{24|47P9} 27|244r62
+X 38 stdint_h.ads
+11M12*uint8_t{22|47M9}
+X 40 system.ads
+37K9*System 27|6w6 6r18 91r17 94r19 40|155e11
+67M9*Address 27|91r24
+69m4*Null_Address{67M9} 27|94r26
+81V14*"="{boolean} 27|94r17
+X 49 s-memory.ads
+53V13*Alloc{40|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{40|67M9} 105i<c,__gnat_realloc>22
+X 53 s-os_lib.ads
+978U14*OS_Exit 27|481s19 512s22
+X 58 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 60 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 66 s-taskin.ads
+109P9*Task_Id(107R9)
+X 71 s-traceb.ads
+94V13*C_Call_Chain{natural} 97i<c,system__traceback__c_call_chain>22
+X 72 s-trasym.ads
+94V13*Symbolic_Traceback{string} 27|510s20
+

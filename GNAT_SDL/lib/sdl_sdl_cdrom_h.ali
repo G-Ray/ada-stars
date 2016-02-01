@@ -1,0 +1,108 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_cdrom_h%s	sdl_sdl_cdrom_h.ads	63deeb7d NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_cdrom_h.ads	20160123123442 985ff240 sdl_sdl_cdrom_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24 6r6 54r45
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 6r17 54r56
+35I9*int<integer> 7|42r20 44r27 45r27 46r27 51r36 54r33 57r33 65r21 66r21
+. 67r17 68r17 68r29 73r15 74r16 74r28 77r56 80r57 83r55 86r56
+43M9*unsigned 7|24r24
+44M9*unsigned_short
+47M9*unsigned_char
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|6w19 54r58
+47P9*chars_ptr 7|54r66
+X 7 sdl_sdl_cdrom_h.ads
+8K9*SDL_SDL_cdrom_h 92l5 92e20
+11N4*SDL_MAX_TRACKS
+13N4*SDL_AUDIO_TRACK
+14N4*SDL_DATA_TRACK
+18N4*CD_FPS
+24M12*CDstatus{4|43M9} 25r28 26r26 27r26 28r25 29r24 43r24 60r57
+25m4*CD_TRAYEMPTY{24M12}
+26m4*CD_STOPPED{24M12}
+27m4*CD_PLAYING{24M12}
+28m4*CD_PAUSED{24M12}
+29m4*CD_ERROR{24M12}
+31R9*SDL_CDtrack 37e14 38r39 40r58
+32m7*id{8|117M12}
+33m7*c_type{8|117M12}
+34m7*unused{8|121M12}
+35m7*length{8|125M12}
+36m7*offset{8|125M12}
+40A9*SDL_CD_track_array(31R9)<integer> 47r23
+41R9*SDL_CD 48e14 49r39 57r52 60r42 64r22 72r22 77r41 80r42 83r40 86r41 89r42
+42i7*id{4|35I9}
+43m7*status{24M12}
+44i7*numtracks{4|35I9}
+45i7*cur_track{4|35I9}
+46i7*cur_frame{4|35I9}
+47a7*track{40A9}
+51V13*SDL_CDNumDrives{4|35I9} 52b<c,SDL_CDNumDrives>22
+54V13*SDL_CDName{6|47P9} 54>25 55b<c,SDL_CDName>22
+54i25 drive{4|35I9}
+57V13*SDL_CDOpen(41R9) 57>25 58b<c,SDL_CDOpen>22
+57i25 drive{4|35I9}
+60V13*SDL_CDStatus{24M12} 60^27 61b<c,SDL_CDStatus>22
+60p27 cdrom(41R9)
+63V13*SDL_CDPlayTracks{4|35I9} 64^7 65>7 66>7 67>7 68>7 69b<c,SDL_CDPlayTracks>22
+64p7 cdrom(41R9)
+65i7 start_track{4|35I9}
+66i7 start_frame{4|35I9}
+67i7 ntracks{4|35I9}
+68i7 nframes{4|35I9}
+71V13*SDL_CDPlay{4|35I9} 72^7 73>7 74>7 75b<c,SDL_CDPlay>22
+72p7 cdrom(41R9)
+73i7 start{4|35I9}
+74i7 length{4|35I9}
+77V13*SDL_CDPause{4|35I9} 77^26 78b<c,SDL_CDPause>22
+77p26 cdrom(41R9)
+80V13*SDL_CDResume{4|35I9} 80^27 81b<c,SDL_CDResume>22
+80p27 cdrom(41R9)
+83V13*SDL_CDStop{4|35I9} 83^25 84b<c,SDL_CDStop>22
+83p25 cdrom(41R9)
+86V13*SDL_CDEject{4|35I9} 86^26 87b<c,SDL_CDEject>22
+86p26 cdrom(41R9)
+89U14*SDL_CDClose 89^27 90b<c,SDL_CDClose>22
+89p27 cdrom(41R9)
+X 8 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|5w6 32r20 33r24 34r24 35r24 36r24 8|230e21
+117M12*Uint8{9|11M12} 7|32r37 33r41
+121M12*Uint16{9|15M12} 7|34r41
+125M12*Uint32{9|19M12} 7|35r41 36r41
+X 9 stdint_h.ads
+11M12*uint8_t{4|47M9}
+15M12*uint16_t{4|44M9}
+

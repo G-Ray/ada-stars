@@ -1,0 +1,152 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_LOOPS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_audio_h%s	sdl_sdl_audio_h.ads	8279db49 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+Y sdl_sdl_rwops_h%s	sdl_sdl_rwops_h.ads	sdl_sdl_rwops_h.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_audio_h.ads	20160123123442 7509a67c sdl_sdl_audio_h%s
+D sdl_sdl_rwops_h.ads	20160123123442 11d62089 sdl_sdl_rwops_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D stdio_h.ads		20160123123442 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123123442 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24 7r6 60r42 66r44 66r97
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 7r17 60r53 66r55 66r108
+35I9*int<integer> 7|29r22 39r20 46r24 51r21 52r25 53r26 56r30 60r81 66r85
+. 69r100 81r41 86r17 99r18 102r18 102r30 105r65 112r16
+43M9*unsigned
+44M9*unsigned_short
+47M9*unsigned_char
+65F9*double<long_float> 7|49r27 54r27
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|7w19 60r55 66r57 66r110
+47P9*chars_ptr 7|60r63 66r65 66r118
+X 7 sdl_sdl_audio_h.ads
+10K9*SDL_SDL_audio_h 124l5 124e20
+13N4*AUDIO_U8
+14N4*AUDIO_S8
+15N4*AUDIO_U16LSB
+16N4*AUDIO_S16LSB
+17N4*AUDIO_U16MSB
+18N4*AUDIO_S16MSB
+26N4*SDL_MIX_MAXVOLUME
+28R9*SDL_AudioSpec 41e14 42r39 69r45 69r78 87r21 89r65
+29i7*freq{4|35I9}
+30m7*format{9|121M12}
+31m7*channels{9|117M12}
+32m7*silence{9|117M12}
+33m7*samples{9|121M12}
+34m7*padding{9|121M12}
+35m7*size{9|125M12}
+36p7*callback
+37m13 arg1{12|67M9}
+38p13 arg2(9|117M12)
+39i13 arg3{4|35I9}
+40m7*userdata{12|67M9}
+44A9*SDL_AudioCVT_filters_array<integer> 55r25
+44m75 arg1{12|67M9}
+44m98 arg2{9|121M12}
+45R9*SDL_AudioCVT 57e14 58r39 96r20 105r44
+46i7*needed{4|35I9}
+47m7*src_format{9|121M12}
+48m7*dst_format{9|121M12}
+49f7*rate_incr{4|65F9}
+50p7*buf(9|117M12)
+51i7*len{4|35I9}
+52i7*len_cvt{4|35I9}
+53i7*len_mult{4|35I9}
+54f7*len_ratio{4|65F9}
+55a7*filters{44A9}
+56i7*filter_index{4|35I9}
+60V13*SDL_AudioInit{4|35I9} 60>28 61b<c,SDL_AudioInit>22
+60p28 driver_name{6|47P9}
+63U14*SDL_AudioQuit 64b<c,SDL_AudioQuit>22
+66V13*SDL_AudioDriverName{6|47P9} 66>34 66>76 67b<c,SDL_AudioDriverName>22
+66p34 namebuf{6|47P9}
+66i76 maxlen{4|35I9}
+69V13*SDL_OpenAudio{4|35I9} 69^28 69^60 70b<c,SDL_OpenAudio>22
+69p28 desired(28R9)
+69p60 obtained(28R9)
+72E9*SDL_audiostatus 75e24 76r26 78r39
+73n7*SDL_AUDIO_STOPPED{72E9}
+74n7*SDL_AUDIO_PLAYING{72E9}
+75n7*SDL_AUDIO_PAUSED{72E9}
+78V13*SDL_GetAudioStatus{72E9} 79b<c,SDL_GetAudioStatus>22
+81U14*SDL_PauseAudio 81>30 82b<c,SDL_PauseAudio>22
+81i30 pause_on{4|35I9}
+84V13*SDL_LoadWAV_RW(28R9) 85^7 86>7 87^7 88>7 89^7 90b<c,SDL_LoadWAV_RW>22
+85p7 src
+86i7 freesrc{4|35I9}
+87p7 spec(28R9)
+88m7 audio_buf{12|67M9}
+89p7 audio_len(9|125M12)
+92U14*SDL_FreeWAV 92^27 93b<c,SDL_FreeWAV>22
+92p27 audio_buf(9|117M12)
+95V13*SDL_BuildAudioCVT{4|35I9} 96^7 97>7 98>7 99>7 100>7 101>7 102>7 103b<c,SDL_BuildAudioCVT>22
+96p7 cvt(45R9)
+97m7 src_format{9|121M12}
+98m7 src_channels{9|117M12}
+99i7 src_rate{4|35I9}
+100m7 dst_format{9|121M12}
+101m7 dst_channels{9|117M12}
+102i7 dst_rate{4|35I9}
+105V13*SDL_ConvertAudio{4|35I9} 105^31 106b<c,SDL_ConvertAudio>22
+105p31 cvt(45R9)
+108U14*SDL_MixAudio 109^7 110^7 111>7 112>7 113b<c,SDL_MixAudio>22
+109p7 dst(9|117M12)
+110p7 src(9|117M12)
+111m7 len{9|125M12}
+112i7 volume{4|35I9}
+115U14*SDL_LockAudio 116b<c,SDL_LockAudio>22
+118U14*SDL_UnlockAudio 119b<c,SDL_UnlockAudio>22
+121U14*SDL_CloseAudio 122b<c,SDL_CloseAudio>22
+X 8 sdl_sdl_rwops_h.ads
+10K9 SDL_SDL_rwops_h 7|85r20
+X 9 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|5w6 30r24 31r26 32r25 33r25 34r25 35r22 38r27 44r105
+. 47r28 48r28 50r20 89r26 92r46 97r20 98r22 100r20 101r22 109r20 110r20 111r13
+. 9|230e21
+117M12*Uint8{10|11M12} 7|31r43 32r42 38r44 50r37 92r63 98r39 101r39 109r37
+. 110r37
+121M12*Uint16{10|15M12} 7|30r41 33r42 34r42 44r122 47r45 48r45 97r37 100r37
+125M12*Uint32{10|19M12} 7|35r39 89r43 111r30
+X 10 stdint_h.ads
+11M12*uint8_t{4|47M9}
+15M12*uint16_t{4|44M9}
+19M12*uint32_t{4|43M9}
+X 12 system.ads
+37K9*System 7|6w6 37r20 40r18 44r82 88r19 12|155e11
+67M9*Address 7|37r27 40r25 44r89 88r26
+

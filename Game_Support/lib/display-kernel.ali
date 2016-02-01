@@ -1,0 +1,771 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCHING_CALLS
+RV NO_ENTRY_CALLS_IN_ELABORATION_CODE
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_LOOPS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U display.kernel%b	display-kernel.adb	dfe55ff9 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.task_identification%s  a-taside.adb	a-taside.ali
+W ada.task_termination%s  a-taster.adb		a-taster.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.unchecked_deallocation%s
+W display%s		display.adb		display.ali
+W gl_glu_h%s		gl_glu_h.ads		gl_glu_h.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.os_lib%s		g-os_lib.ads		g-os_lib.ali
+W gnat.traceback%s	g-traceb.adb		g-traceb.ali
+W gnat.traceback.symbolic%s  g-trasym.ads	g-trasym.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_events_h%s	sdl_sdl_events_h.ads	sdl_sdl_events_h.ali
+W sdl_sdl_h%s		sdl_sdl_h.ads		sdl_sdl_h.ali
+W sdl_sdl_keysym_h%s	sdl_sdl_keysym_h.ads	sdl_sdl_keysym_h.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W sdl_sdl_timer_h%s	sdl_sdl_timer_h.ads	sdl_sdl_timer_h.ali
+W sdl_sdl_ttf_h%s	sdl_sdl_ttf_h.ads	sdl_sdl_ttf_h.ali
+W sdl_sdl_video_h%s	sdl_sdl_video_h.ads	sdl_sdl_video_h.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U display.kernel%s	display-kernel.ads	27ec5667 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.doubly_linked_lists%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.adb		a-finali.ali
+Z ada.iterator_interfaces%s
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W display%s		display.adb		display.ali
+W gl_gl_h%s		gl_gl_h.ads		gl_gl_h.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.strings%s	g-string.ads		g-string.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W sdl_sdl_keysym_h%s	sdl_sdl_keysym_h.ads	sdl_sdl_keysym_h.ali
+W system%s		system.ads		system.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-calend.ads		20150506105330 d986d312 ada.calendar%s
+D a-contai.ads		20150506105327 61e5e089 ada.containers%s
+D a-cdlili.ads		20150506105327 59d7f011 ada.containers.doubly_linked_lists%s
+D a-cdlili.adb		20150506105329 b44c57c3 ada.containers.doubly_linked_lists%b
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-exctra.ads		20150506105332 0966bad0 ada.exceptions.traceback%s
+D a-finali.ads		20150506105331 69f99942 ada.finalization%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20150506105329 7c7305e9 ada.iterator_interfaces%s
+D a-numeri.ads		20150506105328 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20150506105327 03e83d1c ada.numerics.elementary_functions%s
+D a-nuflra.ads		20150506105327 49c50e0b ada.numerics.float_random%s
+D a-ngelfu.ads		20150506105331 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-reatim.ads		20150506105328 a5838d5a ada.real_time%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-taside.ads		20150506105330 9a31e556 ada.task_identification%s
+D a-taster.ads		20150506105329 fe3f8ac8 ada.task_termination%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20150506105330 f15a5ed1 ada.unchecked_deallocation%s
+D display.ads		20160124103935 a63a4646 display%s
+D display-kernel.ads	20160124103425 d9ee7e4a display.kernel%s
+D display-kernel.adb	20160124104431 739142ce display.kernel%b
+D gl_gl_h.ads		20160123113440 788c824f gl_gl_h%s
+D gl_glu_h.ads		20160123113440 d4f6dfb7 gl_glu_h%s
+D gnat.ads		20150506105333 fd2ad2f1 gnat%s
+D g-os_lib.ads		20150506105326 0db74523 gnat.os_lib%s
+D g-string.ads		20150506105331 c6abc540 gnat.strings%s
+D g-traceb.ads		20150506105326 dee80ba3 gnat.traceback%s
+D g-trasym.ads		20150506105327 f121a8ad gnat.traceback.symbolic%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D sdl_sdl_events_h.ads	20160123113440 fd61776b sdl_sdl_events_h%s
+D sdl_sdl_h.ads		20160123113440 c8ed8b58 sdl_sdl_h%s
+D sdl_sdl_keyboard_h.ads  20160123113440 39fac545 sdl_sdl_keyboard_h%s
+D sdl_sdl_keysym_h.ads	20160123113440 39328e2d sdl_sdl_keysym_h%s
+D sdl_sdl_rwops_h.ads	20160123113440 11d62089 sdl_sdl_rwops_h%s
+D sdl_sdl_stdinc_h.ads	20160123113440 9bbd0579 sdl_sdl_stdinc_h%s
+D sdl_sdl_timer_h.ads	20160123113440 26f866a2 sdl_sdl_timer_h%s
+D sdl_sdl_ttf_h.ads	20160123113440 fe8bf8a9 sdl_sdl_ttf_h%s
+D sdl_sdl_version_h.ads	20160123113440 83c9a202 sdl_sdl_version_h%s
+D sdl_sdl_video_h.ads	20160123113440 ec23dadb sdl_sdl_video_h%s
+D stdint_h.ads		20160123113440 2f7ce0ee stdint_h%s
+D stdio_h.ads		20160123113440 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-atacco.ads		20150506105331 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20150506105329 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-finmas.ads		20150506105330 814daec4 system.finalization_masters%s
+D s-finroo.ads		20150506105331 4ff27390 system.finalization_root%s
+D s-imgint.ads		20150506105328 02dbe0c2 system.img_int%s
+D s-linux.ads		20150506105328 2fda6ad1 system.linux%s
+D s-memory.ads		20150506105329 597d6634 system.memory%s
+D s-multip.ads		20150506105326 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20150506142910 4ac7eb08 system.os_constants%s
+D s-osinte.ads		20150506105327 e9e28195 system.os_interface%s
+D s-os_lib.ads		20150506105330 5853d835 system.os_lib%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-rannum.ads		20150506105329 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20150506105331 86a2856d system.secondary_stack%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150506105330 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stalib.adb		20150506105326 f2fe2716 system.standard_library%b
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20150506105330 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20150506105328 b16154c2 system.storage_pools%s
+D s-stposu.ads		20150506105327 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20150506105327 aedef97e system.stream_attributes%s
+D s-string.ads		20150506105330 8fe54fb7 system.strings%s
+D s-tasinf.ads		20150506105329 2b3f8252 system.task_info%s
+D s-taspri.ads		20150506105328 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20150506105327 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20150506105332 339749f0 system.tasking%s
+D s-taprob.ads		20150506105327 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150506105332 b641f948 system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20150506105331 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tassta.ads		20150506105328 70812003 system.tasking.stages%s
+D s-traceb.ads		20150506105332 9e662fab system.traceback%s
+D s-trasym.ads		20150506105332 79d2fb55 system.traceback.symbolic%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+D umingw_h.ads		20160123113440 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123113440 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123113440 28c0a1fd vadefs_h%s
+X 1 ada.ads
+16K9*Ada 19e8 24|23r6 24r6 116r33 25|23r6 23r45 24r6 24r45 25r6 25r45 28r6
+. 28r26 29r6 29r26 40r6 41r6 42r6 42r35 45r6 45r38 492r7 533r29 684r7 686r7
+. 924r19 949r19 998r18 999r18 1010r18 1011r18 1258r7
+X 2 a-calend.ads
+36K13*Calendar 382e17 25|29w10 29r30
+38I9*Time<200I9>
+50O12*Day_Duration{duration}
+52V13*Clock{38I9} 25|337s46
+61V13*Seconds{50O12} 25|337s37
+200I9 Time_Rep<long_long_integer>
+X 3 a-contai.ads
+16K13*Containers 24e19 24|23w10 24r10 116r37
+X 4 a-cdlili.ads
+45k24*Doubly_Linked_Lists 407e39 24|24w21 116r48
+49R9*List<8|43R9> 24|129r53[116] 144r37[116] 25|380r32[24|116] 1096r53[24|116]
+118U14*Move 25|1098s24[24|116]
+146U14*Append 25|1047s15[24|116]
+X 6 a-except.ads
+54K13*Exceptions 361e19 25|28w10 28r30 999r22 1011r22
+63R9*Exception_Occurrence 329e14 25|999r33 1011r33
+104V13*Exception_Information{string} 25|1015s20
+X 10 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[4|67]>
+X 11 a-numeri.ads
+16K13*Numerics 32e17 25|24w10 24r49 25r10 25r49 45r10 45r42
+21N4*Pi 25|251r26 252r26 323r51
+X 12 a-nuelfu.ads
+18K22*Elementary_Functions[14|39] 25|25w19 25r58
+X 13 a-nuflra.ads
+41K22*Float_Random 72e30 25|45w19 45r51
+45R9*Generator<66|63R9> 25|800r11
+X 14 a-ngelfu.ads
+42V13*Sqrt{float} 25|311s43[12|18]
+81V13*Sin{float} 25|261s23[12|18] 270s26[12|18]
+89V13*Cos{float} 25|260s23[12|18] 269s26[12|18]
+113V13*Arccos{float} 25|323s25[12|18]
+X 18 a-taside.ads
+39K13*Task_Identification 77e28 25|41w10 998r22 1010r22 1258r11
+43P9*Task_Id<82|109P9> 25|998r42 1010r42
+53V13*Current_Task{43P9} 25|1258s31
+X 19 a-taster.ads
+19K13*Task_Termination 39e25 25|42w10 42r39
+22E9*Cause_Of_Termination 22e72 25|997r18 1009r18
+29U14*Set_Dependents_Fallback_Handler 25|1256s4
+33U14*Set_Specific_Handler 25|1257s4
+X 20 a-textio.ads
+49K13*Text_IO 471e16 25|23w10 23r49 492r11 684r11 686r11 924r23 949r23
+263U14*Put_Line 25|492s19 499s10 684s19 686s19 689s10 751s13 781s10 924s31
+. 949s31 1014s10 1015s10 1017s10
+X 22 a-uncdea.ads
+20u15*Unchecked_Deallocation 25|40w10 533r33
+X 23 display.ads
+20K9*Display 81e12 24|28r17 206r5 25|47r14 1260r5
+22E9*Color_Type 22e78 24|46r18 96r29 25|92r33
+22n24*Black{22E9} 24|46r51 25|95r15 598r30
+22n31*Blue{22E9} 25|98r15 594r30
+22n37*Green{22E9} 25|101r15 590r30
+22n44*Cyan{22E9} 25|104r15 606r30
+22n50*Red{22E9} 25|107r15 586r30
+22n55*Magenta{22E9} 25|110r15 610r30
+22n64*Yellow{22E9} 25|113r15 614r30
+22n72*White{22E9} 25|116r15 602r30
+24I9*Key_Type<integer> 24|110r42 25|56r15 81r42 907r48 912r30 913r30 914r30
+. 915r30 937r34
+26E9*Special_Key 48e18 25|907r28 909r23
+40n7*KEY_LEFT{26E9} 25|914r50
+41n7*KEY_UP{26E9} 25|912r50
+42n7*KEY_RIGHT{26E9} 25|915r50
+43n7*KEY_DOWN{26E9} 25|913r50
+50X4*Display_Error 25|73r16
+52n25*Left{52E9} 25|977r36
+52n31*Right{52E9} 25|979r36
+54R9*Mouse_Position 57e14 24|137r46 139r51 149r29 25|956r25 1179r46 1184r51
+55f7*X{float} 25|963m26 967m26
+55f10*Y{float} 25|959m26 971m26
+56e7*Button{52E9} 25|977m26 979m26
+59r4*No_Mouse_Position{54R9} 24|149r47 25|956r43 1187r33
+61P9*User_Callback_T
+63p4*User_Callback{61P9} 25|463r10 464r10
+66w15*Synchronizer 25|685r7
+67Y13 Before_Start 25|685s20
+75N4 Max_Shapes 24|43r37 87r40 145r38 146r46 25|49r31
+X 24 display-kernel.ads
+28K25*Kernel 23|20k9 24|206l13 206e19 25|47b22 1260l13 1260t19
+38E9*Shape_Kind 38e61 42r28 166r30
+38n24*None{38E9} 180r43 25|364r15
+38n30*Circle{38E9} 42r42 49r15 166r44 25|298r15
+38n38*Line{38E9} 52r15 25|306r15
+38n44*Box{38E9} 55r15 25|354r15 445r34
+38n49*Torus{38E9} 58r15 25|344r15
+38n56*Text{38E9} 62r15 170r15 25|61r27 64r29 351r15 416r43 430r35 450r38
+. 536r22 1079r41 1107r41 1120r56 1121r48
+42R9*Shape_Data 42d21 68e14 70r25 85r22 119r57 133r47 167r11 25|1161r47
+42e21*Kind{38E9} 48r12 25|424r53 430r28 1079r34 1107r34 1120r49 1121r41
+43i7*Index{integer} 25|427r36 431r49 442r26 1087r31 1121r34 1126r51
+44f7*X{float} 25|309r60 358r29 387m35 447r42 452r42 643r38 1051m31
+45f7*Y{float} 25|310r60 359r29 390m35 448r42 453r42 643r59 1054m31
+46e7*Color{23|22E9} 25|399m35 457r37 585r33 1063m31
+50f13*Radius{float} 25|302r44 402m35 1066m31
+53f13*X2{float} 25|309r47 393m35 1057m31
+53f17*Y2{float} 25|310r47 396m35 1060m31
+56f13*Width{float} 25|360r33 447r59
+56f20*Height{float} 25|361r34 448r59
+59f13*Inner_Radius{float} 25|346r49 405m35 1069m31
+60f13*Outer_Radius{float} 25|347r51 408m35 1072m31
+63p13*The_Text{78|45P9} 25|411m54 412m35 417m57 544r34 544r64 552r37 1075m50
+. 1076m31 1080m53 1111r59 1125m28 1126r58 1131m28 1172r27
+70r4*Null_Data{42R9} 25|1084r34
+72E9*Command_Kind 78e13 82r25
+73n7*Set_X{72E9} 82r41 90r21 25|386r18 1050r18
+73n14*Set_Y{72E9} 90r29 25|389r18 1053r18
+73n21*Set_X2{72E9} 90r37 25|392r18 1056r18
+73n29*Set_Y2{72E9} 90r46 25|395r18 1059r18
+74n7*Set_Color{72E9} 95r21 25|398r18 1062r18
+75n7*Set_Radius{72E9} 91r21 25|401r18 1065r18
+75n19*Set_Inner_Radius{72E9} 91r34 25|404r18 1068r18
+75n37*Set_Outer_Radius{72E9} 91r53 25|407r18 1071r18
+76n7*Set_Text{72E9} 98r21 25|410r18 1074r18 1106r25
+77n7*Delete{72E9} 101r21 25|415r18 1078r18
+78n7*Store{72E9} 84r15 104r21 25|422r18 1086r18 1120r25
+82R9*Command 82d18 108e14 116r69 127r39 25|1045r39
+82e18*Kind{72E9} 83r12 89r18 25|1049r17
+85r13*Object{42R9} 25|424r46 426r35 427r29 430r21 431r42 1087r24 1087r43
+. 1120r42 1121r27 1125m21 1126r44 1131m21
+87i13*Index{integer} 25|387r26 390r26 393r26 396r26 399r26 402r26 405r26
+. 408r26 411r45 412r26 413r39 416r29 417r48 420r26 1051r24 1054r24 1057r24
+. 1060r24 1063r24 1066r24 1069r24 1072r24 1075r43 1076r24 1079r27 1080r46
+. 1083r30 1084r24 1107r27 1111r52
+93f19*Value_F{float} 25|387r42 390r42 393r43 396r43 402r47 405r53 408r53
+. 1051r38 1054r38 1057r39 1060r39 1066r43 1069r49 1072r49
+96e19*Value_C{23|22E9} 25|399r46 1063r42
+99p19*Value_T{78|45P9} 25|412r49 1076r45 1111m21 1116m21
+110U14*Read_Current_Key 110<32 25|81b14 84l8 84t24
+110i32 Key{23|24I9} 25|81b32 83m7
+114V13*Is_Key_Pressed{boolean} 114>29 25|898b13 901l8 901t22
+114m29 Key{41|12M12} 25|898b29 900r32
+116K12*Command_Lists[4|45] 129r39 144r23 25|380r18 1096r39 1098r10
+118A9*Id_Stack(natural)<integer> 145r23
+119A9*Shape_Data_Array(42R9)<integer> 146r23
+124w14*Data_Manager 25|382r7 982r19 1028b19 1190l8 1190t20 1255r4
+125U17 Initialize 25|1034b17 1039l11 1039t21 1255s17
+127U17 Schedule_Command 127>35 25|1045b17 1090l11 1090t27
+127r35 C{82R9} 25|1045b35 1047r23 1049r15 1051r22 1051r36 1054r22 1054r36
+. 1057r22 1057r37 1060r22 1060r37 1063r22 1063r40 1066r22 1066r41 1069r22
+. 1069r47 1072r22 1072r47 1075r41 1076r22 1076r43 1079r25 1080r44 1083r28
+. 1084r22 1087r22 1087r41
+129U17 Flush 129<24 25|382s20 1096b17 1135l11 1135t16
+129r24 Commands{4|49R9[116]} 25|1096b24 1098m30 1100r19
+131U17 Take_Id 131<26 25|1141b17 1145l11 1145t18
+131i26 Value{natural} 25|1141b26 1143m10
+133V16 Get_Data{42R9} 133>26 25|1161b16 1164l11 1164t19
+133i26 Id{natural} 25|1161b26 1163r23
+135V16 Get_Text{string} 135>26 25|1170b16 1173l11 1173t19
+135i26 Id{natural} 25|1170b26 1172r23
+137U17 Set_Last_Mouse_Position 137>42 25|982s32 1179b17 1182l11 1182t34
+137r42 P{23|54R9} 25|1179b42 1181r33
+139U17 Read_Last_Mouse_Position 139<43 25|1184b17 1188l11 1188t35
+139r43 P{23|54R9} 25|1184b43 1186m10
+142U17 Release_Id 142>29 25|1083s16 1151b17 1155l11 1155t21
+142i29 Id{natural} 25|1151b29 1154r43
+144r7 List{4|49R9[116]} 25|1047r10 1098r40
+145a7 Available_Ids{118A9} 25|1036r19 1037r13 1143r19 1154r10
+146a7 Data{119A9} 25|1051r16 1054r16 1057r16 1060r16 1063r16 1066r16 1069r16
+. 1072r16 1075r35 1076r16 1079r19 1080r38 1084r16 1087r16 1107r19 1111r44
+. 1121r19 1126r36 1163r17 1172r17
+147i7 Stack_Pointer{integer} 25|1143r34 1144r10 1144r27 1153r10 1153r27 1154r25
+149r7 Last_Mouse_Position{23|54R9} 25|1181r10 1186r15 1187r10
+153R9*E_Pixel 158e14 159r26 161r48
+154m7*R{26|664M12} 25|587m47 591m47 595m47 599m47 603m47 607m47 611m47 615m47
+155m7*G{26|664M12} 25|588m47 592m47 596m47 600m47 604m47 608m47 612m47 616m47
+156m7*B{26|664M12} 25|589m47 593m47 597m47 601m47 605m47 609m47 613m47 617m47
+157m7*A{26|664M12}
+161A9*Pixel_Array(153R9)<34|35I9> 162r26 164r42 25|534r10 571r28
+164P9*Pixel_Array_Access(161A9) 171r24 25|534r23
+166R9*Shape_Object 166d23 178e14 180r26 182r35 184r60 25|60r38 63r40 295r35
+. 424r30 527r40 634r38
+166e23*Kind{38E9} 167r23 169r12 25|61r20 64r22 297r18 416r36 445r27 450r30
+. 536r14
+167r7*D{42R9} 25|302r42 309r45 309r58 310r45 310r58 346r47 347r49 358r27
+. 359r27 360r31 361r32 387m33 390m33 393m33 396m33 399m33 402m33 405m33 408m33
+. 411m52 412m33 417m55 426m28 442r24 447r40 447r57 448r40 448r57 452r40 453r40
+. 457r35 544r32 544r62 552r35 585r31 643r36 643r57
+171p13*Pixels{164P9} 25|540r14 541m20 571m14 572r14 587r32 588r32 589r32
+. 591r32 592r32 593r32 595r32 596r32 597r32 599r32 600r32 601r32 603r32 604r32
+. 605r32 607r32 608r32 609r32 611r32 612r32 613r32 615r32 616r32 617r32 638r14
+. 668r24
+173i13*W{integer} 25|562m11 566r64 576r43 577r59 583r62 664r29
+173i16*H{integer} 25|563m11 566r72 579r33 665r29
+180r4*Null_Shape{166R9} 25|49r57 420r36
+182U14*Draw 182=20 25|295b14 368l8 368t12 458s13
+182r20 Shape{166R9} 25|295b20 297r12 302r36 309r39 309r52 310r39 310r52 346r41
+. 347r43 352m24 358r21 359r21 360r25 361r26
+184A9*Shape_Array(166R9)<integer> 25|49r13
+186b4*At_End{boolean}
+189m4*texture{26|668M12}
+196A9*Tex_Pix_T(35|98M9)<integer> 198r50
+198A9*Tex_T(196A9)<integer><integer> 200r26
+200a4*Tex{198A9}
+X 25 display-kernel.adb
+49a4 Shapes{24|184A9} 387m16 390m16 393m16 393r16 396m16 396r16 399m16 402m16
+. 402r16 405m16 405r16 408m16 408r16 411m35 411r35 412m16 412r16 413m29 413r29
+. 416r19 417m38 417r38 420m16 427m19 431m32 431r32 441r16 442r13 445r16 447r29
+. 447r46 448r29 448r46 450r19 452r29 453r29 457r24 458m19 458r19
+51b4 Initialized{boolean} 548r17 711m7
+52m4 Quadric{50|67M9} 301r26 802m7
+54i4 Window_Width{integer} 493m7 958r22 964r56 968r54 973r33
+54i18 Window_Height{integer} 494m7 958r37 960r55 965r33 972r57
+56i4 Last_Key{23|24I9} 83r14 929m22 931m22 933m22 935m22 937m22 948m19
+60U14 Draw_Text 60=25 352s13 634b14 676l8 676t17
+60r25 Obj{24|166R9} 61r16 634b25 638r10 643r32 643r53 664r25 665r25 668r20
+63U14 Update_Text 63=27 413s16 431s19 527b14 628l8 628t19
+63r27 Obj{24|166R9} 64r18 527b27 536r10 540r10 541m16 541r16 544r28 544r58
+. 552r31 562m7 563m7 566r60 566r68 571m10 572r10 576r39 577r55 579r29 583r58
+. 585r27 587r28 588r28 589r28 591r28 592r28 593r28 595r28 596r28 597r28 599r28
+. 600r28 601r28 603r28 604r28 605r28 607r28 608r28 609r28 611r28 612r28 613r28
+. 615r28 616r28 617r28
+70U14 Check 70b14 70>21 75l8 75t13 709s7 736s7 763s7 764s7 765s7 766s7 767s7
+. 768s7 769s7 770s7
+70i21 Ret{34|35I9} 72r10
+92U14 Set_Color 92b14 92>25 120l8 120t17 457s13
+92e25 Color{23|22E9} 94r12
+126U14 Draw_Line 126b14 126>25 126>41 173l8 173t17 339s16
+126f25 Length{float} 133r19 134r19 141r19 142r19 148r19 149r19 154r19 155r19
+. 160r19 161r19 162r19 163r19 167r25 167r34 168r25 168r33 169r24 169r32 170r24
+. 170r33
+126f41 Width{float} 132r25 132r32 133r28 133r35 134r27 134r34 135r24 135r31
+. 139r25 139r33 140r24 140r32 141r27 141r35 142r28 142r36 146r24 146r32 147r24
+. 147r31 148r27 148r34 149r27 149r35 153r25 153r33 154r28 154r36 155r28 155r35
+. 156r25 156r32 160r28 160r36 161r27 161r35 162r27 162r34 163r28 163r35
+179U14 Draw_Box 179b14 179>24 179>27 179>30 179>37 234l8 234t16 357s13
+179f24 X{float} 180r28 358r16
+179f27 Y{float} 180r31 359r16
+179f30 Width{float} 181r31 183r31 185r30 187r30 360r16
+179f37 Height{float} 182r31 184r30 186r30 188r31 361r16
+181f7 X1{float} 198r18 201r18 210r18 216r18 229r18 230r18
+182f7 Y1{float} 198r22 201r27 210r22 216r27 229r22 230r27
+183f7 X2{float} 199r18 200r18 211r18 217r18 222r18 225r18
+184f7 Y2{float} 199r22 200r27 211r22 217r27 222r22 225r27
+185f7 X3{float} 204r18 207r18 212r18 218r18 223r18 224r18
+186f7 Y3{float} 204r22 207r27 212r22 218r27 223r22 224r27
+187f7 X4{float} 205r18 206r18 213r18 219r18 228r18 231r18
+188f7 Y4{float} 205r22 206r27 213r22 219r27 228r22 231r27
+190N7 Dx 200r23 201r23 206r23 207r23 216r23 217r23 218r23 219r23 224r23 225r23
+. 230r23 231r23
+191N7 Dy 200r32 201r32 206r32 207r32 216r32 217r32 218r32 219r32 224r32 225r32
+. 230r32 231r32
+192N7 Back 200r36 201r36 206r36 207r36 216r36 217r36 218r36 219r36 224r36
+. 225r36 230r36 231r36
+193N7 Front 198r26 199r26 204r26 205r26 210r26 211r26 212r26 213r26 222r26
+. 223r26 228r26 229r26
+240U14 Draw_Torus 240b14 241>7 242>7 243>7 244>7 289l8 289t18 345s13
+241f7 Inner_Radius{26|670F12} 271r39 276r56 280r55 346r16
+242f7 Outer_Radius{26|670F12} 271r24 347r16
+243i7 Nsides{26|660I12} 252r40 264r32 348r16
+244i7 Rings{26|660I12} 251r40 258r29 349r16
+246f7 Theta{26|670F12} 254m7 259r20 285m10
+246f14 Phi{26|670F12} 263m10 268m16 268r23 269r31 270r31
+246f19 Theta1{26|670F12} 259m10 260r27 261r27 285r19
+247f7 CosTheta{26|670F12} 255m7 278r19 280r19 286m10
+247f17 SinTheta{26|670F12} 256m7 278r39 280r37 287m10
+248f7 CosTheta1{26|670F12} 260m10 274r19 276r19 286r22
+248f18 SinTheta1{26|670F12} 261m10 274r40 276r38 287r22
+249f7 RingDelta{26|670F12} 251m7 259r28
+249f18 SideDelta{26|670F12} 252m7 268r29
+258i11 i<integer>
+264i14 j<integer>
+266f16 CosPhi{26|670F12} 269m16 271r54 274r31 274r52 278r30 278r50
+266f24 SinPhi{26|670F12} 270m16 274r60 276r71 278r58 280r70
+266f32 Dist{26|670F12} 271m16 276r31 276r50 280r30 280r48
+309f16 Dx{float} 311r49 311r55 322r27 325r19 327r22 329r22
+310f16 Dy{float} 311r60 311r65 325r38 327r40 329r40
+311f16 Length{float} 318r19 322r32 339r27
+313f16 The_Cos{float} 322m16 323r33
+314f16 Angle{float} 323m16 330m19 330r29 332m19 332r29 336r37
+316N16 Width 339r35
+379U14 Idle 379b14 466l8 466t12 714s10
+380r7 Tmp_List{4|49R9[24|116]} 382m27 384r16
+384r11 C{24|82R9} 385r15 387r24 387r40 390r24 390r40 393r24 393r41 396r24
+. 396r41 399r24 399r44 402r24 402r45 405r24 405r51 408r24 408r51 411r43 412r24
+. 412r47 413r37 416r27 417r46 420r24 424r44 426r33 427r27 430r19 431r40
+424r19 To_Store{24|166R9} 426m19 427r46
+441i11 J{integer} 442r21 445r24 447r37 447r54 448r37 448r54 450r27 452r37
+. 453r37 457r32 458r27
+469p4 surface(47|98R9) 496m7 498r10 778m7 780r10
+470p4 vidInfo(47|127R9) 748m30 748r30
+471i4 w{integer} 778r40 803r16
+472i4 h{integer} 778r49 803r19
+474i4 bpp{34|35I9} 496r54 778r53
+475m4 flags{34|43M9} 496r59 778r58
+477b4 Stop{boolean} 713r17 921m16 941m19
+479U14 Set_SDL_Video 700s7 731b14 785l8 785t21
+480U14 Set_OpenGL 707s7 794b14 888l8 888t18
+481U14 Poll_Events 715s10 904b14 989l8 989t19
+484t9 GL_Task 682b14 725l8 725t15
+486A9 Glubyte_Arrays(26|664M12)<34|35I9> 566r34
+489U17 Reshape 489b17 489>26 489>39 519l8 519t15 803s7 952s16
+489i26 W{integer} 493r23 496r41 507r26 516r34
+489i39 H{integer} 494r24 496r50 507r41 516r47
+490f7 Ratio{26|674F12} 507m7 510r26 510r41
+528m7 fntCourrier{50|67M9} 554m7 560r12 626r22
+529r7 clrFg{47|63R9} 556m7 560r35
+530p7 sText(47|98R9) 558m7 562r25 563r25 568r40 627r24
+531p7 C_String{36|47P9} 552m7 560r25 625m13 625r13
+533U17 Free[22|20] 541s10
+566a10 Import_Pixels{486A9} 567m28 567r28 568m14 568r14 571r40 574r19 581r19
+574i14 J<integer> 576r30 577r39 581r34
+576i16 Line{34|35I9} 577r43 579m16 579r38 583r46
+577i16 Col{34|35I9} 583r67
+583i22 Index{34|35I9} 587r40 588r40 589r40 591r40 592r40 593r40 595r40 596r40
+. 597r40 599r40 600r40 601r40 603r40 604r40 605r40 607r40 608r40 609r40 611r40
+. 612r40 613r40 615r40 616r40 617r40
+635i7 swapbytes{26|660I12} 645m43 645r43 670r43
+635i18 lsbfirst{26|660I12} 646m42 646r42 671r42
+635i28 rowlength{26|660I12} 647m43 647r43 672r43
+635i39 skiprows{26|660I12} 648m42 648r42 673r42
+635i49 skippixels{26|660I12} 649m44 649r44 674r44
+635i61 alignment{26|660I12} 650m42 650r42 675r42
+747m10 ptr{50|67M9} 748m14 748r14 750r13
+795A12 GLFloat_Array(26|670F12)<integer> 796r31 798r32
+796a7 light_diffuse{795A12} 807m40 807r40
+798a7 light_position{795A12} 808m42 808r42
+800r7 G{13|45R9}
+894m4 Last_Key_Sym{41|12M12} 923m16 947r40
+895A9 Active_Key_Array_T(boolean)<34|43M9> 896r24
+896a4 Active_Key_Array{895A9} 900r14 925m16 945m16
+905r7 Evt{38|174R9} 918m28 918r28 919r25 923r32 924r84 925r34 926r21 937r44
+. 940r19 945r34 947r19 949r82 952r34 952r58 960r32 964r32 968r31 972r33 976r22
+. 978r25
+907V16 As_Key{23|24I9} 907b16 907>24 910l11 910t17 912s42 913s42 914s42 915s42
+907e24 K{23|26E9} 909r40
+912i7 Up_Arrow{23|24I9} 933r34
+913i7 Down_Arrow{23|24I9} 935r34
+914i7 Left_Arrow{23|24I9} 929r34
+915i7 Right_Arrow{23|24I9} 931r34
+956r19 Pos{23|54R9} 959m22 963m22 967m22 971m22 977m22 979m22 982r57
+995w14 Exception_Reporting 1006b19 1022l8 1022t27 1256r37 1259r7
+996U17 Report 997>10 998>10 999>10 1008b17 1020l11 1020t17 1256r57 1259r27
+997e10 Cause{19|22E9} 1009b10 1012r31
+998p10 T{18|43P9} 1010b10 1012r38
+999r10 X{6|63R9} 1011b10 1015r43 1017r40
+1036i14 J{integer} 1037r28 1037r34
+1100r14 C{24|82R9} 1106r16 1107r25 1111r19 1111r50 1116r19 1120r16 1120r40
+. 1121r25 1125r19 1126r42 1131r19
+X 26 gl_gl_h.ads
+7K9*GL_gl_h 24|21w6 21r24 26|2337e12
+19N4*GL_LESS 25|824r20
+35N4*GL_DEPTH_BUFFER_BIT 25|437r39
+41N4*GL_COLOR_BUFFER_BIT 25|437r16
+56N4*GL_QUADS 25|128r15 195r15
+57N4*GL_QUAD_STRIP 25|262r18
+74N4*GL_FALSE 25|656r43 657r42
+84N4*GL_UNSIGNED_BYTE 25|667r20
+136N4*GL_CW 25|817r20
+175N4*GL_LIGHTING 25|818r17
+182N4*GL_COLOR_MATERIAL 25|821r17
+191N4*GL_DEPTH_TEST 25|820r17
+206N4*GL_NORMALIZE 25|822r17
+269N4*GL_UNPACK_SWAP_BYTES 25|645r21 656r21 670r21
+270N4*GL_UNPACK_LSB_FIRST 25|646r21 657r21 671r21
+271N4*GL_UNPACK_ROW_LENGTH 25|647r21 658r21 672r21
+272N4*GL_UNPACK_SKIP_ROWS 25|648r21 659r21 673r21
+273N4*GL_UNPACK_SKIP_PIXELS 25|649r21 660r21 674r21
+274N4*GL_UNPACK_ALIGNMENT 25|650r21 661r21 675r21
+346N4*GL_TEXTURE_2D 25|823r17
+363N4*GL_LIGHT0 25|807r17 808r18 819r17
+373N4*GL_DIFFUSE 25|807r28
+375N4*GL_POSITION 25|808r29
+408N4*GL_MODELVIEW 25|438r21 518r21 826r21
+409N4*GL_PROJECTION 25|504r21
+424N4*GL_RGBA 25|666r20
+660I12*GLint{34|35I9} 25|243r16 244r15 636r19
+662I12*GLsizei{34|35I9} 25|516r25 516r38
+664M12*GLubyte{34|47M9} 24|154r11 155r11 156r11 157r11 25|486r59
+668M12*GLuint{34|43M9} 24|189r22
+670F12*GLfloat{float} 25|241r22 242r22 246r28 247r28 248r30 249r30 251r31
+. 252r31 266r39 346r32 347r34 795r65
+674F12*GLdouble{34|65F9} 25|302r26 336r27 337r27 447r19 448r19 452r19 453r19
+. 490r15 507r16 507r31 643r22 643r43 643r63
+695U14*glBegin 25|128s7 195s7 262s10
+723U14*glClear 25|437s7
+733U14*glClearColor 25|805s7
+761U14*glColor3d 25|96s13 99s13 102s13 105s13 108s13 111s13 114s13 117s13
+979U14*glDepthFunc 25|824s7
+1010U14*glDrawPixels 25|663s7
+1011i7 width{662I12} 25|664r10
+1012i7 height{662I12} 25|665r10
+1013m7 format{650M12} 25|666r10
+1014m7 c_type{650M12} 25|667r10
+1015m7 pixels{50|67M9} 25|668r10
+1027U14*glEnable 25|818s7 819s7 820s7 821s7 822s7 823s7
+1033U14*glEnd 25|172s7 233s7 283s10
+1092U14*glFlush 25|717s10
+1107U14*glFrontFace 25|817s7
+1140U14*glGetIntegerv 25|645s7 646s7 647s7 648s7 649s7 650s7
+1345U14*glLightfv 25|807s6 808s7
+1372U14*glLoadIdentity 25|505s7
+1485U14*glMatrixMode 25|438s7 504s7 518s7 826s7
+1506U14*glNormal3d 25|642s7
+1515U14*glNormal3f 25|131s7 138s7 145s7 152s7 159s7 166s7 197s7 203s7 209s7
+. 215s7 221s7 227s7 273s16 277s16
+1548U14*glOrtho 25|510s8
+1581U14*glPixelStorei 25|656s7 657s7 658s7 659s7 660s7 661s7 670s7 671s7
+. 672s7 673s7 674s7 675s7
+1611U14*glPopMatrix 25|341s16 362s13 459s13
+1629U14*glPushMatrix 25|335s16 355s13 443s13
+1659U14*glRasterPos3d 25|643s7
+1791U14*glRotated 25|336s16 337s16
+2105U14*glTranslated 25|446s16 451s16
+2150U14*glVertex3f 25|132s7 133s7 134s7 135s7 139s7 140s7 141s7 142s7 146s7
+. 147s7 148s7 149s7 153s7 154s7 155s7 156s7 160s7 161s7 162s7 163s7 167s7
+. 168s7 169s7 170s7 198s7 199s7 200s7 201s7 204s7 205s7 206s7 207s7 210s7
+. 211s7 212s7 213s7 216s7 217s7 218s7 219s7 222s7 223s7 224s7 225s7 228s7
+. 229s7 230s7 231s7 275s16 279s16
+2224U14*glViewport 25|516s7
+X 27 gl_glu_h.ads
+8K9*GL_glu_h 25|31w6 31r28 27|506e13
+258V13*gluNewQuadric{50|67M9} 25|802s18
+303U14*gluSphere 25|300s13
+304m7 qobj{50|67M9} 25|301r16
+305f7 radius{26|674F12} 25|302r16
+306i7 slices{26|660I12} 25|303r16
+307i7 stacks{26|660I12} 25|304r16
+X 28 gnat.ads
+34K9*GNAT 24|20r6 20r24 63r24 25|21r6 21r33 43r6 43r35 411r16 417r19 544r10
+. 724r7 1019r10 1075r16 1080r19 28|37e9
+X 29 g-os_lib.ads
+51K14*OS_Lib=51:36 25|21w11 21r38 724r12 1019r15
+X 30 g-string.ads
+38K14*Strings=38:37 24|20w11 20r29 63r29 25|411r21 417r24 544r15 1075r21
+. 1080r24
+X 31 g-traceb.ads
+76K14*Traceback 25|43r11 43r40 31|97e19
+X 32 g-trasym.ads
+37K24*Symbolic=37:58 25|43w21 43r50
+X 33 interfac.ads
+38K9*Interfaces 24|22r6 22r24 26r6 26r35 25|20r6 20r33 474r21 475r21 554r36
+. 33|178e15
+X 34 i-c.ads
+18K20*C 24|22w17 22r35 26r17 26r46 25|20r17 20r44 474r32 475r32 554r47 34|230e17
+35I9*int<integer> 24|161r31 25|70r27 474r34 486r34 496r36 496r45 566r55 576r23
+. 576r34 577r32 577r50 579r24 583r39 583r53 664r20 665r20 778r35 778r44
+43M9*unsigned 25|475r34 919r15
+44M9*unsigned_short
+47M9*unsigned_char
+65F9*double<long_float>
+X 35 i-cexten.ads
+37K22*Extensions 24|26w19 26r48 35|458e28
+98M9*Unsigned_8 24|196r40
+X 36 i-cstrin.ads
+36K22*Strings 25|20w19 20r46 554r49 36|106e25
+47P9*chars_ptr 25|531r18
+52p4*Null_Ptr{47P9} 25|702r69
+60V13*New_String{47P9} 25|552s19 554s57 702s35 736s25
+62U14*Free 25|625s7
+X 38 sdl_sdl_events_h.ads
+9K9*SDL_SDL_events_h 25|35w6 35r28 920r18 38|246e21
+27m4*SDL_KEYDOWN{24M12} 25|922r18
+28m4*SDL_KEYUP{24M12} 25|944r18
+30m4*SDL_MOUSEBUTTONDOWN{24M12} 25|954r18
+37m4*SDL_QUIT{24M12} 25|920r35
+41m4*SDL_VIDEORESIZE{24M12} 25|951r18
+83r7*keysym{40|17R9} 25|923r40 924r92 925r42 926r29 937r52 940r27 945r42
+. 947r27 949r90
+91m7*x{43|121M12} 25|964r43 968r42
+92m7*y{43|121M12} 25|960r43 972r44
+101m7*button{43|117M12} 25|976r33 978r36
+143i7*w{34|35I9} 25|952r45
+144i7*h{34|35I9} 25|952r69
+174R9*SDL_Event 25|905r21 38|205e14
+177m13*c_type{43|117M12} 25|919r29
+181r13*key{79R9} 25|923r36 924r88 925r38 926r25 937r48 940r23 945r38 947r23
+. 949r86
+183r13*motion{87R9} 25|960r36 964r36 968r35 972r37
+185r13*button{98R9} 25|976r26 978r29
+195r13*resize{141R9} 25|952r38 952r62
+225V13*SDL_PollEvent{34|35I9} 25|918s13
+X 39 sdl_sdl_h.ads
+7K9*SDL_SDL_h 25|32w6 32r28 500r10 690r10 723r7 752r13 782r10 39|34e14
+12N4*SDL_INIT_VIDEO 25|688r19
+19V13*SDL_Init{34|35I9} 25|688s10
+31U14*SDL_Quit 25|500s20 690s20 723s17 752s23 782s20
+X 40 sdl_sdl_keyboard_h.ads
+19m7*sym{41|12M12} 25|923r47 924r99 925r49 926r36 937r59 940r34 945r49 947r34
+. 949r97
+X 41 sdl_sdl_keysym_h.ads
+6K9*SDL_SDL_keysym_h 24|25w6 114r35 25|37w6 37r28 894r19 41|263e21
+12M12*SDLKey{34|43M9} 24|114r52 25|894r36 898r35
+14m4*SDLK_FIRST{12M12} 25|895r38
+20m4*SDLK_ESCAPE{12M12} 25|940r40
+199m4*SDLK_UP{12M12} 25|932r24
+200m4*SDLK_DOWN{12M12} 25|934r24
+201m4*SDLK_RIGHT{12M12} 25|930r24
+202m4*SDLK_LEFT{12M12} 25|928r24
+246m4*SDLK_LAST{12M12} 25|895r52
+X 43 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 25|33w6 33r28 43|230e21
+121M12*Uint16{48|15M12}
+156V13*SDL_putenv{34|35I9} 25|736s14
+X 44 sdl_sdl_timer_h.ads
+8K9*SDL_SDL_timer_h 25|36w6 36r28 44|43e20
+18U14*SDL_Delay 25|719s10
+X 45 sdl_sdl_ttf_h.ads
+12K9*SDL_SDL_ttf_h 25|38w6 38r28 45|256e18
+58V13*TTF_Init{34|35I9} 25|709s14
+61V13*TTF_OpenFont{50|67M9} 25|554s22
+165V13*TTF_RenderText_Solid(47|98R9) 25|559s9
+241U14*TTF_CloseFont 25|626s7
+244U14*TTF_Quit 25|722s7
+X 47 sdl_sdl_video_h.ads
+11K9*SDL_SDL_video_h 25|34w6 34r28 530r22 47|466e20
+19N4*SDL_HWSURFACE 25|475r59
+26N4*SDL_OPENGL 25|475r46
+28N4*SDL_RESIZABLE 25|475r75
+63R9*SDL_Color 25|529r15 47|68e14
+98R9*SDL_Surface 25|469r21 530r38 47|113e14
+102i7*h{34|35I9} 25|563r31
+103m7*pitch{43|121M12} 25|562r31
+104m7*pixels{50|67M9} 25|568r46
+127R9*SDL_VideoInfo 25|470r21 47|144e14
+168n7*SDL_GL_RED_SIZE{167E9} 25|764r34
+169n7*SDL_GL_GREEN_SIZE{167E9} 25|765r34
+170n7*SDL_GL_BLUE_SIZE{167E9} 25|766r34
+173n7*SDL_GL_DOUBLEBUFFER{167E9} 25|770r34
+174n7*SDL_GL_DEPTH_SIZE{167E9} 25|767r34
+181n7*SDL_GL_MULTISAMPLEBUFFERS{167E9} 25|768r34
+182n7*SDL_GL_MULTISAMPLESAMPLES{167E9} 25|769r34
+184n7*SDL_GL_SWAP_CONTROL{167E9} 25|763r34
+199V13*SDL_GetVideoInfo{50|67M9} 25|747s35
+212V13*SDL_SetVideoMode(98R9) 25|496s18 778s18
+324U14*SDL_FreeSurface 25|627s7
+417V13*SDL_GL_SetAttribute{34|35I9} 25|763s14 764s14 765s14 766s14 767s14
+. 768s14 769s14 770s14
+423U14*SDL_GL_SwapBuffers 25|718s10
+435U14*SDL_WM_SetCaption 25|702s7
+435p33 title{36|47P9} 25|702r26
+435p73 icon{36|47P9} 25|702r60
+X 48 stdint_h.ads
+15M12*uint16_t{34|44M9}
+X 50 system.ads
+37K9*System 25|26w6 26r45 52r18 528r21 747r17 750r19 50|155e11
+67M9*Address 25|52r25 528r28 747r24
+69m4*Null_Address{67M9} 25|750r26
+81V14*"="{boolean} 25|750r17
+X 60 s-memory.ads
+53V13*Alloc{50|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{50|67M9} 105i<c,__gnat_realloc>22
+X 64 s-os_lib.ads
+978U14*OS_Exit 25|724s19 1019s22
+X 70 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 72 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 78 s-string.ads
+45P9*String_Access(string) 24|63r37 99r29
+49U14*Free[22|20] 25|411s29 417s32 1075s29 1080s32
+X 82 s-taskin.ads
+109P9*Task_Id(107R9)
+X 87 s-traceb.ads
+94V13*C_Call_Chain{natural} 97i<c,system__traceback__c_call_chain>22
+X 88 s-trasym.ads
+94V13*Symbolic_Traceback{string} 25|1017s20
+

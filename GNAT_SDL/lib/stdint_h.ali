@@ -1,0 +1,70 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stdint_h%s		stdint_h.ads		c863573f NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 6|4r6 4r24 5r6
+X 4 i-c.ads
+18K20*C 230e17 6|4w17 4r35 5r17
+35I9*int<integer> 6|17r23 33r29 49r28
+36I9*short<short_integer> 6|13r23 29r29 45r28
+40I9*signed_char<short_short_integer> 6|9r22 25r28 41r27
+43M9*unsigned 6|19r24 35r30 51r29
+44M9*unsigned_short 6|15r24 31r30 47r29
+47M9*unsigned_char 6|11r23 27r29 43r28
+X 5 i-cexten.ads
+37K22*Extensions 458e28 6|5w19 23r24 39r30 55r29 59r25
+64M9*unsigned_long_long 6|23r35 39r41 55r40 59r36
+X 6 stdint_h.ads
+7K9*stdint_h 61l5 61e13
+9I12*int8_t{4|40I9}
+11M12*uint8_t{4|47M9}
+13I12*int16_t{4|36I9}
+15M12*uint16_t{4|44M9}
+17I12*int32_t{4|35I9}
+19M12*uint32_t{4|43M9}
+21I12*int64_t{long_long_integer}
+23M12*uint64_t{5|64M9}
+25I12*int_least8_t{4|40I9}
+27M12*uint_least8_t{4|47M9}
+29I12*int_least16_t{4|36I9}
+31M12*uint_least16_t{4|44M9}
+33I12*int_least32_t{4|35I9}
+35M12*uint_least32_t{4|43M9}
+37I12*int_least64_t{long_long_integer}
+39M12*uint_least64_t{5|64M9}
+41I12*int_fast8_t{4|40I9}
+43M12*uint_fast8_t{4|47M9}
+45I12*int_fast16_t{4|36I9}
+47M12*uint_fast16_t{4|44M9}
+49I12*int_fast32_t{4|35I9}
+51M12*uint_fast32_t{4|43M9}
+53I12*int_fast64_t{long_long_integer}
+55M12*uint_fast64_t{5|64M9}
+57I12*intmax_t{long_long_integer}
+59M12*uintmax_t{5|64M9}
+

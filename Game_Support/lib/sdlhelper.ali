@@ -1,0 +1,207 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U sdlhelper%b		sdlhelper.adb		eecc232a NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W gl_gl_h%s		gl_gl_h.ads		gl_gl_h.ali
+W gl_glu_h%s		gl_glu_h.ads		gl_glu_h.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_h%s		sdl_sdl_h.ads		sdl_sdl_h.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W sdl_sdl_ttf_h%s	sdl_sdl_ttf_h.ads	sdl_sdl_ttf_h.ali
+W sdl_sdl_video_h%s	sdl_sdl_video_h.ads	sdl_sdl_video_h.ali
+W system%s		system.ads		system.ali
+
+U sdlhelper%s		sdlhelper.ads		70589a18 EE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D gl_gl_h.ads		20160123113440 788c824f gl_gl_h%s
+D gl_glu_h.ads		20160123113440 d4f6dfb7 gl_glu_h%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D sdl_sdl_h.ads		20160123113440 c8ed8b58 sdl_sdl_h%s
+D sdl_sdl_rwops_h.ads	20160123113440 11d62089 sdl_sdl_rwops_h%s
+D sdl_sdl_stdinc_h.ads	20160123113440 9bbd0579 sdl_sdl_stdinc_h%s
+D sdl_sdl_ttf_h.ads	20160123113440 fe8bf8a9 sdl_sdl_ttf_h%s
+D sdl_sdl_version_h.ads	20160123113440 83c9a202 sdl_sdl_version_h%s
+D sdl_sdl_video_h.ads	20160123113440 ec23dadb sdl_sdl_video_h%s
+D sdlhelper.ads		20160124231346 70589a18 sdlhelper%s
+D sdlhelper.adb		20160124235141 3660e588 sdlhelper%b
+D stdint_h.ads		20160123113440 2f7ce0ee stdint_h%s
+D stdio_h.ads		20160123113440 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+D umingw_h.ads		20160123113440 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123113440 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123113440 28c0a1fd vadefs_h%s
+X 1 ada.ads
+16K9*Ada 19e8 22|3r6 3r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 22|3w10 3r27
+263U14*Put_Line 22|29s10 65s13 95s10
+X 8 gl_gl_h.ads
+7K9*GL_gl_h 2337e12 22|8w6 8r19
+19N4*GL_LESS 22|190r20
+136N4*GL_CW 22|183r20
+175N4*GL_LIGHTING 22|184r17
+182N4*GL_COLOR_MATERIAL 22|187r17
+191N4*GL_DEPTH_TEST 22|186r17
+206N4*GL_NORMALIZE 22|188r17
+346N4*GL_TEXTURE_2D 22|189r17
+363N4*GL_LIGHT0 22|173r18 174r18 185r17
+373N4*GL_DIFFUSE 22|173r29
+375N4*GL_POSITION 22|174r29
+408N4*GL_MODELVIEW 22|123r21 141r21 192r21
+409N4*GL_PROJECTION 22|112r21 134r21
+662I12*GLsizei{11|35I9} 22|121r25 121r49 139r25 139r49
+670F12*GLfloat{float} 22|161r65
+674F12*GLdouble{11|65F9} 22|110r16 110r28 110r54 116r65 116r90 118r65 118r90
+. 132r16 132r28 132r54
+733U14*glClearColor 22|171s7
+979U14*glDepthFunc 22|190s7
+1027U14*glEnable 22|184s7 185s7 186s7 187s7 188s7 189s7
+1107U14*glFrontFace 22|183s7
+1345U14*glLightfv 22|173s7 174s7
+1372U14*glLoadIdentity 22|113s7 135s7
+1485U14*glMatrixMode 22|112s7 123s7 134s7 141s7 192s7
+1548U14*glOrtho 22|116s10 118s10
+2224U14*glViewport 22|121s7 139s7
+X 9 gl_glu_h.ads
+8K9*GL_glu_h 506e13 22|9w6 9r20
+162U14*gluPerspective 22|137s7
+X 10 interfac.ads
+38K9*Interfaces 178e15 22|2r6 2r24 5r6 5r32 43r26 44r26
+X 11 i-c.ads
+18K20*C 230e17 22|2w17 2r35 5r17 5r43 43r37 44r37
+35I9*int<integer> 22|18r27 43r39 92r36 92r56
+43M9*unsigned 22|44r39
+65F9*double<long_float>
+X 13 i-cstrin.ads
+36K22*Strings 106e25 22|5w19 5r45
+47P9*chars_ptr
+52p4*Null_Ptr{47P9} 22|209r64
+60V13*New_String{47P9} 22|50s43 209s35
+X 15 sdl_sdl_h.ads
+7K9*SDL_SDL_h 34e14 22|1w6 1r21 30r10 66r13 96r10
+12N4*SDL_INIT_VIDEO 22|28r20
+19V13*SDL_Init{11|35I9} 22|28s10
+31U14*SDL_Quit 22|30s20 66s23 96s20
+X 17 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 230e21 22|4w6 50r14
+156V13*SDL_putenv{11|35I9} 22|50s31
+X 18 sdl_sdl_ttf_h.ads
+12K9*SDL_SDL_ttf_h 256e18 22|10w6 10r25
+58V13*TTF_Init{11|35I9} 22|216s14
+X 20 sdl_sdl_video_h.ads
+11K9*SDL_SDL_video_h 466e20 22|7w6 7r27
+19N4*SDL_HWSURFACE 22|44r64
+26N4*SDL_OPENGL 22|44r51
+28N4*SDL_RESIZABLE 22|44r80
+98R9*SDL_Surface 113e14 22|42r24
+127R9*SDL_VideoInfo 144e14 22|41r24
+168n7*SDL_GL_RED_SIZE{167E9} 22|78r35
+169n7*SDL_GL_GREEN_SIZE{167E9} 22|79r35
+170n7*SDL_GL_BLUE_SIZE{167E9} 22|80r35
+173n7*SDL_GL_DOUBLEBUFFER{167E9} 22|84r35
+174n7*SDL_GL_DEPTH_SIZE{167E9} 22|81r35
+181n7*SDL_GL_MULTISAMPLEBUFFERS{167E9} 22|82r35
+182n7*SDL_GL_MULTISAMPLESAMPLES{167E9} 22|83r35
+184n7*SDL_GL_SWAP_CONTROL{167E9} 22|77r35
+199V13*SDL_GetVideoInfo{25|67M9} 22|61s35
+212V13*SDL_SetVideoMode(98R9) 22|92s18
+417V13*SDL_GL_SetAttribute{11|35I9} 22|77s14 78s14 79s14 80s14 81s14 82s14
+. 83s14 84s14
+435U14*SDL_WM_SetCaption 22|209s7
+435p33 title{13|47P9} 22|209r26
+435p73 icon{13|47P9} 22|209r55
+X 21 sdlhelper.ads
+1K9*SDLHelper 11l5 11e14 22|12b14 220l8 220t17
+4X4*Display_Error 22|21r16
+6U14*Init 6>20 7>20 8>20 22|201b14 218l8 218t12
+6i20 Window_Width{integer} 22|201b20 207r22 214r18
+7i20 Window_Height{integer} 22|202b20 207r36 214r32
+8a20 Title{string} 22|203b20 209r47
+X 22 sdlhelper.adb
+18U14 Check 18b14 18>21 23l8 23t13 50s7 77s7 78s7 79s7 80s7 81s7 82s7 83s7
+. 84s7 216s7
+18i21 Ret{11|35I9} 20r10
+25U14 Init_SDL 25b14 32l8 32t16 205s7
+40U14 Set_SDL_Video 40b14 40>29 40>53 99l8 99t21 207s7
+40i29 Window_Width{integer} 92r41
+40i53 Window_Height{integer} 92r61
+41p7 vidInfo(20|127R9) 62m30 62r30
+42p7 surface(20|98R9) 92m7 94r10
+43i7 bpp{11|35I9} 92r77
+44m7 flags{11|43M9} 92r82
+61m10 ptr{25|67M9} 62m14 62r14 64r13
+106U14 Set_Orthographic_Projection 106b14 106>43 107>43 108>43 109>43 125l8
+. 125t35 153s7
+106i43 Screen_Width{integer} 110r38 115r10 121r34
+107i43 Screen_Height{integer} 110r64 115r25 121r58
+108f43 Near_Clipping{float} 116r74 118r74
+109f43 Far_Clipping{float} 116r99 118r99
+110f8 Ratio{8|674F12} 116r28 116r43 118r43 118r58
+131U14 Set_Perspective_Projection 131b14 131>42 131>67 143l8 143t34
+131i42 Screen_Width{integer} 132r38 139r34
+131i67 Screen_Height{integer} 132r64 139r58
+132f8 Ratio{8|674F12} 137r29
+151U14 Set_Default_Projection 151b14 151>38 151>63 154l8 154t30 169s7
+151i38 Screen_Width{integer} 153r35
+151i63 Screen_Height{integer} 153r49
+160U14 Set_OpenGL 160b14 160>26 160>51 197l8 197t18 214s7
+160i26 Screen_Width{integer} 169r31
+160i51 Screen_Height{integer} 169r45
+161A12 GLFloat_Array(8|670F12)<integer> 162r31 164r32
+162a7 light_diffuse{161A12} 173m41 173r41
+164a7 light_position{161A12} 174m42 174r42
+X 25 system.ads
+37K9*System 22|6w6 6r18 61r17 64r19 25|155e11
+67M9*Address 22|61r24
+69m4*Null_Address{67M9} 22|64r26
+81V14*"="{boolean} 22|64r17
+

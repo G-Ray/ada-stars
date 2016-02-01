@@ -1,0 +1,90 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_mutex_h%s	sdl_sdl_mutex_h.ads	1dff9108 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_mutex_h.ads	20160123123442 cf44c16b sdl_sdl_mutex_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35
+35I9*int<integer> 7|23r56 26r56 42r55 45r58 48r92 51r55 65r59 68r62 71r79
+. 77r44
+43M9*unsigned
+X 7 sdl_sdl_mutex_h.ads
+8K9*SDL_SDL_mutex_h 80l5 80e20
+11N4*SDL_MUTEX_TIMEDOUT
+20V13*SDL_CreateMutex{10|67M9} 21b<c,SDL_CreateMutex>22
+23V13*SDL_mutexP{4|35I9} 23>25 24b<c,SDL_mutexP>22
+23m25 mutex{10|67M9}
+26V13*SDL_mutexV{4|35I9} 26>25 27b<c,SDL_mutexV>22
+26m25 mutex{10|67M9}
+29U14*SDL_DestroyMutex 29>32 30b<c,SDL_DestroyMutex>22
+29m32 mutex{10|67M9}
+36V13*SDL_CreateSemaphore{10|67M9} 36>34 37b<c,SDL_CreateSemaphore>22
+36m34 initial_value{8|125M12}
+39U14*SDL_DestroySemaphore 39>36 40b<c,SDL_DestroySemaphore>22
+39m36 sem{10|67M9}
+42V13*SDL_SemWait{4|35I9} 42>26 43b<c,SDL_SemWait>22
+42m26 sem{10|67M9}
+45V13*SDL_SemTryWait{4|35I9} 45>29 46b<c,SDL_SemTryWait>22
+45m29 sem{10|67M9}
+48V13*SDL_SemWaitTimeout{4|35I9} 48>33 48>55 49b<c,SDL_SemWaitTimeout>22
+48m33 sem{10|67M9}
+48m55 ms{8|125M12}
+51V13*SDL_SemPost{4|35I9} 51>26 52b<c,SDL_SemPost>22
+51m26 sem{10|67M9}
+54V13*SDL_SemValue{8|125M12} 54>27 55b<c,SDL_SemValue>22
+54m27 sem{10|67M9}
+59V13*SDL_CreateCond{10|67M9} 60b<c,SDL_CreateCond>22
+62U14*SDL_DestroyCond 62>31 63b<c,SDL_DestroyCond>22
+62m31 cond{10|67M9}
+65V13*SDL_CondSignal{4|35I9} 65>29 66b<c,SDL_CondSignal>22
+65m29 cond{10|67M9}
+68V13*SDL_CondBroadcast{4|35I9} 68>32 69b<c,SDL_CondBroadcast>22
+68m32 cond{10|67M9}
+71V13*SDL_CondWait{4|35I9} 71>27 71>50 72b<c,SDL_CondWait>22
+71m27 cond{10|67M9}
+71m50 mut{10|67M9}
+74V13*SDL_CondWaitTimeout{4|35I9} 75>7 76>7 77>7 78b<c,SDL_CondWaitTimeout>22
+75m7 cond{10|67M9}
+76m7 mutex{10|67M9}
+77m7 ms{8|125M12}
+X 8 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|6w6 36r50 48r60 54r56 77r12 8|230e21
+125M12*Uint32{9|19M12} 7|36r67 48r77 54r73 77r29
+X 9 stdint_h.ads
+19M12*uint32_t{4|43M9}
+X 10 system.ads
+37K9*System 7|5w6 20r36 23r33 26r33 29r40 36r82 39r42 42r32 45r35 48r39 51r32
+. 54r33 59r35 62r38 65r36 68r39 71r34 71r56 75r14 76r15 10|155e11
+67M9*Address 7|20r43 23r40 26r40 29r47 36r89 39r49 42r39 45r42 48r46 51r39
+. 54r40 59r42 62r45 65r43 68r46 71r41 71r63 75r21 76r22
+

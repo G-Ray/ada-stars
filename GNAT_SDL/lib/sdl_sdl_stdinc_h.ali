@@ -1,0 +1,175 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_stdinc_h%b	sdl_sdl_stdinc_h.adb	feef4c53 NE OO PK
+W system%s		system.ads		system.ali
+W system.os_constants%s	s-oscons.ads		s-oscons.ali
+
+U sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.ads	ec45cbd2 EE NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W stdint_h%s		stdint_h.ads		stdint_h.ali
+W system%s		system.ads		system.ali
+W umingw_h%s		umingw_h.ads		umingw_h.ali
+W vadefs_h%s		vadefs_h.ads		vadefs_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D sdl_sdl_stdinc_h.adb	20160123123442 2f95a222 sdl_sdl_stdinc_h%b
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-oscons.ads		20150506142910 4ac7eb08 system.os_constants%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|28r6 28r24 30r6 153r32 153r71 156r36 159r13 160r13
+. 165r13 166r13 170r34 170r73 175r16 176r27 181r16 182r27 186r16 192r14 194r13
+. 199r14 201r13 209r38 209r81 224r16 225r18 226r15 227r45 8|30r36 34r43 41r43
+X 4 i-c.ads
+18K20*C 230e17 7|28w17 28r35 30r17 153r43 153r82 156r47 159r24 160r24 165r24
+. 166r24 170r45 170r84 175r27 176r38 181r27 182r38 186r27 192r25 194r24 199r25
+. 201r24 209r49 209r92 224r27 225r29 226r26 227r56 8|30r47 34r54 41r54
+35I9*int<integer> 7|131r54 133r54 135r55 137r55 139r55 141r55 143r55 145r55
+. 151r55 156r75 176r15 182r15 188r14 195r16 202r37 212r55 8|30r75 34r82 41r82
+36I9*short<short_integer>
+40I9*signed_char<short_short_integer>
+43M9*unsigned
+44M9*unsigned_short
+47M9*unsigned_char
+X 5 i-cexten.ads
+64M9*unsigned_long_long
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|30w19 153r45 153r84 156r49 159r26 160r26 165r26 166r26
+. 170r47 170r86 175r29 176r40 181r29 182r40 186r29 192r27 194r26 199r27 201r26
+. 209r51 209r94 224r29 225r31 226r28 227r58 8|30r49 34r56 41r56
+47P9*chars_ptr 7|153r53 153r92 156r57 159r34 160r34 165r34 166r34 170r55
+. 170r94 175r37 176r48 181r37 182r48 186r37 192r35 194r34 199r35 201r34 209r59
+. 209r102 224r37 225r39 226r36 227r66 8|30r57 34r64 41r64
+X 7 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 230l5 230e21 8|29b14 48t4
+110E9*SDL_bool 112e16 113r26
+111n7*SDL_FALSE{110E9}
+112n7*SDL_TRUE{110E9}
+115I12*Sint8{9|9I12}
+117M12*Uint8{9|11M12}
+119I12*Sint16{9|13I12}
+121M12*Uint16{9|15M12}
+123I12*Sint32{9|17I12}
+125M12*Uint32{9|19M12}
+127I12*Sint64{9|21I12} 174r15
+129M12*Uint64{9|23M12} 180r15 188r26
+131A9*SDL_dummy_uint8(4|35I9)<integer>
+133A9*SDL_dummy_sint8(4|35I9)<integer>
+135A9*SDL_dummy_uint16(4|35I9)<integer>
+137A9*SDL_dummy_sint16(4|35I9)<integer>
+139A9*SDL_dummy_uint32(4|35I9)<integer>
+141A9*SDL_dummy_sint32(4|35I9)<integer>
+143A9*SDL_dummy_uint64(4|35I9)<integer>
+145A9*SDL_dummy_sint64(4|35I9)<integer>
+147E9*SDL_DUMMY_ENUM 148e24 149r26
+148n7*DUMMY_ENUM_VALUE{147E9}
+151A9*SDL_dummy_enum_A(4|35I9)<integer>
+153V13*SDL_getenv{6|47P9} 153>25 154b<c,SDL_getenv>22
+153p25 name{6|47P9}
+156V13*SDL_putenv{4|35I9} 156>25 8|30b13 47l8 47t18
+156p25 variable{6|47P9} 8|30b25 37r29 44r29
+158V13*SDL_strlcpy{15|13M12} 159>7 160>7 161>7 162b<c,SDL_strlcpy>22
+159p7 dst{6|47P9}
+160p7 src{6|47P9}
+161m7 maxlen{15|13M12}
+164V13*SDL_strlcat{15|13M12} 165>7 166>7 167>7 168b<c,SDL_strlcat>22
+165p7 dst{6|47P9}
+166p7 src{6|47P9}
+167m7 maxlen{15|13M12}
+170V13*SDL_strdup{6|47P9} 170>25 171b<c,SDL_strdup>22
+170p25 string{6|47P9}
+173V13*SDL_lltoa{6|47P9} 174>7 175>7 176>7 177b<c,SDL_lltoa>22
+174i7 value{127I12}
+175p7 string{6|47P9}
+176i7 radix{4|35I9}
+179V13*SDL_ulltoa{6|47P9} 180>7 181>7 182>7 183b<c,SDL_ulltoa>22
+180m7 value{129M12}
+181p7 string{6|47P9}
+182i7 radix{4|35I9}
+185V13*SDL_strtoull{129M12} 186>7 187>7 188>7 189b<c,SDL_strtoull>22
+186p7 string{6|47P9}
+187m7 endp{10|67M9}
+188i7 base{4|35I9}
+191V13*SDL_snprintf{4|35I9} 192>7 193>7 194>7 196b<c,SDL_snprintf>22
+192p7 text{6|47P9}
+193m7 maxlen{15|13M12}
+194p7 fmt{6|47P9}
+198V13*SDL_vsnprintf{4|35I9} 199>7 200>7 201>7 202>7 203b<c,SDL_vsnprintf>22
+199p7 text{6|47P9}
+200m7 maxlen{15|13M12}
+201p7 fmt{6|47P9}
+202m7 ap{16|11M12}
+207M9*SDL_iconv_t<10|67M9> 209r120 212r35 216r12
+209V13*SDL_iconv_open{207M9} 209>29 209>70 210b<c,SDL_iconv_open>22
+209p29 tocode{6|47P9}
+209p70 fromcode{6|47P9}
+212V13*SDL_iconv_close{4|35I9} 212>30 213b<c,SDL_iconv_close>22
+212m30 cd{207M9}
+215V13*SDL_iconv{15|13M12} 216>7 217>7 218^7 219>7 220^7 221b<c,SDL_iconv>22
+216m7 cd{207M9}
+217m7 inbuf{10|67M9}
+218p7 inbytesleft(15|13M12)
+219m7 outbuf{10|67M9}
+220p7 outbytesleft(15|13M12)
+223V13*SDL_iconv_string{6|47P9} 224>7 225>7 226>7 227>7 228b<c,SDL_iconv_string>22
+224p7 tocode{6|47P9}
+225p7 fromcode{6|47P9}
+226p7 inbuf{6|47P9}
+227m7 inbytesleft{15|13M12}
+X 8 sdl_sdl_stdinc_h.adb
+34V22*Internal{4|35I9} 34>32 35b<c,SDL_putenv>31 37s20
+34p32 variable{6|47P9}
+41V22*Internal{4|35I9} 41>32 42b<c,putenv>31 44s20
+41p32 variable{6|47P9}
+X 9 stdint_h.ads
+7K9*stdint_h 7|29w6 115r21 117r21 119r22 121r22 123r22 125r22 127r22 129r22
+. 9|61e13
+9I12*int8_t{4|40I9} 7|115r30
+11M12*uint8_t{4|47M9} 7|117r30
+13I12*int16_t{4|36I9} 7|119r31
+15M12*uint16_t{4|44M9} 7|121r31
+17I12*int32_t{4|35I9} 7|123r31
+19M12*uint32_t{4|43M9} 7|125r31
+21I12*int64_t{long_long_integer} 7|127r31
+23M12*uint64_t{5|64M9} 7|129r31
+X 10 system.ads
+37K9*System 7|32w6 187r14 207r28 217r15 219r16 8|27r6 27r31 10|155e11
+67M9*Address 7|187r21 207r35 217r22 219r23
+X 12 s-oscons.ads
+44K16*OS_Constants 8|27w13 27r38 12|366e24
+52n21*Windows{52E9} 8|32r22
+53e4*Target_OS{52E9} 8|32r10
+X 15 umingw_h.ads
+6K9*umingw_h 7|31w6 161r16 161r40 167r16 167r40 193r16 200r16 218r28 220r29
+. 220r53 227r21 15|35e13
+13M12*size_t{4|43M9} 7|161r25 161r49 167r25 167r49 193r25 200r25 218r37 220r38
+. 220r62 227r30
+X 16 vadefs_h.ads
+7K9*vadefs_h 7|33w6 202r12 16|13e13
+9M12*uu_gnuc_va_list{10|67M9}
+11M12*va_list{9M12} 7|202r21
+

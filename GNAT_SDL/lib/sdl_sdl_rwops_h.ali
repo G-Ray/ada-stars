@@ -1,0 +1,165 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sdl_sdl_rwops_h%s	sdl_sdl_rwops_h.ads	b37990fb NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+Y stdio_h%s		stdio_h.ads		stdio_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_rwops_h.ads	20160123123442 11d62089 sdl_sdl_rwops_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D stdio_h.ads		20160123123442 4409edce stdio_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D umingw_off_t_h.ads	20160123123442 ea895f27 umingw_off_t_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24 8r6 91r36 91r75
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 8r17 91r47 91r86
+35I9*int<integer> 7|31r22 32r22 36r24 42r27 73r20 74r20 74r32 78r20 79r20
+. 79r32 83r20 84r20 84r32 85r64 94r60 97r57 100r62 127r92 130r92 133r92 136r92
+. 139r92 142r92
+43M9*unsigned 7|56r26
+44M9*unsigned_short
+47M9*unsigned_char
+X 5 i-cexten.ads
+64M9*unsigned_long_long
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|8w19 91r49 91r88
+47P9*chars_ptr 7|91r57 91r96
+X 7 sdl_sdl_rwops_h.ads
+10K9*SDL_SDL_rwops_h 145l5 145e20
+13N4*RW_SEEK_SET
+14N4*RW_SEEK_CUR
+15N4*RW_SEEK_END
+27R9*anon_10 56c9 56d18 67e14 68r39 69r28 87r16
+28R9*anon_11 35c9 39e14 40r39 59r31
+29R9*anon_12 33e14 34r39 38r24
+30m7*data{11|67M9}
+31i7*size{4|35I9}
+32i7*left{4|35I9}
+35R9*anon_11
+36i7*append{4|35I9}
+37m7*h{11|67M9}
+38r7*buffer{29R9}
+41R9*anon_13 44e14 45r39 61r29
+42i7*autoclose{4|35I9}
+43m7*fp{11|67M9}
+46R9*anon_14 50e14 51r39 63r27
+47p7*base(8|117M12)
+48p7*here(8|117M12)
+49p7*stop(8|117M12)
+52R9*anon_15 54e14 55r39 65r31
+53m7*data1{11|67M9}
+56R9*anon_10
+56m18*discr{4|43M9} 57r12
+59r13*win32io{35R9}
+61r13*stdio{41R9}
+63r13*mem{46R9}
+65r13*unknown{52R9}
+70R9*SDL_RWops 88e14
+71p7*seek(4|35I9)
+72p13 arg1(70R9)
+73i13 arg2{4|35I9}
+74i13 arg3{4|35I9}
+75p7*read(4|35I9)
+76p13 arg1(70R9)
+77m13 arg2{11|67M9}
+78i13 arg3{4|35I9}
+79i13 arg4{4|35I9}
+80p7*write(4|35I9)
+81p13 arg1(70R9)
+82m13 arg2{11|67M9}
+83i13 arg3{4|35I9}
+84i13 arg4{4|35I9}
+85p7*close(4|35I9)
+85p32 arg1(70R9)
+86m7*c_type{8|125M12}
+87r7*hidden{56R9}
+91V13*SDL_RWFromFile(70R9) 91>29 91>68 92b<c,SDL_RWFromFile>22
+91p29 file{6|47P9}
+91p68 mode{6|47P9}
+94V13*SDL_RWFromFP(70R9) 94>27 94>48 95b<c,SDL_RWFromFP>22
+94m27 fp{11|67M9}
+94i48 autoclose{4|35I9}
+97V13*SDL_RWFromMem(70R9) 97>28 97>50 98b<c,SDL_RWFromMem>22
+97m28 mem{11|67M9}
+97i50 size{4|35I9}
+100V13*SDL_RWFromConstMem(70R9) 100>33 100>55 101b<c,SDL_RWFromConstMem>22
+100m33 mem{11|67M9}
+100i55 size{4|35I9}
+103V13*SDL_AllocRW(70R9) 104b<c,SDL_AllocRW>22
+106U14*SDL_FreeRW 106^26 107b<c,SDL_FreeRW>22
+106p26 area(70R9)
+109V13*SDL_ReadLE16{8|121M12} 109^27 110b<c,SDL_ReadLE16>22
+109p27 src(70R9)
+112V13*SDL_ReadBE16{8|121M12} 112^27 113b<c,SDL_ReadBE16>22
+112p27 src(70R9)
+115V13*SDL_ReadLE32{8|125M12} 115^27 116b<c,SDL_ReadLE32>22
+115p27 src(70R9)
+118V13*SDL_ReadBE32{8|125M12} 118^27 119b<c,SDL_ReadBE32>22
+118p27 src(70R9)
+121V13*SDL_ReadLE64{8|129M12} 121^27 122b<c,SDL_ReadLE64>22
+121p27 src(70R9)
+124V13*SDL_ReadBE64{8|129M12} 124^27 125b<c,SDL_ReadBE64>22
+124p27 src(70R9)
+127V13*SDL_WriteLE16{4|35I9} 127^28 127>52 128b<c,SDL_WriteLE16>22
+127p28 dst(70R9)
+127m52 value{8|121M12}
+130V13*SDL_WriteBE16{4|35I9} 130^28 130>52 131b<c,SDL_WriteBE16>22
+130p28 dst(70R9)
+130m52 value{8|121M12}
+133V13*SDL_WriteLE32{4|35I9} 133^28 133>52 134b<c,SDL_WriteLE32>22
+133p28 dst(70R9)
+133m52 value{8|125M12}
+136V13*SDL_WriteBE32{4|35I9} 136^28 136>52 137b<c,SDL_WriteBE32>22
+136p28 dst(70R9)
+136m52 value{8|125M12}
+139V13*SDL_WriteLE64{4|35I9} 139^28 139>52 140b<c,SDL_WriteLE64>22
+139p28 dst(70R9)
+139m52 value{8|129M12}
+142V13*SDL_WriteBE64{4|35I9} 142^28 142>52 143b<c,SDL_WriteBE64>22
+142p28 dst(70R9)
+142m52 value{8|129M12}
+X 8 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|7w6 47r21 48r21 49r21 86r24 109r58 112r58 115r58
+. 118r58 121r58 124r58 127r60 130r60 133r60 136r60 139r60 142r60 8|230e21
+117M12*Uint8{9|11M12} 7|47r38 48r38 49r38
+121M12*Uint16{9|15M12} 7|109r75 112r75 127r77 130r77
+125M12*Uint32{9|19M12} 7|86r41 115r75 118r75 133r77 136r77
+129M12*Uint64{9|23M12} 7|121r75 124r75 139r77 142r77
+X 9 stdint_h.ads
+11M12*uint8_t{4|47M9}
+15M12*uint16_t{4|44M9}
+23M12*uint64_t{5|64M9}
+X 11 system.ads
+37K9*System 7|5w6 30r14 37r11 43r12 53r15 77r20 82r20 94r32 97r34 100r39
+. 11|155e11
+67M9*Address 7|30r21 37r18 43r19 53r22 77r27 82r27 94r39 97r41 100r46
+

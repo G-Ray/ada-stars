@@ -1,0 +1,261 @@
+V "GNAT Lib v2015"
+A -gnatA
+A -gnat12
+A -g
+A -gnatQ
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U display.basic%b	display-basic.adb	0dab328c NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W display%s		display.ads		display.ali
+W display.kernel%s	display-kernel.adb	display-kernel.ali
+
+U display.basic%s	display-basic.ads	e612d9c3 BN EE NE OO PK
+W display%s		display.ads		display.ali
+W sdl_sdl_keysym_h%s	sdl_sdl_keysym_h.ads	sdl_sdl_keysym_h.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-contai.ads		20150506105327 61e5e089 ada.containers%s
+D a-cdlili.ads		20150506105327 59d7f011 ada.containers.doubly_linked_lists%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-finali.ads		20150506105331 69f99942 ada.finalization%s
+D a-iteint.ads		20150506105329 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20150506105330 f15a5ed1 ada.unchecked_deallocation%s
+D display.ads		20160124103935 a63a4646 display%s
+D display-basic.ads	20160124103917 791a11a8 display.basic%s
+D display-basic.adb	20160123113429 ad5f5d6e display.basic%b
+D display-kernel.ads	20160124103425 d9ee7e4a display.kernel%s
+D gl_gl_h.ads		20160123113440 788c824f gl_gl_h%s
+D gnat.ads		20150506105333 fd2ad2f1 gnat%s
+D g-string.ads		20150506105331 c6abc540 gnat.strings%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D sdl_sdl_keysym_h.ads	20160123113440 39328e2d sdl_sdl_keysym_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-atacco.ads		20150506105331 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-finmas.ads		20150506105330 814daec4 system.finalization_masters%s
+D s-finroo.ads		20150506105331 4ff27390 system.finalization_root%s
+D s-linux.ads		20150506105328 2fda6ad1 system.linux%s
+D s-multip.ads		20150506105326 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20150506142910 4ac7eb08 system.os_constants%s
+D s-osinte.ads		20150506105327 e9e28195 system.os_interface%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-secsta.ads		20150506105331 86a2856d system.secondary_stack%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150506105330 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20150506105328 b16154c2 system.storage_pools%s
+D s-stposu.ads		20150506105327 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20150506105327 aedef97e system.stream_attributes%s
+D s-string.ads		20150506105330 8fe54fb7 system.strings%s
+D s-tasinf.ads		20150506105329 2b3f8252 system.task_info%s
+D s-taspri.ads		20150506105328 e3ab4429 system.task_primitives%s
+D s-taskin.ads		20150506105332 339749f0 system.tasking%s
+D s-taprob.ads		20150506105327 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150506105332 b641f948 system.tasking.protected_objects.entries%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+X 6 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[3|67]>
+X 11 display.ads
+20K9*Display 81e12 12|21r9 188r5 13|20r6 20r27 22r14 292r30 337r14 417r14
+. 420r5
+22E9*Color_Type 22e78 12|44r58 47r49 58r16 75r16 101r16 109r22 134r15 13|64r58
+. 73r49 98r16 123r16 147r16 228r22 289r15
+24I9*Key_Type<integer> 12|146r38 156r33 160r31 163r35 166r35 169r33 172r31
+. 13|328r38 329r13 343r33 355r6 362r35 369r35 376r33 383r31 390r31
+26E9*Special_Key 48e18 12|160r48 13|355r34 355r51 390r48 393r17
+27n7*KEY_NONE{26E9} 13|395r17
+54R9*Mouse_Position 57e14 12|175r45 13|403r45 404r11
+75N4 Max_Shapes 12|184r44
+X 12 display-basic.ads
+21K17*Basic 11|20k9 12|184E9 188l13 188e18 13|22b22 420l13 420t18
+23I9*Shape_Id<integer> 27r29 30r36 34r28 37r36 41r28 44r40 47r32 50r37 59r14
+. 62r41 66r33 76r14 80r25 84r25 88r33 93r33 102r14 110r14 114r43 118r43 122r35
+. 126r35 135r14 139r35 143r27 184c9 186r29 13|28r36 37r28 46r36 55r28 64r40
+. 73r32 82r37 99r14 111r14 124r14 137r14 148r14 162r14 169r41 178r33 187r25
+. 196r25 205r33 214r33 229r14 242r14 249r43 258r43 267r35 276r35 290r14 302r14
+. 309r35 319r27
+27i4*Null_Shape_Id{23I9} 186c4 13|84r19 86r19
+30U14*Set_X 30=21 30>46 13|28b14 31l8 31t13
+30i21 Shape{23I9} 13|28b21 30r55
+30f46 Value{float} 31r16 13|28b46 30r63
+34V13*Get_X{float} 34>20 13|37b13 40l8 40t13
+34i20 Shape{23I9} 13|37b20 39r46
+37U14*Set_Y 37=21 37>46 13|46b14 49l8 49t13
+37i21 Shape{23I9} 13|46b21 48r55
+37f46 Value{float} 38r16 13|46b46 48r63
+41V13*Get_Y{float} 41>20 13|55b13 58l8 58t13
+41i20 Shape{23I9} 13|55b20 57r46
+44U14*Set_Color 44=25 44>50 13|64b14 67l8 67t17
+44i25 Shape{23I9} 13|64b25 66r59
+44e50 Color{11|22E9} 13|64b50 66r67
+47V13*Get_Color{11|22E9} 47>24 13|73b13 76l8 76t17
+47i24 Shape{23I9} 13|73b24 75r46
+50U14*Delete 50=22 13|82b14 88l8 88t14
+50i22 Shape{23I9} 13|82b22 84r10 85r59 86m10
+54V13*New_Circle{23I9} 55>7 56>7 57>7 58>7 13|94b13 112l8 112t18
+55f7 X{float} 13|95b7 103r23
+56f7 Y{float} 13|96b7 104r23
+57f7 Radius{float} 13|97b7 105r28
+58e7 Color{11|22E9} 13|98b7 106r27
+62U14*Set_Radius 62=26 62>51 13|169b14 172l8 172t18
+62i26 Shape{23I9} 13|169b26 171r60
+62f51 Value{float} 13|169b51 171r68
+66V13*Get_Radius{float} 66>25 13|178b13 181l8 181t18
+66i25 Shape{23I9} 13|178b25 180r46
+70V13*New_Line{23I9} 71>7 72>7 73>7 74>7 75>7 13|118b13 138l8 138t16
+71f7 X{float} 13|119b7 128r21
+72f7 Y{float} 13|120b7 129r21
+73f7 X2{float} 13|121b7 130r22
+74f7 Y2{float} 13|122b7 131r22
+75e7 Color{11|22E9} 13|123b7 132r25
+80V13*Get_X2{float} 80>21 13|187b13 190l8 190t14
+80i21 V{23I9} 13|187b21 189r46
+84V13*Get_Y2{float} 84>21 13|196b13 199l8 199t14
+84i21 V{23I9} 13|196b21 198r46
+88U14*Set_X2 88=22 88>43 13|205b14 208l8 208t14
+88i22 V{23I9} 13|205b22 207r56
+88f43 Value{float} 89r16 13|205b43 207r60
+93U14*Set_Y2 93=22 93>43 13|214b14 217l8 217t14
+93i22 V{23I9} 13|214b22 216r56
+93f43 Value{float} 94r16 13|214b43 216r60
+98V13*New_Box{23I9} 99>7 99>11 100>7 100>14 101>7 13|144b13 163l8 163t15
+99f7 X{float} 13|145b7 152r20
+99f11 Y{float} 13|145b11 153r20
+100f7 Width{float} 13|146b7 154r24
+100f14 Height{float} 13|146b14 155r25
+101e7 Color{11|22E9} 13|147b7 157r24
+104V13*New_Torus{23I9} 105>7 106>7 107>7 108>7 109>7 13|223b13 243l8 243t17
+105f7 X{float} 13|224b7 233r22
+106f7 Y{float} 13|225b7 234r22
+107f7 Inner_Radius{float} 13|226b7 235r33
+108f7 Outer_Radius{float} 13|227b7 236r33
+109e7 Color{11|22E9} 13|228b7 237r26
+114U14*Set_Inner_Radius 114=32 114>53 13|249b14 252l8 252t24
+114i32 V{23I9} 13|249b32 251r66
+114f53 Value{float} 13|249b53 251r70
+118U14*Set_Outer_Radius 118=32 118>53 13|258b14 261l8 261t24
+118i32 V{23I9} 13|258b32 260r66
+118f53 Value{float} 13|258b53 260r70
+122V13*Get_Inner_Radius{float} 122>31 13|267b13 270l8 270t24
+122i31 V{23I9} 13|267b31 269r46
+126V13*Get_Outer_Radius{float} 126>31 13|276b13 279l8 279t24
+126i31 V{23I9} 13|276b31 278r46
+130V13*New_Text{23I9} 131>7 132>7 133>7 134>7 13|285b13 303l8 303t16
+131f7 X{float} 13|286b7 294r21
+132f7 Y{float} 13|287b7 295r21
+133a7 Text{string} 13|288b7 296r40
+134e7 Color{11|22E9} 13|289b7 297r25
+139U14*Set_Text 139=24 139>45 13|309b14 313l8 313t16
+139i24 V{23I9} 13|309b24 312r30
+139a45 Text{string} 13|309b45 312r46
+143V13*Get_Text{string} 143>23 13|319b13 322l8 322t16
+143i23 V{23I9} 13|319b23 321r46
+146V13*Current_Key_Press{11|24I9} 13|328b13 333l8 333t25
+153V13*Is_Key_Pressed{boolean} 153>29 13|335b13 338l8 338t22
+153m29 Key{21|12M12} 13|335b29 337r45
+156V13*To_Character{character} 156>27 13|343b13 350l8 350t20
+156i27 Key{11|24I9} 13|343b27 345r10 346r41
+160V13*To_Special{11|26E9} 160>25 13|390b13 397l8 397t18
+160i25 Key{11|24I9} 13|390b25 392r10 393r34
+163V13*Is_Special_Key{boolean} 163>29 13|362b13
+163i29 Key{11|24I9} 13|363r8
+166V13*Is_Control_Key{boolean} 166>29 13|369b13
+166i29 Key{11|24I9} 13|370r8
+169V13*Is_Shift_Key{boolean} 169>27 13|376b13
+169i27 Key{11|24I9} 13|377r8
+172V13*Is_Alt_Key{boolean} 172>25 13|383b13
+172i25 Key{11|24I9} 13|384r8
+175V13*Read_Last_Mouse_Position{11|54R9} 13|403b13 409l8 409t32
+177V13*At_End{boolean} 13|415b13 418l8 418t14
+X 13 display-basic.adb
+101r7 The_Circle{14|42R9} 103m7 104m7 105m7 106m7 108m29 108r29 109r46 111r24
+126r7 The_Line{14|42R9} 128m7 129m7 130m7 131m7 132m7 134m29 134r29 135r46
+. 137r24
+150r7 The_Box{14|42R9} 152m7 153m7 154m7 155m7 157m7 159m29 159r29 160r46
+. 162r24
+231r7 The_Torus{14|42R9} 233m7 234m7 235m7 236m7 237m7 239m29 239r29 240r46
+. 242r24
+292r7 The_Text{14|42R9} 294m7 295m7 296m7 297m7 299m29 299r29 300r46 302r24
+329i7 Val{11|24I9} 331m25 332r14
+354I12 Special_Key_Values{11|24I9} 363r15 392r17
+404r7 P{11|54R9} 406m46 408r14
+X 14 display-kernel.ads
+28K25*Kernel 13|20w14 20r35 292r38 337r22 417r22 14|206e19
+38n30*Circle{38E9} 13|101r32
+38n38*Line{38E9} 13|126r30
+38n44*Box{38E9} 13|150r29
+38n49*Torus{38E9} 13|231r31
+38n56*Text{38E9} 13|292r45
+42R9*Shape_Data 13|101r20 126r18 150r17 231r19 292r18 14|68e14
+43i7*Index{integer} 13|108m40 111r35 134m38 137r33 159m37 162r32 239m39 242r34
+. 299m38 302r33
+44f7*X{float} 13|39r54 103m18 128m16 152m15 233m17 294m16
+45f7*Y{float} 13|57r54 104m18 129m16 153m15 234m17 295m16
+46e7*Color{11|22E9} 13|75r54 106m18 132m16 157m15 237m17 297m16
+50f13*Radius{float} 13|105m18 180r54
+53f13*X2{float} 13|130m16 189r50
+53f17*Y2{float} 13|131m16 198r50
+56f13*Width{float} 13|154m15
+56f20*Height{float} 13|155m15
+59f13*Inner_Radius{float} 13|235m17 269r50
+60f13*Outer_Radius{float} 13|236m17 278r50
+63p13*The_Text{41|45P9} 13|296m16
+73n7*Set_X{72E9} 13|30r39
+73n14*Set_Y{72E9} 13|48r39
+73n21*Set_X2{72E9} 13|207r39
+73n29*Set_Y2{72E9} 13|216r39
+74n7*Set_Color{72E9} 13|66r39
+75n7*Set_Radius{72E9} 13|171r39
+75n19*Set_Inner_Radius{72E9} 13|251r39
+75n37*Set_Outer_Radius{72E9} 13|260r39
+76n7*Set_Text{72E9} 13|312r11
+77n7*Delete{72E9} 13|85r42
+78n7*Store{72E9} 13|109r39 135r39 160r39 240r39 300r39
+110U14*Read_Current_Key 13|331s7
+114V13*Is_Key_Pressed{boolean} 13|337s29
+124w14*Data_Manager 13|30r7 39r14 48r7 57r14 66r7 75r14 85r10 108r7 109r7
+. 134r7 135r7 159r7 160r7 171r7 180r14 189r14 198r14 207r7 216r7 239r7 240r7
+. 251r7 260r7 269r14 278r14 299r7 300r7 311r7 321r14 406r7
+127U17 Schedule_Command 13|30s20 48s20 66s20 85s23 109s20 135s20 160s20 171s20
+. 207s20 216s20 240s20 251s20 260s20 300s20 311s20
+131U17 Take_Id 13|108s20 134s20 159s20 239s20 299s20
+133V16 Get_Data{42R9} 13|39s27 57s27 75s27 180s27 189s27 198s27 269s27 278s27
+135V16 Get_Text{string} 13|321s27
+139U17 Read_Last_Mouse_Position 13|406s20
+186b4*At_End{boolean} 13|417r29
+X 19 i-c.ads
+43M9*unsigned
+X 21 sdl_sdl_keysym_h.ads
+6K9*SDL_SDL_keysym_h 12|1w6 1r28 21|263e21
+12M12*SDLKey{19|43M9} 12|153r35 13|335r35
+X 35 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 41 s-string.ads
+45P9*String_Access(string)
+

@@ -1,0 +1,39 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U umingw_off_t_h%s	umingw_off_t_h.ads	bea84ebc NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_off_t_h.ads	20160123123442 ea895f27 umingw_off_t_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 9|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 9|4w17 4r35
+37I9*long<long_integer> 9|8r23 10r23
+X 9 umingw_off_t_h.ads
+6K9*umingw_off_t_h 18l5 18e19
+8I12*u_off_t{4|37I9}
+10I12*off32_t{4|37I9} 16r21
+12I12*u_off64_t{long_long_integer}
+14I12*off64_t{long_long_integer}
+16I12*off_t{10I12}
+

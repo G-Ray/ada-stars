@@ -1,0 +1,66 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U sdl_sdl_main_h%s	sdl_sdl_main_h.ads	8ec274ab NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W sdl_sdl_stdinc_h%s	sdl_sdl_stdinc_h.adb	sdl_sdl_stdinc_h.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-c.ads		20150506105326 5421119b interfaces.c%s
+D i-cexten.ads		20150506105327 b33ea64a interfaces.c.extensions%s
+D i-cstrin.ads		20150506105329 341d0ddf interfaces.c.strings%s
+D sdl_sdl_main_h.ads	20160123123442 68642917 sdl_sdl_main_h%s
+D sdl_sdl_stdinc_h.ads	20160123123442 9bbd0579 sdl_sdl_stdinc_h%s
+D stdint_h.ads		20160123123442 2f7ce0ee stdint_h%s
+D system.ads		20150506105329 1d274481 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D umingw_h.ads		20160123123442 0d5fd77d umingw_h%s
+D vadefs_h.ads		20160123123442 28c0a1fd vadefs_h%s
+X 3 interfac.ads
+38K9*Interfaces 178e15 7|4r6 4r24 6r6 22r14
+X 4 i-c.ads
+18K20*C 230e17 7|4w17 4r35 6r17 22r25
+35I9*int<integer> 7|15r30 15r65 24r38
+43M9*unsigned
+X 6 i-cstrin.ads
+36K22*Strings 106e25 7|6w19 22r27
+47P9*chars_ptr 7|22r35
+X 7 sdl_sdl_main_h.ads
+9K9*SDL_SDL_main_h 30l5 30e19
+12a4*C_LINKAGE{string}
+15V13*SDL_main{4|35I9} 15>23 15>35 16b<c,SDL_main>22
+15i23 argc{4|35I9}
+15m35 argv{10|67M9}
+18U14*SDL_SetModuleHandle 18>35 19b<c,SDL_SetModuleHandle>22
+18m35 hInst{10|67M9}
+21V13*SDL_RegisterApp{4|35I9} 22>7 23>7 24>7 25b<c,SDL_RegisterApp>22
+22p7 name{6|47P9}
+23m7 style{8|125M12}
+24m7 hInst{10|67M9}
+27U14*SDL_UnregisterApp 28b<c,SDL_UnregisterApp>22
+X 8 sdl_sdl_stdinc_h.ads
+35K9*SDL_SDL_stdinc_h 7|7w6 23r15 8|230e21
+125M12*Uint32{9|19M12} 7|23r32
+X 9 stdint_h.ads
+19M12*uint32_t{4|43M9}
+X 10 system.ads
+37K9*System 7|5w6 15r42 18r43 24r15 10|155e11
+67M9*Address 7|15r49 18r50 24r22
+
