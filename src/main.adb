@@ -6,11 +6,14 @@ with Scene;
 with Ada.Text_IO; use Ada.Text_IO;
 with SDL_SDL_keysym_h; use SDL_SDL_keysym_h;
 with Asteroid;
+with SpaceCraft;
+with Display;
 
 procedure Main is
 
 begin
    Asteroid.Init_Asteroids;
+   SpaceCraft.Init_SpaceCraft;
 
    SDL_Helper.Set_Loop_Cbk (Scene.Draw'Access);
    SDL_Helper.Set_Projection_Cbk (Scene.Set_Projection'Access);
@@ -19,9 +22,6 @@ begin
    loop
       if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) then
          Put_Line("left!");
-      end if;
-      if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) then
-         Put_Line("right!");
       end if;
       null;
    end loop;
