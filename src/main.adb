@@ -20,9 +20,6 @@ begin
    SDL_Helper.Start_SDL_Task (800, 600, "Asteroid");
 
    loop
-      if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) then
-         Put_Line("left!");
-      end if;
       null;
    end loop;
 

@@ -36,7 +36,7 @@ package  body Scene is
          LastTime := SDL_GetTicks;
       end if;
       glMatrixMode (GL_PROJECTION);
-      gluLookAt(0.0, 0.0, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0);
+      gluLookAt(SC.Get_X, 0.0, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0);
       glMatrixMode (GL_MODELVIEW);
 
       -- pour chaque asteroid
