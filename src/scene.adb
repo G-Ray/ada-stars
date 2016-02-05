@@ -5,19 +5,36 @@ with GL_gl_h; use GL_gl_h;
 with Asteroid; use Asteroid;
 with Ada.Text_IO; use Ada.Text_IO;
 with Interfaces.C.Extensions; use Interfaces.C;
+with Ada.Real_Time; use Ada.Real_Time;
 with SpaceCraft; use SpaceCraft;
+with SDL_SDL_stdinc_h;
+with SDL_SDL_timer_h; use SDL_SDL_timer_h;
 
 package  body Scene is
 
    Quadric : System.Address := gluNewQuadric; -- besoin de reserver un espace
+   Frames : Integer := 0;
+   CurrentTime : SDL_SDL_stdinc_h.Uint32;
+   LastTime : SDL_SDL_stdinc_h.Uint32;
    --X : double;
 
    procedure Draw is
 
    begin
+      CurrentTime :=  SDL_GetTicks;
+      Frames := Frames + 1;
       --glMatrixMode (GL_MODELVIEW);
       --glClear(GL_COLOR_BUFFER_BIT);
-      -- Move Camera
+
+      if CurrentTime - LastTime >= 1000 then
+         Put(Integer'Image(Frames));
+         Put("FPS");
+         Put(Float'Image(Float(1000/Frames)));
+         Put("ms/frame");
+         New_Line;
+         Frames := 0;
+         LastTime := SDL_GetTicks;
+      end if;
       glMatrixMode (GL_PROJECTION);
       gluLookAt(0.0, 0.0, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0);
       glMatrixMode (GL_MODELVIEW);
@@ -38,7 +55,7 @@ package  body Scene is
             stacks => 40);
          glPopMatrix;
 
-         delay Duration(0.01);
+         --delay Duration(0.05);
       end loop;
 
    end Draw;

@@ -1,6 +1,6 @@
 with SpaceCraft; use SpaceCraft;
 
-package Display is
+package Move is
    task type T;
-   My_Task : T;
-end Display;
+   Move_Task : T;
+end Move;

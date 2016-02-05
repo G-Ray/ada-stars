@@ -14,7 +14,7 @@ package body SpaceCraft is
 
    procedure Init_SpaceCraft is
    begin
-      SC.Set_Z(-1.0);
+      SC.Set_Z(-0.1);
    end Init_SpaceCraft;
 
 end SpaceCraft;

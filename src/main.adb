@@ -7,7 +7,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with SDL_SDL_keysym_h; use SDL_SDL_keysym_h;
 with Asteroid;
 with SpaceCraft;
-with Display;
+with Move;
 
 procedure Main is
 
