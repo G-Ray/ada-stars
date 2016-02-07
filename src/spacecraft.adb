@@ -9,6 +9,10 @@ package body SpaceCraft is
       begin
          SpaceCraft_T.X := X;
       end Set_X;
+      procedure Set_Y(Y : double) is
+      begin
+         SpaceCraft_T.Y := Y;
+      end Set_Y;
 
       function Get_Z return double is
       begin
@@ -19,12 +23,18 @@ package body SpaceCraft is
       begin
          return X;
       end Get_X;
+
+      function Get_Y return double is
+      begin
+         return Y;
+      end Get_Y;
    end SpaceCraft_T;
 
    procedure Init_SpaceCraft is
    begin
       SC.Set_Z (-0.1);
       SC.Set_X (0.0);
+      SC.Set_Y (0.0);
    end Init_SpaceCraft;
 
 end SpaceCraft;

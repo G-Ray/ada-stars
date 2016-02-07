@@ -10,15 +10,21 @@ package body Move is
    task body T is
       Period : constant Time_Span := Ada.Real_Time.Milliseconds (10);
       Activation : Time := Clock;
-      KeyLeft: Boolean := false;
-      KeyRight : Boolean := false;
+      --KeyLeft: Boolean := false;
+      --KeyRight : Boolean := false;
    begin
       loop
-         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) and not keyLeft then
+         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) then
             SC.set_X (-0.1);
-         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) and not keyRight then
+         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) then
             SC.set_X (0.1);
-         else SC.Set_X(0.0);
+         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) then
+            SC.set_Y (0.1);
+         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_DOWN) then
+            SC.set_Y (-0.1);
+         else
+            SC.Set_X(0.0);
+            SC.Set_Y(0.0);
          end if;
          --Put_Line(double'Image(SC.Get_Z));
          Activation := Activation + Period;
