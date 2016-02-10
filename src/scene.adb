@@ -44,8 +44,6 @@ package  body Scene is
          glPushMatrix;
          glLoadIdentity;
 
-         --A.Z := A.Z + 1.0;
-         --Put_Line(Integer'Image(Integer(A.Z)));
          glTranslated (GLdouble(A.X), GLdouble(A.Y), GLdouble(A.Z));
          glColor3d (GLdouble(A.R), GLdouble(A.G), GLdouble(A.B));
          gluSphere
