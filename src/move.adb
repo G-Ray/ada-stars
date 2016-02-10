@@ -18,14 +18,18 @@ package body Move is
             SC.set_X (-0.1);
          elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) then
             SC.set_X (0.1);
-         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) then
+         else
+            SC.Set_X(0.0);
+         end if;
+
+         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) then
             SC.set_Y (0.1);
          elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_DOWN) then
             SC.set_Y (-0.1);
          else
-            SC.Set_X(0.0);
             SC.Set_Y(0.0);
          end if;
+
          --Put_Line(double'Image(SC.Get_Z));
          Activation := Activation + Period;
          delay until Activation;
