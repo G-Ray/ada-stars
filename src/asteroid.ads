@@ -1,6 +1,7 @@
 package Asteroid is
 
    type Asteroid_T is record
+      X_Pos : Float;
       X, Y, Z : Float;
       R, G, B : Float;
       Radius : Float;

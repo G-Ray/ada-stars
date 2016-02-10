@@ -16,6 +16,7 @@ package  body Scene is
    Frames : Integer := 0;
    CurrentTime : SDL_SDL_stdinc_h.Uint32;
    LastTime : SDL_SDL_stdinc_h.Uint32;
+   Distance : double;
    --X : double;
 
    procedure Draw is
@@ -37,21 +38,27 @@ package  body Scene is
       end if;
       glMatrixMode (GL_PROJECTION);
       gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0); --regarde vers l'horizon
+      SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
+      --Put_Line(double'Image(SC.Get_Z_Pos));
       glMatrixMode (GL_MODELVIEW);
 
       -- pour chaque asteroid
       for A of Asteroids loop
-         glPushMatrix;
-         glLoadIdentity;
+         Distance := - double (A.Z) - SC.Get_Z_Pos;
+         --Put_Line(double'Image(Distance));
+         if Distance <  100.0 and Distance > 0.0 then
+            glPushMatrix;
+            glLoadIdentity;
 
-         glTranslated (GLdouble(A.X), GLdouble(A.Y), GLdouble(A.Z));
-         glColor3d (GLdouble(A.R), GLdouble(A.G), GLdouble(A.B));
-         gluSphere
-           (qobj => Quadric,
-            radius => GLdouble (A.Radius),
-            slices => 40,
-            stacks => 40);
-         glPopMatrix;
+            glTranslated (GLdouble(A.X), GLdouble(A.Y), GLdouble(A.Z));
+            glColor3d (GLdouble(A.R), GLdouble(A.G), GLdouble(A.B));
+            gluSphere
+              (qobj => Quadric,
+               radius => GLdouble (A.Radius),
+               slices => 40,
+               stacks => 40);
+            glPopMatrix;
+         end if;
 
          --delay Duration(0.05);
       end loop;
@@ -64,7 +71,7 @@ package  body Scene is
    begin
       glMatrixMode (GL_PROJECTION);
       glLoadIdentity;
-      gluPerspective (90.0, Ratio, 1.0, 2000.0);
+      gluPerspective (90.0, Ratio, 1.0, 100.0);
       glViewport (0, 0, GLsizei (Width), GLsizei (Height));
       gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -100.0, 0.0, 1.0, 0.0);
       glMatrixMode (GL_MODELVIEW);

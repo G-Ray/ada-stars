@@ -13,6 +13,10 @@ package body SpaceCraft is
       begin
          SpaceCraft_T.Y := Y;
       end Set_Y;
+      procedure Set_Z_Pos(Z : double) is
+      begin
+         SpaceCraft_T.Z_Pos := Z;
+      end Set_Z_Pos;
 
       function Get_Z return double is
       begin
@@ -28,6 +32,11 @@ package body SpaceCraft is
       begin
          return Y;
       end Get_Y;
+
+      function Get_Z_Pos return double is
+      begin
+         return Z_Pos;
+      end Get_Z_Pos;
    end SpaceCraft_T;
 
    procedure Init_SpaceCraft is
@@ -35,6 +44,7 @@ package body SpaceCraft is
       SC.Set_Z (-0.1);
       SC.Set_X (0.0);
       SC.Set_Y (0.0);
+      SC.Set_Z_Pos (0.0);
    end Init_SpaceCraft;
 
 end SpaceCraft;
