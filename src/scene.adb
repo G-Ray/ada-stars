@@ -55,8 +55,8 @@ package  body Scene is
             gluSphere
               (qobj => Quadric,
                radius => GLdouble (A.Radius),
-               slices => 40,
-               stacks => 40);
+               slices => 20,
+               stacks => 20);
             glPopMatrix;
          end if;
 

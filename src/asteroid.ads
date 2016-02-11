@@ -9,7 +9,7 @@ package Asteroid is
 
    type Asteroid_Array is array (Integer range <>) of Asteroid_T;
 
-   Asteroids : Asteroid_Array(1 .. 50);
+   Asteroids : Asteroid_Array(1 .. 500);
 
    procedure Init_Asteroids;
 

@@ -5,7 +5,7 @@ with Ada.Numerics.Float_Random;
 package body Asteroid is
 
    subtype Asteroid_Range_X_Y is Integer range -30 .. 30;
-   subtype Asteroid_Range_Z is Integer range -200 .. -20;
+   subtype Asteroid_Range_Z is Integer range -1500 .. -20;
    subtype Asteroid_Range_Radius is Integer range 3 .. 10;
    subtype Asteroid_Range_Color is Float range 0.0 .. 1.0;
 
