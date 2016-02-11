@@ -6,16 +6,19 @@ package SpaceCraft is
       procedure Set_X(X : Interfaces.C.double);
       procedure Set_Y(Y : Interfaces.C.double);
       procedure Set_Z_Pos(Z : double);
+      procedure Set_Radius(Radius : double);
       function Get_Z return double;
       function Get_X return double;
       function Get_Y return double;
       function Get_Z_Pos return double;
+      function Get_Radius return double;
 
    private
       Z : double;
       X : double;
       Y : double;
       Z_Pos : double;
+      Radius : double;
    end SpaceCraft_T;
 
    procedure Init_SpaceCraft;

@@ -17,6 +17,10 @@ package body SpaceCraft is
       begin
          SpaceCraft_T.Z_Pos := Z;
       end Set_Z_Pos;
+      procedure Set_Radius (Radius : double) is
+      begin
+         SpaceCraft_T.Radius := Radius;
+      end Set_Radius;
 
       function Get_Z return double is
       begin
@@ -37,6 +41,11 @@ package body SpaceCraft is
       begin
          return Z_Pos;
       end Get_Z_Pos;
+
+      function Get_Radius return double is
+      begin
+         return Radius;
+      end Get_Radius;
    end SpaceCraft_T;
 
    procedure Init_SpaceCraft is
@@ -45,6 +54,7 @@ package body SpaceCraft is
       SC.Set_X (0.0);
       SC.Set_Y (0.0);
       SC.Set_Z_Pos (0.0);
+      SC.Set_Radius (3.0);
    end Init_SpaceCraft;
 
 end SpaceCraft;

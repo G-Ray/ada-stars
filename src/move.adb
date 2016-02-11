@@ -15,17 +15,17 @@ package body Move is
    begin
       loop
          if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) then
-            SC.set_X (-0.1);
+            SC.set_X (-0.3);
          elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) then
-            SC.set_X (0.1);
+            SC.set_X (0.3);
          else
             SC.Set_X(0.0);
          end if;
 
          if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) then
-            SC.set_Y (0.1);
+            SC.set_Y (0.3);
          elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_DOWN) then
-            SC.set_Y (-0.1);
+            SC.set_Y (-0.3);
          else
             SC.Set_Y(0.0);
          end if;
