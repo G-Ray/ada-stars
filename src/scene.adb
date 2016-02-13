@@ -38,14 +38,11 @@ package  body Scene is
          LastTime := SDL_GetTicks;
       end if;
 
-      glMatrixMode (GL_PROJECTION);
-
-      gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, -Config.Level_Distance, 0.0, 1.0, 0.0); --regarde vers l'horizon
+      --gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, SC.Get_Z_Pos + SC.Get_Z, 0.0, 1.0, 0.0); --regarde vers l'horizon
       SC.Set_X_Pos(SC.Get_X_Pos + SC.Get_X);
       SC.Set_Y_Pos(SC.Get_Y_Pos + SC.Get_Y);
       SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
-      --Put_Line(double'Image(SC.Get_Z_Pos));
-      glMatrixMode (GL_MODELVIEW);
+      Put_Line(double'Image(SC.Get_Z_Pos));
 
       if SC.Get_X_Pos > Config.Level_Radius or SC.Get_X_Pos < -Config.Level_Radius or
         SC.Get_Y_Pos > Config.Level_Radius or SC.Get_Y_Pos < -Config.Level_Radius
@@ -61,8 +58,6 @@ package  body Scene is
          --Put_Line(double'Image(Distance));
          if Distance <  Config.Distance_visibility and Distance > 0.0 then
             glPushMatrix;
-            glLoadIdentity;
-
             glTranslated (GLdouble(A.X), GLdouble(A.Y), GLdouble(A.Z));
             glColor3d (GLdouble(A.R), GLdouble(A.G), GLdouble(A.B));
             gluSphere
@@ -72,9 +67,10 @@ package  body Scene is
                stacks => Config.Sphere_detail);
             glPopMatrix;
          end if;
-
          --delay Duration(0.05);
       end loop;
+
+      glTranslated(-SC.Get_X, -SC.Get_Y, -SC.Get_Z);
 
    end Draw;
 
@@ -87,6 +83,7 @@ package  body Scene is
       gluPerspective (90.0, Ratio, 1.0, Config.Distance_visibility);
       glViewport (0, 0, GLsizei (Width), GLsizei (Height));
       gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -Config.Distance_visibility, 0.0, 1.0, 0.0);
+      glMatrixMode (GL_MODELVIEW);
       --glMatrixMode (GL_MODELVIEW);
       --      Set_Perspective_Projection (Width, Height);
    end Set_Projection;

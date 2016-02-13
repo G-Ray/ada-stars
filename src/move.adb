@@ -20,7 +20,7 @@ package body Move is
             SC.set_X (SC.Get_X + Config.Speed_Step);
          else -- simulate inertia
             if (SC.Get_X > 0.0) then
-              SC.Set_X(SC.Get_X - Config.Speed_Step);
+               SC.Set_X(SC.Get_X - Config.Speed_Step);
             elsif (SC.Get_X < 0.0) then
                SC.Set_X(SC.Get_X + Config.Speed_Step);
             end if;
