@@ -8,11 +8,12 @@ with SpaceCraft; use SpaceCraft;
 with Asteroid; use Asteroid;
 with Ada.Numerics;
 with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
+with Config;
 
 package body Collision is
 
    task body T is
-      Period : constant Time_Span := Ada.Real_Time.Milliseconds (10);
+      Period : constant Time_Span := Ada.Real_Time.Milliseconds (Config.Period_Collision);
       Activation : Time := Clock;
       Distance : double;
       COLLISION : exception;

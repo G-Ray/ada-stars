@@ -9,6 +9,7 @@ with Ada.Real_Time; use Ada.Real_Time;
 with SpaceCraft; use SpaceCraft;
 with SDL_SDL_stdinc_h;
 with SDL_SDL_timer_h; use SDL_SDL_timer_h;
+with Config;
 
 package  body Scene is
 
@@ -39,14 +40,16 @@ package  body Scene is
 
       glMatrixMode (GL_PROJECTION);
 
-      gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0); --regarde vers l'horizon
+      gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, -Config.Level_Distance, 0.0, 1.0, 0.0); --regarde vers l'horizon
       SC.Set_X_Pos(SC.Get_X_Pos + SC.Get_X);
       SC.Set_Y_Pos(SC.Get_Y_Pos + SC.Get_Y);
       SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
       --Put_Line(double'Image(SC.Get_Z_Pos));
       glMatrixMode (GL_MODELVIEW);
 
-      if SC.Get_X_Pos > 30.0 or SC.Get_X_Pos < -30.0 or SC.Get_Y_Pos > 30.0 or SC.Get_Y_Pos < -30.0 then
+      if SC.Get_X_Pos > Config.Level_Radius or SC.Get_X_Pos < -Config.Level_Radius or
+        SC.Get_Y_Pos > Config.Level_Radius or SC.Get_Y_Pos < -Config.Level_Radius
+      then
          glClearColor(1.0, 0.0, 0.0, 0.0);
       else
          glClearColor (0.0, 0.0, 0.05, 0.0);
@@ -56,7 +59,7 @@ package  body Scene is
       for A of Asteroids loop
          Distance := - double (A.Z) - SC.Get_Z_Pos;
          --Put_Line(double'Image(Distance));
-         if Distance <  100.0 and Distance > 0.0 then
+         if Distance <  Config.Distance_visibility and Distance > 0.0 then
             glPushMatrix;
             glLoadIdentity;
 
@@ -65,8 +68,8 @@ package  body Scene is
             gluSphere
               (qobj => Quadric,
                radius => GLdouble (A.Radius),
-               slices => 20,
-               stacks => 20);
+               slices => Config.Sphere_detail,
+               stacks => Config.Sphere_detail);
             glPopMatrix;
          end if;
 
@@ -81,10 +84,10 @@ package  body Scene is
    begin
       glMatrixMode (GL_PROJECTION);
       glLoadIdentity;
-      gluPerspective (90.0, Ratio, 1.0, 100.0);
+      gluPerspective (90.0, Ratio, 1.0, Config.Distance_visibility);
       glViewport (0, 0, GLsizei (Width), GLsizei (Height));
-      gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -100.0, 0.0, 1.0, 0.0);
-      glMatrixMode (GL_MODELVIEW);
+      gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -Config.Distance_visibility, 0.0, 1.0, 0.0);
+      --glMatrixMode (GL_MODELVIEW);
       --      Set_Perspective_Projection (Width, Height);
    end Set_Projection;
 

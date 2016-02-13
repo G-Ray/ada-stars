@@ -1,3 +1,4 @@
+with Config;
 package Asteroid is
 
    type Asteroid_T is record
@@ -9,7 +10,7 @@ package Asteroid is
 
    type Asteroid_Array is array (Integer range <>) of Asteroid_T;
 
-   Asteroids : Asteroid_Array(1 .. 500);
+   Asteroids : Asteroid_Array(1 .. Config.Asteroid_Number);
 
    procedure Init_Asteroids;
 
