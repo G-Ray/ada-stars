@@ -42,7 +42,7 @@ package  body Scene is
       SC.Set_X_Pos(SC.Get_X_Pos + SC.Get_X);
       SC.Set_Y_Pos(SC.Get_Y_Pos + SC.Get_Y);
       SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
-      Put_Line(double'Image(SC.Get_Z_Pos));
+      Put_Line(double'Image(SC.Get_X));
 
       if SC.Get_X_Pos > Config.Level_Radius or SC.Get_X_Pos < -Config.Level_Radius or
         SC.Get_Y_Pos > Config.Level_Radius or SC.Get_Y_Pos < -Config.Level_Radius
@@ -51,6 +51,18 @@ package  body Scene is
       else
          glClearColor (0.0, 0.0, 0.05, 0.0);
       end if;
+
+      glPushMatrix;
+      glTranslated (0.0, 0.0, -1000.0);
+      glColor4d(0.0, 0.1, 0.3, 0.7);
+      gluCylinder
+        (qobj       => Quadric,
+         baseRadius => 50.0,
+         topRadius  => 50.0,
+         height     => 1000.0,
+         slices     => 40,
+         stacks     => 40);
+      glPopMatrix;
 
       -- pour chaque asteroid
       for A of Asteroids loop
@@ -84,6 +96,9 @@ package  body Scene is
       glViewport (0, 0, GLsizei (Width), GLsizei (Height));
       gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -Config.Distance_visibility, 0.0, 1.0, 0.0);
       glMatrixMode (GL_MODELVIEW);
+      glEnable (GL_BLEND);
+      glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
       --glMatrixMode (GL_MODELVIEW);
       --      Set_Perspective_Projection (Width, Height);
    end Set_Projection;
