@@ -11,17 +11,26 @@ with Move;
 with Collision;
 
 procedure Main is
+   -- TODO : move tasks here
    Collision_Task : Collision.T;
+   procedure Game is
+   begin
+      Asteroid.Init_Asteroids;
+      SpaceCraft.Init_SpaceCraft;
+
+      loop
+         null;
+      end loop;
+   end Game;
+
 begin
-   Asteroid.Init_Asteroids;
-   SpaceCraft.Init_SpaceCraft;
 
    SDL_Helper.Set_Loop_Cbk (Scene.Draw'Access);
    SDL_Helper.Set_Projection_Cbk (Scene.Set_Projection'Access);
    SDL_Helper.Start_SDL_Task (800, 600, "Asteroid");
 
-   loop
-      null;
-   end loop;
+   while not SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_SPACE) loop null; end loop;
 
+   --start the game
+   Game;
 end Main;
