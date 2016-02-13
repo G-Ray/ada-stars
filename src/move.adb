@@ -14,20 +14,28 @@ package body Move is
       --KeyRight : Boolean := false;
    begin
       loop
-         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) then
-            SC.set_X (-0.3);
-         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) then
-            SC.set_X (0.3);
-         else
-            SC.Set_X(0.0);
+         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) and SC.Get_X > -1.0 then
+            SC.set_X (SC.Get_X-0.01);
+         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_RIGHT) and SC.Get_X < 1.0 then
+            SC.set_X (SC.Get_X + 0.01);
+         else -- simulate inertia
+            if (SC.Get_X > 0.0) then
+              SC.Set_X(SC.Get_X - 0.01);
+            elsif (SC.Get_X < 0.0) then
+               SC.Set_X(SC.Get_X + 0.01);
+            end if;
          end if;
 
-         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) then
-            SC.set_Y (0.3);
-         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_DOWN) then
-            SC.set_Y (-0.3);
-         else
-            SC.Set_Y(0.0);
+         if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) and SC.Get_Y < 1.0 then
+            SC.set_Y (SC.Get_Y + 0.01);
+         elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_DOWN) and SC.Get_Y > -1.0 then
+            SC.set_Y (SC.Get_Y -0.01);
+         else -- simulate inertia
+            if (SC.Get_Y > 0.0) then
+               SC.Set_Y(SC.Get_Y - 0.01);
+            elsif (SC.Get_Y < 0.0) then
+               SC.Set_Y(SC.Get_Y + 0.01);
+            end if;
          end if;
 
          --Put_Line(double'Image(SC.Get_Z));
