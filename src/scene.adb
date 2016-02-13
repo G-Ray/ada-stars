@@ -36,13 +36,21 @@ package  body Scene is
          Frames := 0;
          LastTime := SDL_GetTicks;
       end if;
+
       glMatrixMode (GL_PROJECTION);
+
       gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0); --regarde vers l'horizon
       SC.Set_X_Pos(SC.Get_X_Pos + SC.Get_X);
       SC.Set_Y_Pos(SC.Get_Y_Pos + SC.Get_Y);
       SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
       --Put_Line(double'Image(SC.Get_Z_Pos));
       glMatrixMode (GL_MODELVIEW);
+
+      if SC.Get_X_Pos > 30.0 or SC.Get_X_Pos < -30.0 or SC.Get_Y_Pos > 30.0 or SC.Get_Y_Pos < -30.0 then
+         glClearColor(1.0, 0.0, 0.0, 0.0);
+      else
+         glClearColor (0.0, 0.0, 0.05, 0.0);
+      end if;
 
       -- pour chaque asteroid
       for A of Asteroids loop
