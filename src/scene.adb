@@ -39,6 +39,8 @@ package  body Scene is
       end if;
       glMatrixMode (GL_PROJECTION);
       gluLookAt(SC.Get_X, SC.Get_Y, SC.Get_Z, 0.0, 0.0, -1000.0, 0.0, 1.0, 0.0); --regarde vers l'horizon
+      SC.Set_X_Pos(SC.Get_X_Pos + SC.Get_X);
+      SC.Set_Y_Pos(SC.Get_Y_Pos + SC.Get_Y);
       SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
       --Put_Line(double'Image(SC.Get_Z_Pos));
       glMatrixMode (GL_MODELVIEW);

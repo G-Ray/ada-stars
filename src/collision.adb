@@ -23,7 +23,8 @@ package body Collision is
             if Distance < SC.Get_Radius and Distance > 0.0 then
                -- Put_Line ("....eval...");
                -- calcul de la distance entre 2 points
-               Distance := double (Sqrt ( Float ( (SC.Get_X - double(A.X))**2 + (SC.Get_Y - double(A.Y))**2) ) );
+               Distance := double (Sqrt ( Float ( (SC.Get_X_Pos - double(A.X))**2 +
+                                   (SC.Get_Y_Pos - double(A.Y))**2 + (-SC.Get_Z_Pos - double(A.Z))**2) ) );
                if Distance <= (SC.Get_Radius + double(A.Radius)) then
                   Put_Line ("###Collision!");
                end if;
