@@ -8,9 +8,10 @@ with SDL_SDL_keysym_h; use SDL_SDL_keysym_h;
 with Asteroid;
 with SpaceCraft;
 with Move;
+with Collision;
 
 procedure Main is
-
+   Collision_Task : Collision.T;
 begin
    Asteroid.Init_Asteroids;
    SpaceCraft.Init_SpaceCraft;

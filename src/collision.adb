@@ -15,6 +15,7 @@ package body Collision is
       Period : constant Time_Span := Ada.Real_Time.Milliseconds (10);
       Activation : Time := Clock;
       Distance : double;
+      COLLISION : exception;
 
    begin
       loop
@@ -26,13 +27,17 @@ package body Collision is
                Distance := double (Sqrt ( Float ( (SC.Get_X_Pos - double(A.X))**2 +
                                    (SC.Get_Y_Pos - double(A.Y))**2 + (-SC.Get_Z_Pos - double(A.Z))**2) ) );
                if Distance <= (SC.Get_Radius + double(A.Radius)) then
-                  Put_Line ("###Collision!");
+                  raise COLLISION;
                end if;
             end if;
          end loop;
          Activation := Activation + Period;
          delay until Activation;
       end loop;
+
+      exception
+      when COLLISION => put_line("Collision avec un asteroid ! Vous êtes mort!"); raise; --TODO : handle this
+      when others    => put_line("Erreur!");
    end T;
 
 end Collision;

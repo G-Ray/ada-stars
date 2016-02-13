@@ -9,7 +9,6 @@ with Ada.Real_Time; use Ada.Real_Time;
 with SpaceCraft; use SpaceCraft;
 with SDL_SDL_stdinc_h;
 with SDL_SDL_timer_h; use SDL_SDL_timer_h;
-with Collision;
 
 package  body Scene is
 
