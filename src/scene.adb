@@ -18,6 +18,8 @@ package  body Scene is
    CurrentTime : SDL_SDL_stdinc_h.Uint32;
    LastTime : SDL_SDL_stdinc_h.Uint32;
    Distance : double;
+   type Light is array (Integer range <>) of GLfloat;
+   Lightpos : Light (1 .. 4);
    --X : double;
 
    procedure Draw is
@@ -51,6 +53,13 @@ package  body Scene is
       else
          glClearColor (0.0, 0.0, 0.05, 0.0);
       end if;
+
+      Lightpos(1) := 0.0;
+      Lightpos(2) := 0.0;
+      Lightpos(3) := 1.0;
+      Lightpos(4) := 0.0;
+
+      glLightfv (GL_LIGHT0, GL_POSITION, lightpos(1)'Unrestricted_Access);
 
       glPushMatrix;
       glTranslated (0.0, 0.0, -1000.0);
