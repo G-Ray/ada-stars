@@ -20,6 +20,7 @@ package  body Scene is
    Distance : double;
    type Light is array (Integer range <>) of GLfloat;
    Lightpos : Light (1 .. 4);
+   Red : Float;
    --X : double;
 
    procedure Draw is
@@ -49,9 +50,13 @@ package  body Scene is
       if SC.Get_X_Pos > Config.Level_Radius or SC.Get_X_Pos < -Config.Level_Radius or
         SC.Get_Y_Pos > Config.Level_Radius or SC.Get_Y_Pos < -Config.Level_Radius
       then
-         glClearColor(1.0, 0.0, 0.0, 0.0);
+         Red := Red + 0.005;
+         if Red > 1.0 then Red := 1.0; end if;
+         glClearColor(Red, 0.0, 0.0, 0.0);
       else
-         glClearColor (0.0, 0.0, 0.05, 0.0);
+         Red := Red - 0.005;
+         if Red < 0.0 then Red := 0.0; end if;
+         glClearColor (Red, 0.0, 0.0, 0.0);
       end if;
 
       Lightpos(1) := 0.0;
@@ -61,17 +66,17 @@ package  body Scene is
 
       glLightfv (GL_LIGHT0, GL_POSITION, lightpos(1)'Unrestricted_Access);
 
-      glPushMatrix;
-      glTranslated (0.0, 0.0, -1000.0);
-      glColor4d(0.0, 0.1, 0.3, 0.7);
-      gluCylinder
-        (qobj       => Quadric,
-         baseRadius => 50.0,
-         topRadius  => 50.0,
-         height     => 1000.0,
-         slices     => 40,
-         stacks     => 40);
-      glPopMatrix;
+--        glPushMatrix;
+--        glTranslated (0.0, 0.0, -1000.0);
+--        glColor4d(0.0, 1.0, 0.0, 1.0);
+--        gluCylinder
+--          (qobj       => Quadric,
+--           baseRadius => 40.0,
+--           topRadius  => 40.0,
+--           height     => 1000.0,
+--           slices     => 40,
+--           stacks     => 40);
+--        glPopMatrix;
 
       -- pour chaque asteroid
       for A of Asteroids loop
