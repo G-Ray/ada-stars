@@ -11,9 +11,9 @@ with Move;
 with Collision;
 
 procedure Main is
-   -- TODO : move tasks here
-   Collision_Task : Collision.T;
    procedure Game is
+      Collision_Task : Collision.T;
+      Move_Task : Move.T;
    begin
       Asteroid.Init_Asteroids;
       SpaceCraft.Init_SpaceCraft;
