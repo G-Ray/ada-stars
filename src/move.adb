@@ -51,28 +51,22 @@ package body Move is
          else -- simulate inertia
             if (SC.Get_X > 0.0) then
                SC.Set_X(SC.Get_X - Config.Speed_Step);
-               if (SC.Get_X < 0.0) then SC.Set_X (0.0); end if;
             elsif (SC.Get_X < 0.0) then
                SC.Set_X(SC.Get_X + Config.Speed_Step);
-               if (SC.Get_X > 0.0) then SC.Set_X (0.0); end if;
             end if;
          end if;
 
          if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_UP) and
            SC.Get_Y < Config.Max_Speed_X_Y
          then
-            if SC.Get_Y_Pos >= 30.0 then SC.Set_Y (0.0);
-            else SC.set_Y (SC.Get_Y +Config.Speed_Step);
-            end if;
+            SC.set_Y (SC.Get_Y +Config.Speed_Step);
          elsif SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_DOWN) and SC.Get_Y > -Config.Max_Speed_X_Y then
             SC.set_Y (SC.Get_Y - Config.Speed_Step);
          else -- simulate inertia
             if (SC.Get_Y > 0.0) then
                SC.Set_Y(SC.Get_Y - Config.Speed_Step);
-               if (SC.Get_Y < 0.0) then SC.Set_Y (0.0); end if;
             elsif (SC.Get_Y < 0.0) then
                SC.Set_Y(SC.Get_Y + Config.Speed_Step);
-               if (SC.Get_Y > 0.0) then SC.Set_Y (0.0); end if;
             end if;
          end if;
 
