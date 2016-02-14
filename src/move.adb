@@ -11,9 +11,35 @@ package body Move is
    task body T is
       Period : constant Time_Span := Ada.Real_Time.Milliseconds (Config.Period_Move);
       Activation : Time := Clock;
+      Running : Boolean := True;
 
    begin
       loop
+
+         <<Selection>>
+         select
+            accept Pause do
+               Running := False;
+            end;
+         or
+            accept Resume do
+               Running := True;
+            end;
+         else
+            null;
+         end select;
+
+         if not Running then
+            SC.Set_X (0.0); --stop the spacecraft
+            SC.Set_Y (0.0); --stop the spacecraft
+            SC.Set_Z (0.0); --stop the spacecraft
+            Activation := Activation + Period;
+            delay until Activation;
+            goto Selection;
+         end if;
+
+         SC.Set_Z (-0.2);
+
          if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) and
            SC.Get_X > -Config.Max_Speed_X_Y
          then

@@ -17,9 +17,30 @@ package body Collision is
       Activation : Time := Clock;
       Distance : double;
       COLLISION : exception;
+      Running : Boolean := True;
 
    begin
       loop
+
+         <<Selection>>
+         select
+            accept Pause do
+               Running := False;
+            end;
+         or
+            accept Resume do
+               Running := True;
+            end;
+         else
+            null;
+         end select;
+
+         if not Running then
+            Activation := Activation + Period;
+            delay until Activation;
+            goto Selection;
+         end if;
+
          for A of Asteroids loop
             Distance := - double (A.Z + A.Radius) - (SC.Get_Z_Pos - SC.Get_Radius); -- on prend en compte le radius
             if Distance < SC.Get_Radius and Distance > 0.0 then

@@ -94,7 +94,7 @@ package  body Scene is
       glLoadIdentity;
       gluPerspective (90.0, Ratio, 1.0, Config.Distance_visibility);
       glViewport (0, 0, GLsizei (Width), GLsizei (Height));
-      gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -Config.Distance_visibility, 0.0, 1.0, 0.0);
+      --gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -Config.Distance_visibility, 0.0, 1.0, 0.0);
       glMatrixMode (GL_MODELVIEW);
       glEnable (GL_BLEND);
       glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
