@@ -67,13 +67,13 @@ begin
 
    SDL_Helper.Set_Loop_Cbk (Scene.Draw'Access);
    SDL_Helper.Set_Projection_Cbk (Scene.Set_Projection'Access);
-   SDL_Helper.Start_SDL_Task (800, 600, "Asteroid");
+   SDL_Helper.Start_SDL_Task (Config.Width, Config.Height, "Asteroid");
 
    --while not SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_SPACE) loop null; end loop;
 
    --start the game
    Game;
-   abort Time_Task, Move_Task, Collision_Task;
+   --abort Time_Task, Move_Task, Collision_Task;
    SDL_SDL_h.SDL_Quit; -- peut lever un  STORAGE_ERROR
 
 exception

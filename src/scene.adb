@@ -106,6 +106,7 @@ package  body Scene is
       glMatrixMode (GL_PROJECTION);
       glLoadIdentity;
       gluPerspective (90.0, Ratio, 1.0, Config.Distance_visibility);
+      Set_Perspective_Projection (Width, Height);
       glViewport (0, 0, GLsizei (Width), GLsizei (Height));
       --gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, -Config.Distance_visibility, 0.0, 1.0, 0.0);
       glMatrixMode (GL_MODELVIEW);
@@ -113,7 +114,6 @@ package  body Scene is
       glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
       --glMatrixMode (GL_MODELVIEW);
-      --      Set_Perspective_Projection (Width, Height);
    end Set_Projection;
 
 end Scene;
