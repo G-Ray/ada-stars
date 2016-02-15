@@ -14,13 +14,43 @@ package body Timer is
 
    task body T is
       Timer : constant Time_Span := Ada.Real_Time.Milliseconds (Config.Timer);
-      Activation : Time := Clock;
+      Debut : Time := Clock;
+      Fin : Time := Clock;
+      Clock_Pause : Time := Clock;
       END_TIMER : exception;
-      --Running : Boolean := True;
+      Running : Boolean := True;
    begin
-      Activation := Activation + Timer;
-      delay until Activation;
-      raise END_TIMER;
+      Fin := Debut + Timer;
+
+      loop
+         <<Selection>>
+         select
+            accept Pause do
+               Clock_Pause := Clock;
+               Running := False;
+            end;
+         or
+            accept Resume do
+               Fin := Fin + (Clock - Clock_Pause);
+               Running := True;
+            end;
+         else
+            null;
+         end select;
+
+         if not Running then
+            --Fin := Fin + Ada.Real_Time.Milliseconds(10);
+            --delay until Activation;
+            goto Selection;
+         end if;
+
+         --delay until Activation;
+         if Fin <= Clock then
+            raise END_TIMER;
+         end if;
+
+         delay 0.01;
+      end loop;
 
       exception
       when END_TIMER => put_line("Fin du timer"); raise; --TODO : handle this

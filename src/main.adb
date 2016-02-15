@@ -28,6 +28,7 @@ procedure Main is
       SpaceCraft.Init_SpaceCraft;
       Move_Task.Pause;
       Collision_Task.Pause;
+      Time_Task.Pause;
       Pause := True;
       Activation := Clock;
 
@@ -38,10 +39,12 @@ procedure Main is
             if Pause then
                Move_Task.Resume;
                Collision_Task.Resume;
+               Time_Task.Resume;
                Pause := False;
             else
                Move_Task.Pause;
                Collision_Task.Pause;
+               Time_Task.Pause;
                Pause := True;
             end if;
             Space := True;
