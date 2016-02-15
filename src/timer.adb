@@ -54,7 +54,7 @@ package body Timer is
       end loop;
 
       exception
-      when END_TIMER => put_line("Fin du timer. Vous avez gagner ! Bravo !"); State.Terminated := True;
+      when END_TIMER => put_line("Fin du timer. Vous avez gagné ! Bravo !"); State.Terminated := True;
       when others    => put_line("Erreur!");
    end T;
 

@@ -3,6 +3,7 @@ use Interfaces.C;
 
 package Config is
    Max_Speed_X_Y : double := 1.0;
+   Speed : double := -0.3;
    Speed_Step : double := 0.01;
    Period_Move : Integer := 10; --milliseconds
    Period_Collision : Integer := 10; --milliseconds

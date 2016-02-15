@@ -38,7 +38,7 @@ package body Move is
             goto Selection;
          end if;
 
-         SC.Set_Z (-0.2);
+         SC.Set_Z (Config.Speed);
 
          if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_LEFT) and
            SC.Get_X > -Config.Max_Speed_X_Y
