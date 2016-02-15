@@ -4,9 +4,9 @@ with Ada.Numerics.Float_Random;
 
 package body Asteroid is
 
-   subtype Asteroid_Range_X_Y is Integer range -30 .. 30;
-   subtype Asteroid_Range_Z is Integer range -1500 .. -20;
-   subtype Asteroid_Range_Radius is Integer range 3 .. 10;
+   subtype Asteroid_Range_X_Y is Integer range -Config.Level_Radius .. Config.Level_Radius;
+   subtype Asteroid_Range_Z is Integer range -Config.Level_Distance_Far .. -Config.Level_Distance_Start;
+   subtype Asteroid_Range_Radius is Integer range Config.Asteroid_Min_Radius .. Config.Asteroid_Max_Radius;
    subtype Asteroid_Range_Color is Float range 0.0 .. 1.0;
 
    package RandomAsteroid_X_Y is
@@ -27,33 +27,19 @@ package body Asteroid is
       RandomAsteroid_Radius.Reset (Gen => G_Radius);
       Ada.Numerics.Float_Random.Reset (Gen => G_Color);
 
+      --Generate all asteroids
       for A of Asteroids loop
+         --Set position
          A.X := Float (RandomAsteroid_X_Y.Random (Gen => G_X_Y));
          A.Y := Float (RandomAsteroid_X_Y.Random (Gen => G_X_Y));
          A.Z := Float (RandomAsteroid_Z.Random (Gen => G_Z));
+         --Set colors
          A.R := Ada.Numerics.Float_Random.Random (Gen => G_Color);
          A.G := Ada.Numerics.Float_Random.Random (Gen => G_Color);
          A.B := Ada.Numerics.Float_Random.Random (Gen => G_Color);
+         --Set radius
          A.Radius := Float (RandomAsteroid_Radius.Random (Gen => G_Radius));
       end loop;
-
---        Asteroids(1).X := 0.0;
---        Asteroids(1).Y := 0.0;
---        Asteroids(1).Z := -200.0;
---        Asteroids(1).R := 1.0;
---        Asteroids(1).Radius := 5.0;
---
---        Asteroids(2).X := 30.0;
---        Asteroids(2).Y := 30.0;
---        Asteroids(2).Z := -100.0;
---        Asteroids(2).G := 1.0;
---        Asteroids(2).Radius := 5.0;
---
---        Asteroids(3).X := 15.0;
---        Asteroids(3).Y := -15.0;
---        Asteroids(3).Z := -50.0;
---        Asteroids(3).B := 1.0;
---        Asteroids(3).Radius := 5.0;
    end Init_Asteroids;
 
 end Asteroid;

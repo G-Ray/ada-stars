@@ -47,8 +47,8 @@ package  body Scene is
       SC.Set_Z_Pos(SC.Get_Z_Pos - SC.Get_Z);
       --Put_Line(double'Image(SC.Get_X));
 
-      if SC.Get_X_Pos > Config.Level_Radius or SC.Get_X_Pos < -Config.Level_Radius or
-        SC.Get_Y_Pos > Config.Level_Radius or SC.Get_Y_Pos < -Config.Level_Radius
+      if SC.Get_X_Pos > double(Config.Level_Radius) or SC.Get_X_Pos < double(-Config.Level_Radius) or
+        SC.Get_Y_Pos > double(Config.Level_Radius) or SC.Get_Y_Pos < double(-Config.Level_Radius)
       then
          Red := Red + 0.005;
          if Red > 1.0 then Red := 1.0; end if;

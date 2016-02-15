@@ -8,11 +8,15 @@ package Config is
    Period_Move : Integer := 10; --milliseconds
    Period_Collision : Integer := 10; --milliseconds
    Distance_visibility : double := 100.0;
-   Sphere_detail : int := 40;
-   Level_Radius : double := 30.0;
-   Level_Distance : double := 1000.0;
+   Sphere_detail : int := 20;
+   Level_Radius : Integer := 30;
+   Level_Distance_Far : Integer := 1000;
+   Level_Distance_Start : Integer := 50;
    Asteroid_Number : Integer := 500;
-   Timer : Integer := 10000; -- 10 seconds
+   Timer : Integer := 600000; -- 60 seconds
    Width :Integer := 800;
    Height : Integer := 600;
+   Asteroid_Min_Radius : Integer := 3;
+   Asteroid_Max_Radius : Integer := 10;
+   SpaceCraft_Radius : double := 3.0;
 end Config;

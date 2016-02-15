@@ -23,6 +23,7 @@ package body Timer is
    begin
       Fin := Debut + Timer;
 
+      --Pause/resume
       loop
          <<Selection>>
          select
@@ -44,6 +45,7 @@ package body Timer is
             --delay until Activation;
             goto Selection;
          end if;
+         --End Pause/resume
 
          --delay until Activation;
          if Fin <= Clock then

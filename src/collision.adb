@@ -14,14 +14,15 @@ with State;
 package body Collision is
 
    task body T is
+      COLLISION : exception;
       Period : constant Time_Span := Ada.Real_Time.Milliseconds (Config.Period_Collision);
       Activation : Time := Clock;
       Distance : double;
-      COLLISION : exception;
       Running : Boolean := True;
 
    begin
       loop
+         --Pause/resume
          <<Selection>>
          select
             accept Pause do
@@ -40,25 +41,30 @@ package body Collision is
             delay until Activation;
             goto Selection;
          end if;
+         --End Pause/resume
 
          for A of Asteroids loop
-            Distance := - double (A.Z + A.Radius) - (SC.Get_Z_Pos - SC.Get_Radius); -- on prend en compte le radius
-            if Distance < SC.Get_Radius and Distance > 0.0 then
-               -- Put_Line ("....eval...");
-               -- calcul de la distance entre 2 points
+            --Compute 1D distance along Z only
+            Distance := - double (A.Z + A.Radius) - (SC.Get_Z_Pos - SC.Get_Radius);
+            if Distance < SC.Get_Radius and Distance > 0.0 then --a collision could occur
+               --Compute 3D distance between Asteroid and SC
                Distance := double (Sqrt ( Float ( (SC.Get_X_Pos - double(A.X))**2 +
-                                   (SC.Get_Y_Pos - double(A.Y))**2 + (-SC.Get_Z_Pos - double(A.Z))**2) ) );
+                                   (SC.Get_Y_Pos - double(A.Y))**2 +
+                                   (-SC.Get_Z_Pos - double(A.Z))**2) ) );
+
                if Distance <= (SC.Get_Radius + double(A.Radius)) then
+                  --Collision detected!
                   raise COLLISION;
                end if;
             end if;
          end loop;
+
          Activation := Activation + Period;
          delay until Activation;
       end loop;
 
       exception
-      when COLLISION => put_line("Collision avec un asteroid ! Vous êtes mort!"); State.Terminated := True; --TODO : handle this
+      when COLLISION => put_line("Collision avec un asteroid ! Vous êtes mort!"); State.Terminated := True;
       when others    => put_line("Erreur!");
    end T;
 
