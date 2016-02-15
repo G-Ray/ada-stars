@@ -97,7 +97,6 @@ package  body Scene is
       end loop;
 
       glTranslated(-SC.Get_X, -SC.Get_Y, -SC.Get_Z);
-
    end Draw;
 
    procedure Set_Projection (Width: Integer;

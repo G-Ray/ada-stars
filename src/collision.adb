@@ -9,6 +9,7 @@ with Asteroid; use Asteroid;
 with Ada.Numerics;
 with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 with Config;
+with State;
 
 package body Collision is
 
@@ -21,7 +22,6 @@ package body Collision is
 
    begin
       loop
-
          <<Selection>>
          select
             accept Pause do
@@ -58,7 +58,7 @@ package body Collision is
       end loop;
 
       exception
-      when COLLISION => put_line("Collision avec un asteroid ! Vous êtes mort!"); raise; --TODO : handle this
+      when COLLISION => put_line("Collision avec un asteroid ! Vous êtes mort!"); State.Terminated := True; --TODO : handle this
       when others    => put_line("Erreur!");
    end T;
 

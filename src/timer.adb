@@ -9,6 +9,7 @@ with Asteroid; use Asteroid;
 with Ada.Numerics;
 with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
 with Config;
+with State;
 
 package body Timer is
 
@@ -53,7 +54,7 @@ package body Timer is
       end loop;
 
       exception
-      when END_TIMER => put_line("Fin du timer"); raise; --TODO : handle this
+      when END_TIMER => put_line("Fin du timer. Vous avez gagner ! Bravo !"); State.Terminated := True;
       when others    => put_line("Erreur!");
    end T;
 

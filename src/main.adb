@@ -12,12 +12,14 @@ with Collision;
 with Ada.Real_Time; use Ada.Real_Time;
 with Config;
 with Timer;
+with State;
+with SDL_SDL_h;
 
 procedure Main is
+   Collision_Task : Collision.T;
+   Move_Task : Move.T;
+   Time_Task : Timer.T;
    procedure Game is
-      Collision_Task : Collision.T;
-      Move_Task : Move.T;
-      Time_Task : Timer.T;
       Pause : Boolean := False;
       Space : Boolean := False;
       Period : constant Time_Span := Ada.Real_Time.Milliseconds (Config.Period_Move);
@@ -34,6 +36,10 @@ procedure Main is
 
       --Move_Task.Resume;
       loop
+
+         if State.Terminated then
+            return;
+         end if;
 
          if SDL_Helper.Is_Key_Pressed (SDL_SDL_keysym_h.SDLK_SPACE) and not Space then
             if Pause then
@@ -67,4 +73,11 @@ begin
 
    --start the game
    Game;
+   abort Time_Task;
+   abort Move_Task;
+   abort Collision_Task;
+   SDL_SDL_h.SDL_Quit; -- peut lever un  STORAGE_ERROR
+
+exception
+   when others => put_line("Erreur!");
 end Main;
