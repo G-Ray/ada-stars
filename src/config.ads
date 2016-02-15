@@ -11,4 +11,5 @@ package Config is
    Level_Radius : double := 30.0;
    Level_Distance : double := 1000.0;
    Asteroid_Number : Integer := 500;
+   Timer : Integer := 10000; -- 10 seconds
 end Config;

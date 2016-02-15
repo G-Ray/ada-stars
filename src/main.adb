@@ -11,11 +11,13 @@ with Move;
 with Collision;
 with Ada.Real_Time; use Ada.Real_Time;
 with Config;
+with Timer;
 
 procedure Main is
    procedure Game is
       Collision_Task : Collision.T;
       Move_Task : Move.T;
+      Time_Task : Timer.T;
       Pause : Boolean := False;
       Space : Boolean := False;
       Period : constant Time_Span := Ada.Real_Time.Milliseconds (Config.Period_Move);
