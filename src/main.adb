@@ -74,6 +74,7 @@ begin
    --start the game
    Game;
    --abort Time_Task, Move_Task, Collision_Task;
+   --TODO : Find a better manner to quit
    SDL_SDL_h.SDL_Quit; -- peut lever un  STORAGE_ERROR
 
 exception

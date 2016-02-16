@@ -41,8 +41,7 @@ package body Timer is
          end select;
 
          if not Running then
-            --Fin := Fin + Ada.Real_Time.Milliseconds(10);
-            --delay until Activation;
+            delay 0.1;
             goto Selection;
          end if;
          --End Pause/resume
@@ -52,11 +51,12 @@ package body Timer is
             raise END_TIMER;
          end if;
 
-         delay 0.01;
+         delay 0.1;
       end loop;
 
       exception
-      when END_TIMER => put_line("Fin du timer. Vous avez gagné ! Bravo !"); State.Terminated := True;
+      when END_TIMER => put_line("=====================Fin du timer. Vous avez gagné ! Bravo !=====================");
+         State.Terminated := True;
       when others    => put_line("Erreur!");
    end T;
 

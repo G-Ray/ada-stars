@@ -17,7 +17,7 @@ package Config is
    --Distance from where asteroids can be seen
    Distance_visibility : double := 100.0;
    --Detail of the spheres (number of vertices)
-   Sphere_detail : int := 40;
+   Sphere_detail : int := 30;
 
    --Radius where asteroids are generated
    Level_Radius : Integer := 30;
@@ -29,7 +29,7 @@ package Config is
    Asteroid_Number : Integer := 500;
 
    --Time of the level
-   Timer : Integer := 600000; -- 60 seconds
+   Timer : Integer := 30000; -- 30 seconds
 
    --Min radius of a asteroid
    Asteroid_Min_Radius : Integer := 3;

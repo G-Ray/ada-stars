@@ -64,7 +64,8 @@ package body Collision is
       end loop;
 
       exception
-      when COLLISION => put_line("Collision avec un asteroid ! Vous êtes mort!"); State.Terminated := True;
+      when COLLISION => put_line("=====================Collision avec un asteroid ! Vous êtes mort!=====================");
+         State.Terminated := True;
       when others    => put_line("Erreur!");
    end T;
 
